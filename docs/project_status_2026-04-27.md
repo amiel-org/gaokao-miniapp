@@ -142,7 +142,17 @@
 7. 跳转到北京定位结果页。
 8. 展示市排名区间、定位段位、置信度、风险提示和下一步建议。
 
-### 2.10 页面视觉预览
+### 2.10 前端逻辑模块化
+
+已完成一次前端工程整理：
+
+- 学校标签和固定选项已抽到 `miniprogram/utils/school-labels.js`。
+- 学校搜索逻辑已抽到 `miniprogram/utils/school-search.js`。
+- 校排估算逻辑已抽到 `miniprogram/utils/school-rank-estimator.js`。
+
+校排入口页现在主要负责页面状态、表单校验、payload 组装和跳转，不再承载大量业务计算逻辑。
+
+### 2.11 页面视觉预览
 
 已生成预览图：
 
@@ -165,6 +175,7 @@
 - `docs/implementation_roadmap.md`
 - `docs/product_v1_increment_frontend_integration.md`
 - `docs/product_v1_increment_position_result_page.md`
+- `docs/frontend_logic_refactor_2026-04-27.md`
 - `docs/school_rank_entry_prototype.md`
 - `docs/school_rank_to_city_rank_prototype.md`
 - `docs/school_rank_estimation_data_layer.md`
@@ -342,11 +353,10 @@ JS 语法通过不代表微信小程序编译一定完全通过。
 建议按这个顺序继续：
 
 1. 初始化 Git 仓库并做一次当前基线提交。
-2. 抽取搜索和估算逻辑到 `miniprogram/utils/`。
-3. 用微信开发者工具导入项目，做一次模拟器验收。
-4. 把 imagegen 视觉方向转成小程序页面样式。
-5. 开始建立 2025 院校专业组数据结构。
-6. 做冲稳保推荐页原型。
+2. 用微信开发者工具导入项目，做一次模拟器验收。
+3. 把 imagegen 视觉方向转成小程序页面样式。
+4. 开始建立 2025 院校专业组数据结构。
+5. 做冲稳保推荐页原型。
 
 ## 8. 当前结论
 
