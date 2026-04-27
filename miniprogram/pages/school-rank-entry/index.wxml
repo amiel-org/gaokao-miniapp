@@ -1,0 +1,151 @@
+<view class="page-shell">
+  <view class="hero">
+    <text class="eyebrow">北京 2025 基线版</text>
+    <view class="hero-title">先选中高中，再用校排名看孩子大概在北京什么位置。</view>
+    <view class="hero-lead">
+      这不是填一堆表，而是先把学校选准，再补齐年级人数和排名口径，才开始估算市级区间。
+    </view>
+    <view class="hero-note">当前结果为预测参考，不替代官方位次。</view>
+  </view>
+
+  <view class="form-block">
+    <view class="section-title">校排入口</view>
+    <view class="section-subtitle">
+      家长通常只记得学校和校排。这个入口会强制补上最低必要信息，避免把结果算偏。
+    </view>
+
+    <view class="field-list">
+      <view class="field">
+        <text class="field-label">所在区<text class="required">*</text></text>
+        <picker mode="selector" range="{{districtOptions}}" value="{{districtIndex}}" bindchange="handleDistrictChange">
+          <view class="field-picker {{districtLabel ? '' : 'placeholder'}}">
+            {{districtLabel || '先选所在区，能明显降低学校混淆'}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="field">
+        <text class="field-label">搜索高中<text class="required">*</text></text>
+        <view class="search-box">
+          <input
+            class="field-input"
+            placeholder="例如：人大附、北交附中、汇文中学"
+            value="{{schoolQuery}}"
+            bindinput="handleSchoolQueryInput"
+            confirm-type="search"
+          />
+
+          <view wx:if="{{searchResults.length > 0}}" class="search-results">
+            <view
+              wx:for="{{searchResults}}"
+              wx:key="school_id"
+              class="search-item"
+              data-item="{{item}}"
+              bindtap="handleSchoolSelect"
+            >
+              <view class="search-item-top">
+                <text class="search-item-name">{{item.short_name}}</text>
+                <text class="search-item-score">{{item.matchReasonLabel}}</text>
+              </view>
+              <view class="search-item-meta">
+                {{item.official_name}}｜{{item.district}}｜{{item.entityTypeLabel}}
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view wx:if="{{selectedSchool.school_id}}" class="selected-school">
+          <view class="selected-school-title">{{selectedSchool.short_name}}</view>
+          <view class="selected-school-meta">
+            {{selectedSchool.official_name}}｜{{selectedSchool.district}}｜{{selectedSchool.entityTypeLabel}}
+          </view>
+        </view>
+      </view>
+
+      <view class="field">
+        <text class="field-label">校排名<text class="required">*</text></text>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="请输入年级排名，例如 120"
+          value="{{gradeRank}}"
+          bindinput="handleGradeRankInput"
+        />
+      </view>
+
+      <view class="field">
+        <text class="field-label">年级总人数<text class="required">*</text></text>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="请输入年级总人数，例如 680"
+          value="{{gradeTotal}}"
+          bindinput="handleGradeTotalInput"
+        />
+        <view class="field-tip">如果缺这个值，系统只能给非常粗的区间，不建议直接估算。</view>
+      </view>
+
+      <view class="field">
+        <text class="field-label">排名口径<text class="required">*</text></text>
+        <view class="segmented">
+          <view class="segment {{rankingBasis === 'same_track' ? 'active' : ''}}" data-value="same_track" bindtap="handleRankingBasisSelect">
+            同类选科
+          </view>
+          <view class="segment {{rankingBasis === 'full_grade' ? 'active' : ''}}" data-value="full_grade" bindtap="handleRankingBasisSelect">
+            全年级
+          </view>
+          <view class="segment {{rankingBasis === 'unknown' ? 'active' : ''}}" data-value="unknown" bindtap="handleRankingBasisSelect">
+            不确定
+          </view>
+        </view>
+      </view>
+
+      <view class="field">
+        <text class="field-label">分数（可选）</text>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="如果知道分数，区间会明显收窄"
+          value="{{score}}"
+          bindinput="handleScoreInput"
+        />
+      </view>
+    </view>
+
+    <view class="cta-area">
+      <button class="primary-button" bindtap="handleEstimate">估算北京市位次区间</button>
+    </view>
+  </view>
+
+  <view class="info-panel">
+    <view class="info-title">为什么要补“年级总人数”和“排名口径”？</view>
+    <view class="info-copy">
+      同样写“第 400 名”，如果是全年级大排名和同类选科排名，含义完全不同。年级人数也会直接改变你在校内所处百分位。
+    </view>
+  </view>
+
+  <view wx:if="{{estimateResult}}" class="result-block">
+    <view class="result-title">当前原型结果</view>
+    <view class="result-row">
+      <text class="result-key">命中学校</text>
+      <text class="result-value">{{estimateResult.selectedSchool}}</text>
+    </view>
+    <view class="result-row">
+      <text class="result-key">实体类型</text>
+      <text class="result-value">{{estimateResult.entityType}}</text>
+    </view>
+    <view class="result-row">
+      <text class="result-key">估算区间</text>
+      <text class="result-value">{{estimateResult.rankRange}}</text>
+    </view>
+    <view class="result-row">
+      <text class="result-key">置信度</text>
+      <text class="result-value">{{estimateResult.confidence}}</text>
+    </view>
+    <view class="result-row">
+      <text class="result-key">说明</text>
+      <text class="result-value">{{estimateResult.explanation}}</text>
+    </view>
+  </view>
+</view>
+

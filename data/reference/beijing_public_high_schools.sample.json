@@ -1,0 +1,167 @@
+[
+  {
+    "school_id": "BJ_HS_HD_0001",
+    "official_name": "中国人民大学附属中学",
+    "short_name": "人大附中",
+    "district": "海淀区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "人大附中",
+      "人大附",
+      "人大附本校"
+    ],
+    "search_tokens": [
+      "中国人民大学附属中学",
+      "人大附中",
+      "人大附",
+      "海淀区"
+    ],
+    "pinyin_initials": [
+      "zgrmdxdfszx",
+      "rdfz"
+    ],
+    "input_hints": [
+      "请确认选择本部学校"
+    ],
+    "tier_level": 1,
+    "conversion_confidence": 0.92,
+    "default_enrollment_scale": 700,
+    "ranking_notes": "头部强校样例，适合采用较窄预测区间。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  },
+  {
+    "school_id": "BJ_HS_XC_0001",
+    "official_name": "北京市第四中学",
+    "short_name": "北京四中",
+    "district": "西城区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "北京四中",
+      "四中",
+      "西城四中"
+    ],
+    "search_tokens": [
+      "北京市第四中学",
+      "北京四中",
+      "四中",
+      "西城区"
+    ],
+    "pinyin_initials": [
+      "bjsz",
+      "sz"
+    ],
+    "input_hints": [
+      "建议结合年级总人数填写"
+    ],
+    "tier_level": 1,
+    "conversion_confidence": 0.9,
+    "default_enrollment_scale": 650,
+    "ranking_notes": "西城区头部强校样例，历史生源较稳定。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  },
+  {
+    "school_id": "BJ_HS_HD_0002",
+    "official_name": "北京市十一学校",
+    "short_name": "十一学校",
+    "district": "海淀区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "十一学校",
+      "北京十一学校",
+      "十一"
+    ],
+    "search_tokens": [
+      "北京市十一学校",
+      "十一学校",
+      "十一",
+      "海淀区"
+    ],
+    "pinyin_initials": [
+      "bjssxx",
+      "ssxx"
+    ],
+    "input_hints": [
+      "优先通过搜索结果选择，不建议手填"
+    ],
+    "tier_level": 1,
+    "conversion_confidence": 0.88,
+    "default_enrollment_scale": 750,
+    "ranking_notes": "头部强校样例，校排转市排时可作为高置信学校。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  },
+  {
+    "school_id": "BJ_HS_CY_0001",
+    "official_name": "北京市第八十中学",
+    "short_name": "八十中",
+    "district": "朝阳区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "八十中",
+      "北京八十中",
+      "朝阳八十中"
+    ],
+    "search_tokens": [
+      "北京市第八十中学",
+      "八十中",
+      "北京八十中",
+      "朝阳区"
+    ],
+    "pinyin_initials": [
+      "bjbslzx",
+      "bsz"
+    ],
+    "input_hints": [
+      "如不确定年级总人数，可先使用默认估算"
+    ],
+    "tier_level": 2,
+    "conversion_confidence": 0.82,
+    "default_enrollment_scale": 600,
+    "ranking_notes": "朝阳区高频学校样例，适合中等置信区间估算。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  },
+  {
+    "school_id": "BJ_HS_DC_0001",
+    "official_name": "北京市广渠门中学",
+    "short_name": "广渠门中学",
+    "district": "东城区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "广渠门中学",
+      "广中",
+      "东城广渠门"
+    ],
+    "search_tokens": [
+      "北京市广渠门中学",
+      "广渠门中学",
+      "广中",
+      "东城区"
+    ],
+    "pinyin_initials": [
+      "bjsgqmzx",
+      "gqmzx"
+    ],
+    "input_hints": [
+      "请尽量填写准确排名口径"
+    ],
+    "tier_level": 3,
+    "conversion_confidence": 0.76,
+    "default_enrollment_scale": 520,
+    "ranking_notes": "东城区优质公办样例，适合较宽区间估算。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  }
+]

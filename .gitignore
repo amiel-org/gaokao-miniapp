@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+
+# WeChat local files
+project.private.config.json
+
+# Data pipeline outputs
+data/raw/*
+!data/raw/.gitkeep
+data/staging/*
+!data/staging/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Generated previews / local artifacts
+output/page-preview/*
+!output/page-preview/.gitkeep
+output/imagegen/*
+!output/imagegen/.gitkeep
+output/chrome-user-data/

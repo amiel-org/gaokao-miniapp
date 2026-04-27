@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/school-rank-entry/index",
+    "pages/position-result/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "北京高考志愿助手",
+    "navigationBarBackgroundColor": "#f5efe4",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5efe4",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

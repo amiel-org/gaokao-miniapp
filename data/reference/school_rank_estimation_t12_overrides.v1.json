@@ -1,0 +1,716 @@
+[
+  {
+    "school_id": "BJ_HS_XC_0019",
+    "official_name": "北京市第四中学",
+    "tier_code": "T1",
+    "range_factor_min": 0.8,
+    "range_factor_max": 1.08,
+    "confidence_adjustment": 0.15,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.92,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 100,
+    "notes": "T1 头部强校精调：区间更窄、置信度更高。"
+  },
+  {
+    "school_id": "BJ_HS_XC_0027",
+    "official_name": "北京师范大学第二附属中学",
+    "tier_code": "T1",
+    "range_factor_min": 0.8,
+    "range_factor_max": 1.1,
+    "confidence_adjustment": 0.15,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.92,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 100,
+    "notes": "T1 头部强校精调。"
+  },
+  {
+    "school_id": "BJ_HS_XC_0029",
+    "official_name": "北京师范大学附属实验中学",
+    "tier_code": "T1",
+    "range_factor_min": 0.78,
+    "range_factor_max": 1.08,
+    "confidence_adjustment": 0.16,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.93,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 100,
+    "notes": "T1 头部强校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0001",
+    "official_name": "中国人民大学附属中学",
+    "tier_code": "T1",
+    "range_factor_min": 0.78,
+    "range_factor_max": 1.08,
+    "confidence_adjustment": 0.16,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.93,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 120,
+    "notes": "T1 头部强校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0042",
+    "official_name": "清华大学附属中学",
+    "tier_code": "T1",
+    "range_factor_min": 0.78,
+    "range_factor_max": 1.08,
+    "confidence_adjustment": 0.16,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.93,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 120,
+    "notes": "T1 头部强校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0024",
+    "official_name": "北京市十一学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.8,
+    "range_factor_max": 1.1,
+    "confidence_adjustment": 0.15,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.92,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.98,
+    "school_percentile_weight": 1.0,
+    "min_sample_size": 100,
+    "notes": "T1 头部强校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0002",
+    "official_name": "中国人民大学附属中学朝阳学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.82,
+    "range_factor_max": 1.12,
+    "confidence_adjustment": 0.12,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T1 校品牌延伸学校，略宽于头部本校。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0026",
+    "official_name": "清华大学附属中学朝阳学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.82,
+    "range_factor_max": 1.12,
+    "confidence_adjustment": 0.12,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T1 校品牌延伸学校，略宽于头部本校。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0025",
+    "official_name": "清华大学附属中学望京学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校，按保守口径精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0024",
+    "official_name": "清华大学附属中学广华学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校，按保守口径精调。"
+  },
+  {
+    "school_id": "BJ_HS_FT_0001",
+    "official_name": "中国人民大学附属中学丰台学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校，按保守口径精调。"
+  },
+  {
+    "school_id": "BJ_HS_TZ_0001",
+    "official_name": "中国人民大学附属中学通州校区",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校，按保守口径精调。"
+  },
+  {
+    "school_id": "BJ_HS_DX_0013",
+    "official_name": "清华附中大兴学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.9,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校，按保守口径精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0002",
+    "official_name": "中国人民大学附属中学第二分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.86,
+    "range_factor_max": 1.22,
+    "confidence_adjustment": 0.05,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.86,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.88,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T2 分校精调，保守于头部主校。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0012",
+    "official_name": "北京交通大学附属中学分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.86,
+    "range_factor_max": 1.22,
+    "confidence_adjustment": 0.05,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.86,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.88,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T2 分校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0013",
+    "official_name": "北京交通大学附属中学第二分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.86,
+    "range_factor_max": 1.22,
+    "confidence_adjustment": 0.05,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.86,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.88,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T2 分校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0017",
+    "official_name": "北京市第八十中学睿德分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.86,
+    "range_factor_max": 1.22,
+    "confidence_adjustment": 0.05,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.86,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.88,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T2 分校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0020",
+    "official_name": "北京市陈经纶中学团结湖分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.86,
+    "range_factor_max": 1.22,
+    "confidence_adjustment": 0.05,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.86,
+      "unknown": 0.68
+    },
+    "score_reference_weight": 0.88,
+    "school_percentile_weight": 0.95,
+    "min_sample_size": 90,
+    "notes": "T2 分校精调。"
+  },
+  {
+    "school_id": "BJ_HS_DC_0005",
+    "official_name": "北京市广渠门中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_DC_0029",
+    "official_name": "北京汇文中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_DC_0028",
+    "official_name": "北京景山学校",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_XC_0028",
+    "official_name": "北京师范大学附属中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.96,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0016",
+    "official_name": "北京市第八十中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0019",
+    "official_name": "北京市陈经纶中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0021",
+    "official_name": "北京汇文中学朝阳垂杨柳分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.07,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T2 分化校精调。"
+  },
+  {
+    "school_id": "BJ_HS_CY_0027",
+    "official_name": "首都师范大学附属中学朝阳学校",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.08,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.94,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0047",
+    "official_name": "首都师范大学附属中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.96,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0040",
+    "official_name": "北京理工大学附属中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0010",
+    "official_name": "北京交通大学附属中学",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.09,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.95,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0022",
+    "official_name": "北京市八一学校",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.08,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.94,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_SJS_0002",
+    "official_name": "北京大学附属中学石景山学校",
+    "tier_code": "T2",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.07,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T2 品牌延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_SJS_0001",
+    "official_name": "人大附中石景山学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_TZ_0014",
+    "official_name": "首都师范大学附属中学（通州校区）",
+    "tier_code": "T2",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.16,
+    "confidence_adjustment": 0.08,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.72
+    },
+    "score_reference_weight": 0.94,
+    "school_percentile_weight": 0.98,
+    "min_sample_size": 90,
+    "notes": "T2 主校精调。"
+  },
+  {
+    "school_id": "BJ_HS_TZ_0012",
+    "official_name": "北京理工大学附属中学通州校区",
+    "tier_code": "T2",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.07,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T2 品牌延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0044",
+    "official_name": "清华附中学院路学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0045",
+    "official_name": "清华附中志新学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0006",
+    "official_name": "人大附中航天城学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_HD_0043",
+    "official_name": "清华附中上庄学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_FT_0004",
+    "official_name": "北京十一学校中堂实验学校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_SJS_0006",
+    "official_name": "北京景山学校远洋分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.07,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T2 品牌延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_TZ_0011",
+    "official_name": "北京景山学校通州分校",
+    "tier_code": "T2",
+    "range_factor_min": 0.85,
+    "range_factor_max": 1.18,
+    "confidence_adjustment": 0.07,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T2 品牌延伸校精调。"
+  },
+  {
+    "school_id": "BJ_HS_DX_0011",
+    "official_name": "北京师范大学附属实验中学大兴分校",
+    "tier_code": "T1",
+    "range_factor_min": 0.84,
+    "range_factor_max": 1.15,
+    "confidence_adjustment": 0.1,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.88,
+      "unknown": 0.7
+    },
+    "score_reference_weight": 0.92,
+    "school_percentile_weight": 0.96,
+    "min_sample_size": 90,
+    "notes": "T1 延伸校精调。"
+  }
+]

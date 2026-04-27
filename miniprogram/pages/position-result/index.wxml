@@ -1,0 +1,64 @@
+<view class="result-page-shell">
+  <view wx:if="{{!hasResult}}" class="empty-state">
+    <view class="empty-title">还没有可展示的定位结果</view>
+    <view class="empty-copy">请先回到校排入口，选择学校并输入校排名后再查看。</view>
+    <button class="secondary-button" bindtap="handleBackEdit">返回填写</button>
+  </view>
+
+  <block wx:if="{{hasResult}}">
+    <view class="result-hero">
+      <text class="eyebrow">北京 {{payload.baselineYear}} 基线测算</text>
+      <view class="result-school">{{payload.input.schoolShortName}}</view>
+      <view class="result-summary">孩子大致处在：{{payload.result.level}}</view>
+      <view class="result-disclaimer">预测区间只用于定位，不等同于官方位次或录取承诺。</view>
+    </view>
+
+    <view class="rank-plate">
+      <view class="plate-label">估算北京市排名区间</view>
+      <view class="rank-range">{{rangeDisplay}}</view>
+      <view class="plate-meta">{{payload.input.district}}｜{{payload.result.entityType}}｜{{payload.input.rankingBasisLabel}}</view>
+    </view>
+
+    <view class="insight-section">
+      <view class="insight-title">这意味着什么</view>
+      <view class="insight-copy">{{payload.result.bandText}}</view>
+      <view class="metric-grid">
+        <view class="metric-item">
+          <text class="metric-label">校内百分位</text>
+          <text class="metric-value">前 {{payload.input.schoolPercentile}}%</text>
+        </view>
+        <view class="metric-item">
+          <text class="metric-label">置信度</text>
+          <text class="metric-value confidence {{confidenceTone}}">{{payload.result.confidence}}</text>
+        </view>
+        <view class="metric-item">
+          <text class="metric-label">参数梯队</text>
+          <text class="metric-value">{{payload.result.parameterSnapshot.tierName || '-'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{payload.result.warnings.length > 0}}" class="warning-section">
+      <view class="warning-title">需要注意</view>
+      <view wx:for="{{payload.result.warnings}}" wx:key="*this" class="warning-item">{{item}}</view>
+    </view>
+
+    <view class="detail-section">
+      <view class="detail-title">本次输入</view>
+      <view class="detail-row"><text class="detail-key">学校</text><text class="detail-value">{{payload.input.schoolName}}</text></view>
+      <view class="detail-row"><text class="detail-key">校排名</text><text class="detail-value">第 {{payload.input.gradeRank}} / {{payload.input.gradeTotal}} 名</text></view>
+      <view class="detail-row"><text class="detail-key">分数</text><text class="detail-value">{{payload.input.score || '未填写'}}</text></view>
+      <view class="detail-row"><text class="detail-key">口径</text><text class="detail-value">{{payload.input.rankingBasisLabel}}</text></view>
+    </view>
+
+    <view class="next-section">
+      <view class="next-title">下一步建议</view>
+      <view wx:for="{{nextSteps}}" wx:key="*this" class="next-item"><text class="next-dot"></text><text>{{item}}</text></view>
+    </view>
+
+    <view class="result-actions">
+      <button class="secondary-button" bindtap="handleBackEdit">返回修改</button>
+      <button class="primary-button compact" bindtap="handleNextVolunteer">继续看冲稳保</button>
+    </view>
+  </block>
+</view>

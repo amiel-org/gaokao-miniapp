@@ -1,0 +1,22 @@
+[
+  {
+    "school_id": "BJ_HS_HD_0001",
+    "official_name": "中国人民大学附属中学",
+    "canonical_school_name": "中国人民大学附属中学",
+    "tier_code": "T1",
+    "entity_type": "main_school",
+    "independent_admission": true,
+    "ranking_basis_weight": {
+      "same_track": 1.0,
+      "full_grade": 0.9,
+      "unknown": 0.75
+    },
+    "score_reference_weight": 1.0,
+    "school_percentile_weight": 1.0,
+    "confidence_adjustment": 0.1,
+    "range_factor_min": 0.82,
+    "range_factor_max": 1.12,
+    "min_sample_size": 80,
+    "notes": "示例模板。后续需要按学校真实情况校准。"
+  }
+]

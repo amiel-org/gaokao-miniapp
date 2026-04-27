@@ -1,0 +1,61 @@
+[
+  {
+    "log_id": "CAL-20260417-001",
+    "logged_at": "2026-04-17T00:00:00+08:00",
+    "school_id": "*",
+    "official_name": "全量参数表",
+    "district": "北京",
+    "parameter_version_before": "2025.v0.0",
+    "parameter_version_after": "2025.v1.0",
+    "change_type": "baseline_initialization",
+    "changed_fields": [
+      "tier_code",
+      "range_factor_min",
+      "range_factor_max",
+      "confidence_adjustment",
+      "ranking_basis_weight",
+      "score_reference_weight",
+      "school_percentile_weight",
+      "min_sample_size"
+    ],
+    "before": {},
+    "after": {
+      "scope": "195 所学校全量参数表 + T1/T2 全覆盖精调"
+    },
+    "reason": "建立 2025 基线年可运行参数层，并完成 T1/T2 学校的精调覆盖。",
+    "source": "codex_initial_build",
+    "operator": "Codex",
+    "requires_backtest": true,
+    "backtest_status": "completed"
+  },
+  {
+    "log_id": "CAL-20260417-002",
+    "logged_at": "2026-04-17T12:00:00+08:00",
+    "school_id": "BJ_HS_HD_0010",
+    "official_name": "北京交通大学附属中学",
+    "district": "海淀区",
+    "parameter_version_before": "2025.v1.0",
+    "parameter_version_after": "2025.v1.1",
+    "change_type": "manual_adjustment",
+    "changed_fields": [
+      "range_factor_min",
+      "range_factor_max",
+      "confidence_adjustment"
+    ],
+    "before": {
+      "range_factor_min": 0.84,
+      "range_factor_max": 1.16,
+      "confidence_adjustment": 0.09
+    },
+    "after": {
+      "range_factor_min": 0.83,
+      "range_factor_max": 1.14,
+      "confidence_adjustment": 0.1
+    },
+    "reason": "演示校准记录机制，不实际写回参数表。",
+    "source": "demo",
+    "operator": "Codex",
+    "requires_backtest": true,
+    "backtest_status": "pending"
+  }
+]

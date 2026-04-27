@@ -1,0 +1,33 @@
+[
+  {
+    "school_id": "BJ_HS_XXXX_0001",
+    "official_name": "学校官方全称",
+    "short_name": "学校简称",
+    "district": "所在区",
+    "is_public": true,
+    "status": 1,
+    "aliases": [
+      "简称1",
+      "简称2"
+    ],
+    "search_tokens": [
+      "官方全称",
+      "简称1",
+      "所在区"
+    ],
+    "pinyin_initials": [
+      "example"
+    ],
+    "input_hints": [
+      "优先搜索选择标准学校"
+    ],
+    "tier_level": 3,
+    "conversion_confidence": 0.75,
+    "default_enrollment_scale": 500,
+    "ranking_notes": "用于记录该校参与区间预测时的业务说明。",
+    "source_type": "manual_seed",
+    "last_reviewed_at": "2026-04-15",
+    "enabled": true
+  }
+]
+

@@ -1,0 +1,170 @@
+[
+  {
+    "district": "东城区",
+    "official_name": "北京市第五十中学分校",
+    "canonical_school_name": "北京市第五十中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "丰台区",
+    "official_name": "北京市第十中学晓月苑分校",
+    "canonical_school_name": "北京市第十中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "丰台区",
+    "official_name": "北京市第十八中学蒲芳学校",
+    "canonical_school_name": "北京市第十八中学",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "merge_as_campus_note"
+  },
+  {
+    "district": "大兴区",
+    "official_name": "北京市大兴区第一中学东校区",
+    "canonical_school_name": "北京市大兴区第一中学",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "朝阳区",
+    "official_name": "中国传媒大学附属中学（北京中学传媒分校）",
+    "canonical_school_name": "北京中学",
+    "entity_type": "co_branded_school",
+    "relation_type": "brand_cooperation",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "朝阳区",
+    "official_name": "北京中学科技分校",
+    "canonical_school_name": "北京中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "朝阳区",
+    "official_name": "北京第二外国语学院附属中学（北京中学外语分校）",
+    "canonical_school_name": "北京中学",
+    "entity_type": "co_branded_school",
+    "relation_type": "brand_cooperation",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "朝阳区",
+    "official_name": "北京市第八十中学睿德分校",
+    "canonical_school_name": "北京市第八十中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "朝阳区",
+    "official_name": "北京市陈经纶中学团结湖分校",
+    "canonical_school_name": "北京市陈经纶中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "中国人民大学附属中学第二分校",
+    "canonical_school_name": "中国人民大学附属中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "中国人民大学附属中学翠微学校",
+    "canonical_school_name": "中国人民大学附属中学",
+    "entity_type": "co_branded_school",
+    "relation_type": "brand_cooperation",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京交通大学附属中学东校区",
+    "canonical_school_name": "北京交通大学附属中学分校",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "merge_as_campus_note"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京交通大学附属中学分校",
+    "canonical_school_name": "北京交通大学附属中学第二分校",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "merge_as_alias"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京大学附属中学北医分校",
+    "canonical_school_name": "北京大学附属中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京市中关村中学知春分校",
+    "canonical_school_name": "北京市中关村中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京市八一学校附属玉泉中学",
+    "canonical_school_name": "北京市八一学校",
+    "entity_type": "co_branded_school",
+    "relation_type": "brand_cooperation",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京市第五十七中学上庄分校",
+    "canonical_school_name": "北京市第五十七中学",
+    "entity_type": "branch_school",
+    "relation_type": "main_branch",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京市第十九中学闵庄校区",
+    "canonical_school_name": "北京市第十九中学",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "海淀区",
+    "official_name": "北京市育英学校航天校区",
+    "canonical_school_name": "北京市育英学校",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "通州区",
+    "official_name": "北京市通州区潞河中学于家务校区",
+    "canonical_school_name": "北京市通州区潞河中学",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "keep_independent"
+  },
+  {
+    "district": "通州区",
+    "official_name": "北京市通州区运河中学东校区",
+    "canonical_school_name": "北京市通州区运河中学",
+    "entity_type": "campus",
+    "relation_type": "main_campus",
+    "dedup_decision": "keep_independent"
+  }
+]

@@ -1,0 +1,1250 @@
+[
+  {
+    "case_id": "CASE_T1_MAIN_001",
+    "description": "T1 主校：人大附中，同类选科，含分数。",
+    "ok": true,
+    "query": "人大附中",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0001",
+      "official_name": "中国人民大学附属中学",
+      "short_name": "人大附中",
+      "district": "海淀区",
+      "entity_type": "main_school",
+      "canonical_school_name": "中国人民大学附属中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "海淀区",
+        "school_id": "BJ_HS_HD_0001",
+        "school_name": "中国人民大学附属中学",
+        "grade_rank": 120,
+        "grade_total": 680,
+        "ranking_basis": "same_track",
+        "score": 640
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "中国人民大学附属中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T1",
+        "tier_name": "头部强校",
+        "range_factor_min": 0.78,
+        "range_factor_max": 1.08,
+        "confidence_adjustment": 0.16,
+        "min_sample_size": 120
+      },
+      "official_reference": {
+        "score_rank_reference": 4517,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 3523,
+        "rank_max": 4878,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.1765,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "中国人民大学附属中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "中国人民大学附属中学",
+          "actual": "中国人民大学附属中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T1_MAIN_002",
+    "description": "T1 主校：清华附中，同类选科，含分数。",
+    "ok": true,
+    "query": "清华附中",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0042",
+      "official_name": "清华大学附属中学",
+      "short_name": "清华附中",
+      "district": "海淀区",
+      "entity_type": "main_school",
+      "canonical_school_name": "清华大学附属中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "海淀区",
+        "school_id": "BJ_HS_HD_0042",
+        "school_name": "清华大学附属中学",
+        "grade_rank": 130,
+        "grade_total": 700,
+        "ranking_basis": "same_track",
+        "score": 638
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "清华大学附属中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T1",
+        "tier_name": "头部强校",
+        "range_factor_min": 0.78,
+        "range_factor_max": 1.08,
+        "confidence_adjustment": 0.16,
+        "min_sample_size": 120
+      },
+      "official_reference": {
+        "score_rank_reference": 4834,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 3770,
+        "rank_max": 5220,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.1857,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "清华大学附属中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "清华大学附属中学",
+          "actual": "清华大学附属中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T1_MAIN_003",
+    "description": "T1 主校：北师大实验，同类选科，含分数。",
+    "ok": true,
+    "query": "北师大实验",
+    "district": "西城区",
+    "selected_school": {
+      "school_id": "BJ_HS_XC_0029",
+      "official_name": "北京师范大学附属实验中学",
+      "short_name": "北师大实验",
+      "district": "西城区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京师范大学附属实验中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "西城区",
+        "school_id": "BJ_HS_XC_0029",
+        "school_name": "北京师范大学附属实验中学",
+        "grade_rank": 160,
+        "grade_total": 720,
+        "ranking_basis": "same_track",
+        "score": 632
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "北京师范大学附属实验中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T1",
+        "tier_name": "头部强校",
+        "range_factor_min": 0.78,
+        "range_factor_max": 1.08,
+        "confidence_adjustment": 0.16,
+        "min_sample_size": 100
+      },
+      "official_reference": {
+        "score_rank_reference": 5749,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 4484,
+        "rank_max": 6208,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.2222,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京师范大学附属实验中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京师范大学附属实验中学",
+          "actual": "北京师范大学附属实验中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T2_MAIN_001",
+    "description": "T2 主校：汇文中学，同类选科，无分数。",
+    "ok": true,
+    "query": "汇文中学",
+    "district": "东城区",
+    "selected_school": {
+      "school_id": "BJ_HS_DC_0029",
+      "official_name": "北京汇文中学",
+      "short_name": "汇文中学",
+      "district": "东城区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京汇文中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "东城区",
+        "school_id": "BJ_HS_DC_0029",
+        "school_name": "北京汇文中学",
+        "grade_rank": 400,
+        "grade_total": 700,
+        "ranking_basis": "same_track",
+        "score": null
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "北京汇文中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.84,
+        "range_factor_max": 1.16,
+        "confidence_adjustment": 0.09,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": null,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 4799,
+        "rank_max": 9942,
+        "confidence_level": "high",
+        "confidence_score": 0.84,
+        "estimation_basis": [
+          "school_rank_input",
+          "placeholder_without_score",
+          "main_school_context"
+        ],
+        "school_percentile": 0.5714,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京汇文中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京汇文中学",
+          "actual": "北京汇文中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T2_MAIN_002",
+    "description": "T2 主校：北交附中，同类选科，含分数。",
+    "ok": true,
+    "query": "北交附中",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0010",
+      "official_name": "北京交通大学附属中学",
+      "short_name": "北交附中",
+      "district": "海淀区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京交通大学附属中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "海淀区",
+        "school_id": "BJ_HS_HD_0010",
+        "school_name": "北京交通大学附属中学",
+        "grade_rank": 120,
+        "grade_total": 680,
+        "ranking_basis": "same_track",
+        "score": 640
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "北京交通大学附属中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.84,
+        "range_factor_max": 1.16,
+        "confidence_adjustment": 0.09,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 4517,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 3794,
+        "rank_max": 5239,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.1765,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京交通大学附属中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京交通大学附属中学",
+          "actual": "北京交通大学附属中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T2_MAIN_003",
+    "description": "T2 主校：八十中，同类选科，含分数。",
+    "ok": true,
+    "query": "第八十中学",
+    "district": "朝阳区",
+    "selected_school": {
+      "school_id": "BJ_HS_CY_0016",
+      "official_name": "北京市第八十中学",
+      "short_name": "第八十中学",
+      "district": "朝阳区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京市第八十中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "朝阳区",
+        "school_id": "BJ_HS_CY_0016",
+        "school_name": "北京市第八十中学",
+        "grade_rank": 210,
+        "grade_total": 720,
+        "ranking_basis": "same_track",
+        "score": 622
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "北京市第八十中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.84,
+        "range_factor_max": 1.16,
+        "confidence_adjustment": 0.09,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 7440,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 6249,
+        "rank_max": 8630,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.2917,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京市第八十中学",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京市第八十中学",
+          "actual": "北京市第八十中学",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T1_EXT_001",
+    "description": "T1 延伸校：清华附中朝阳学校。",
+    "ok": true,
+    "query": "清华附中朝阳学校",
+    "district": "朝阳区",
+    "selected_school": {
+      "school_id": "BJ_HS_CY_0026",
+      "official_name": "清华大学附属中学朝阳学校",
+      "short_name": "清华附中朝阳学校",
+      "district": "朝阳区",
+      "entity_type": "main_school",
+      "canonical_school_name": "清华大学附属中学朝阳学校",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "朝阳区",
+        "school_id": "BJ_HS_CY_0026",
+        "school_name": "清华大学附属中学朝阳学校",
+        "grade_rank": 180,
+        "grade_total": 620,
+        "ranking_basis": "same_track",
+        "score": 625
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "清华大学附属中学朝阳学校",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T1",
+        "tier_name": "头部强校",
+        "range_factor_min": 0.82,
+        "range_factor_max": 1.12,
+        "confidence_adjustment": 0.12,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 6896,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 5654,
+        "rank_max": 7723,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.2903,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "清华大学附属中学朝阳学校",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "清华大学附属中学朝阳学校",
+          "actual": "清华大学附属中学朝阳学校",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_T1_EXT_002",
+    "description": "T1 延伸校：人大附中通州校区。",
+    "ok": true,
+    "query": "人大附中通州校区",
+    "district": "通州区",
+    "selected_school": {
+      "school_id": "BJ_HS_TZ_0001",
+      "official_name": "中国人民大学附属中学通州校区",
+      "short_name": "人大附中通州校区",
+      "district": "通州区",
+      "entity_type": "main_school",
+      "canonical_school_name": "中国人民大学附属中学通州校区",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "通州区",
+        "school_id": "BJ_HS_TZ_0001",
+        "school_name": "中国人民大学附属中学通州校区",
+        "grade_rank": 160,
+        "grade_total": 600,
+        "ranking_basis": "same_track",
+        "score": 628
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "中国人民大学附属中学通州校区",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T1",
+        "tier_name": "头部强校",
+        "range_factor_min": 0.84,
+        "range_factor_max": 1.15,
+        "confidence_adjustment": 0.1,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 6399,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 5375,
+        "rank_max": 7358,
+        "confidence_level": "high",
+        "confidence_score": 0.9,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "main_school_context"
+        ],
+        "school_percentile": 0.2667,
+        "explanation": "当前结果为预测区间，不等同于官方位次。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "中国人民大学附属中学通州校区",
+      "confidence_level": "high",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "中国人民大学附属中学通州校区",
+          "actual": "中国人民大学附属中学通州校区",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_BRANCH_001",
+    "description": "T2 分校：北交附中第二分校。",
+    "ok": true,
+    "query": "北交附中第二分校",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0013",
+      "official_name": "北京交通大学附属中学第二分校",
+      "short_name": "北交附中第二分校",
+      "district": "海淀区",
+      "entity_type": "branch_school",
+      "canonical_school_name": "北京交通大学附属中学第二分校",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "海淀区",
+        "school_id": "BJ_HS_HD_0013",
+        "school_name": "北京交通大学附属中学第二分校",
+        "grade_rank": 150,
+        "grade_total": 480,
+        "ranking_basis": "same_track",
+        "score": 618
+      },
+      "school_context": {
+        "entity_type": "branch_school",
+        "canonical_school_name": "北京交通大学附属中学第二分校",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.86,
+        "range_factor_max": 1.22,
+        "confidence_adjustment": 0.05,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 8158,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 7015,
+        "rank_max": 9952,
+        "confidence_level": "high",
+        "confidence_score": 0.88,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "branch_school"
+        ],
+        "school_percentile": 0.3125,
+        "explanation": "当前结果为预测区间，不等同于官方位次。 当前学校为分校/校区/合作校，已按更保守口径处理。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京交通大学附属中学第二分校",
+      "confidence_level": "high",
+      "entity_type": "branch_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京交通大学附属中学第二分校",
+          "actual": "北京交通大学附属中学第二分校",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "branch_school",
+          "actual": "branch_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_BRANCH_002",
+    "description": "T2 分校：第八十中学睿德分校。",
+    "ok": true,
+    "query": "第八十中学睿德分校",
+    "district": "朝阳区",
+    "selected_school": {
+      "school_id": "BJ_HS_CY_0017",
+      "official_name": "北京市第八十中学睿德分校",
+      "short_name": "第八十中学睿德分校",
+      "district": "朝阳区",
+      "entity_type": "branch_school",
+      "canonical_school_name": "北京市第八十中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "朝阳区",
+        "school_id": "BJ_HS_CY_0017",
+        "school_name": "北京市第八十中学睿德分校",
+        "grade_rank": 150,
+        "grade_total": 500,
+        "ranking_basis": "same_track",
+        "score": 615
+      },
+      "school_context": {
+        "entity_type": "branch_school",
+        "canonical_school_name": "北京市第八十中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.86,
+        "range_factor_max": 1.22,
+        "confidence_adjustment": 0.05,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": 8721,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 7500,
+        "rank_max": 10639,
+        "confidence_level": "high",
+        "confidence_score": 0.88,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "branch_school"
+        ],
+        "school_percentile": 0.3,
+        "explanation": "当前结果为预测区间，不等同于官方位次。 当前学校为分校/校区/合作校，已按更保守口径处理。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京市第八十中学睿德分校",
+      "confidence_level": "high",
+      "entity_type": "branch_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京市第八十中学睿德分校",
+          "actual": "北京市第八十中学睿德分校",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "branch_school",
+          "actual": "branch_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_CAMPUS_001",
+    "description": "校区：北交附中东校区。",
+    "ok": true,
+    "query": "北交附中东校区",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0011",
+      "official_name": "北京交通大学附属中学东校区",
+      "short_name": "北交附中东校区",
+      "district": "海淀区",
+      "entity_type": "campus",
+      "canonical_school_name": "北京交通大学附属中学分校",
+      "independent_admission": false,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "海淀区",
+        "school_id": "BJ_HS_HD_0011",
+        "school_name": "北京交通大学附属中学东校区",
+        "grade_rank": 150,
+        "grade_total": 480,
+        "ranking_basis": "same_track",
+        "score": 618
+      },
+      "school_context": {
+        "entity_type": "campus",
+        "canonical_school_name": "北京交通大学附属中学分校",
+        "independent_admission": false
+      },
+      "parameter_context": {
+        "tier_code": "T5",
+        "tier_name": "待校准学校",
+        "range_factor_min": 0.92,
+        "range_factor_max": 1.45,
+        "confidence_adjustment": -0.08,
+        "min_sample_size": 100
+      },
+      "official_reference": {
+        "score_rank_reference": 8158,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 7505,
+        "rank_max": 11829,
+        "confidence_level": "medium",
+        "confidence_score": 0.67,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "campus"
+        ],
+        "school_percentile": 0.3125,
+        "explanation": "当前结果为预测区间，不等同于官方位次。 当前学校为分校/校区/合作校，已按更保守口径处理。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京交通大学附属中学东校区",
+      "confidence_level": "medium",
+      "entity_type": "campus"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京交通大学附属中学东校区",
+          "actual": "北京交通大学附属中学东校区",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "campus",
+          "actual": "campus",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_CAMPUS_002",
+    "description": "校区：通州区潞河中学于家务校区。",
+    "ok": true,
+    "query": "潞河中学于家务校区",
+    "district": "通州区",
+    "selected_school": {
+      "school_id": "BJ_HS_TZ_0008",
+      "official_name": "北京市通州区潞河中学于家务校区",
+      "short_name": "通州区潞河中学于家务校区",
+      "district": "通州区",
+      "entity_type": "campus",
+      "canonical_school_name": "北京市通州区潞河中学",
+      "independent_admission": true,
+      "match_score": 80,
+      "match_reason": "official_contains"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "通州区",
+        "school_id": "BJ_HS_TZ_0008",
+        "school_name": "北京市通州区潞河中学于家务校区",
+        "grade_rank": 180,
+        "grade_total": 460,
+        "ranking_basis": "same_track",
+        "score": 605
+      },
+      "school_context": {
+        "entity_type": "campus",
+        "canonical_school_name": "北京市通州区潞河中学",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T5",
+        "tier_name": "待校准学校",
+        "range_factor_min": 0.92,
+        "range_factor_max": 1.45,
+        "confidence_adjustment": -0.08,
+        "min_sample_size": 100
+      },
+      "official_reference": {
+        "score_rank_reference": 10753,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 9892,
+        "rank_max": 15591,
+        "confidence_level": "medium",
+        "confidence_score": 0.67,
+        "estimation_basis": [
+          "school_rank_input",
+          "score_reference",
+          "campus"
+        ],
+        "school_percentile": 0.3913,
+        "explanation": "当前结果为预测区间，不等同于官方位次。 当前学校为分校/校区/合作校，已按更保守口径处理。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京市通州区潞河中学于家务校区",
+      "confidence_level": "medium",
+      "entity_type": "campus"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京市通州区潞河中学于家务校区",
+          "actual": "北京市通州区潞河中学于家务校区",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "campus",
+          "actual": "campus",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_LOW_CONF_001",
+    "description": "低置信：景山学校，未知口径，无分数。",
+    "ok": true,
+    "query": "景山学校",
+    "district": "东城区",
+    "selected_school": {
+      "school_id": "BJ_HS_DC_0028",
+      "official_name": "北京景山学校",
+      "short_name": "景山学校",
+      "district": "东城区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京景山学校",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": true,
+      "input_summary": {
+        "district": "东城区",
+        "school_id": "BJ_HS_DC_0028",
+        "school_name": "北京景山学校",
+        "grade_rank": 300,
+        "grade_total": 650,
+        "ranking_basis": "unknown",
+        "score": null
+      },
+      "school_context": {
+        "entity_type": "main_school",
+        "canonical_school_name": "北京景山学校",
+        "independent_admission": true
+      },
+      "parameter_context": {
+        "tier_code": "T2",
+        "tier_name": "市级强校",
+        "range_factor_min": 0.84,
+        "range_factor_max": 1.16,
+        "confidence_adjustment": 0.09,
+        "min_sample_size": 90
+      },
+      "official_reference": {
+        "score_rank_reference": null,
+        "reference_source": "北京教育考试院分数分布 / 本地 rank_map"
+      },
+      "estimated_city_rank": {
+        "rank_min": 3876,
+        "rank_max": 8030,
+        "confidence_level": "medium",
+        "confidence_score": 0.56,
+        "estimation_basis": [
+          "school_rank_input",
+          "placeholder_without_score",
+          "main_school_context"
+        ],
+        "school_percentile": 0.4615,
+        "explanation": "当前结果为预测区间，不等同于官方位次。 排名口径不明确，已降低置信度。"
+      },
+      "next_step_hint": {
+        "can_continue_to_recommendation": true,
+        "recommended_action": "进入北京市定位与志愿初筛"
+      }
+    },
+    "errors": [],
+    "expected": {
+      "selected_school_name": "北京景山学校",
+      "confidence_level": "medium",
+      "entity_type": "main_school"
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "selected_school_name",
+          "expected": "北京景山学校",
+          "actual": "北京景山学校",
+          "passed": true
+        },
+        {
+          "name": "confidence_level",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "name": "entity_type",
+          "expected": "main_school",
+          "actual": "main_school",
+          "passed": true
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "CASE_INPUT_ERROR_001",
+    "description": "输入错误：校排名大于总人数。",
+    "ok": false,
+    "query": "北交附中",
+    "district": "海淀区",
+    "selected_school": {
+      "school_id": "BJ_HS_HD_0010",
+      "official_name": "北京交通大学附属中学",
+      "short_name": "北交附中",
+      "district": "海淀区",
+      "entity_type": "main_school",
+      "canonical_school_name": "北京交通大学附属中学",
+      "independent_admission": true,
+      "match_score": 110,
+      "match_reason": "short_name_exact"
+    },
+    "estimate_result": {
+      "ok": false,
+      "errors": [
+        "grade_rank 不能大于 grade_total"
+      ]
+    },
+    "errors": [],
+    "expected": {
+      "should_fail": true
+    },
+    "evaluation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "should_fail",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ]
+    }
+  }
+]

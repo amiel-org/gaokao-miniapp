@@ -1,0 +1,43 @@
+[
+  {
+    "tier_code": "T1",
+    "tier_name": "头部强校",
+    "description": "顶尖高中，生源与出口相对稳定，适合较窄估算区间。",
+    "default_confidence_bonus": 0.12,
+    "default_range_factor_min": 0.82,
+    "default_range_factor_max": 1.12
+  },
+  {
+    "tier_code": "T2",
+    "tier_name": "市级强校",
+    "description": "北京市范围内认可度较高的优质高中，估算区间适中。",
+    "default_confidence_bonus": 0.08,
+    "default_range_factor_min": 0.85,
+    "default_range_factor_max": 1.18
+  },
+  {
+    "tier_code": "T3",
+    "tier_name": "区级重点",
+    "description": "区内重点或高频公办高中，估算区间略宽。",
+    "default_confidence_bonus": 0.04,
+    "default_range_factor_min": 0.88,
+    "default_range_factor_max": 1.25
+  },
+  {
+    "tier_code": "T4",
+    "tier_name": "普通公办高中",
+    "description": "一般公办高中，结果波动风险相对更高。",
+    "default_confidence_bonus": 0.0,
+    "default_range_factor_min": 0.9,
+    "default_range_factor_max": 1.35
+  },
+  {
+    "tier_code": "T5",
+    "tier_name": "待校准学校",
+    "description": "学校样本不足或关系复杂，优先保守估算。",
+    "default_confidence_bonus": -0.08,
+    "default_range_factor_min": 0.92,
+    "default_range_factor_max": 1.45
+  }
+]
+

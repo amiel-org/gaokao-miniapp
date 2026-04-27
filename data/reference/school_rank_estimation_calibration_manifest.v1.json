@@ -1,0 +1,8 @@
+{
+  "current_parameter_version": "2025.v1.0",
+  "parameter_file": "school_rank_estimation_parameter_backlog.v1.json",
+  "calibration_log_file": "school_rank_estimation_calibration_log.v1.json",
+  "last_log_id": "CAL-20260417-002",
+  "last_updated_at": "2026-04-17",
+  "notes": "2025 基线年参数校准记录清单。"
+}

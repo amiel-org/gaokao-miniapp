@@ -1,0 +1,19 @@
+{
+  "appid": "touristappid",
+  "projectname": "gaokao-miniapp",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "description": "北京高考志愿填报小程序",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "libVersion": "trial",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {}
+}
+

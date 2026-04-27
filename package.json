@@ -1,0 +1,11 @@
+{
+  "name": "gaokao-miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "北京高考志愿填报小程序工程骨架",
+  "scripts": {
+    "check:data": "python scripts/check_data.py",
+    "build:exports": "python scripts/build_exports.py"
+  }
+}
+
