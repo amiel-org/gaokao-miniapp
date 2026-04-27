@@ -62,7 +62,9 @@ function estimateCityRank({ school, gradeRank, gradeTotal, rankingBasis, score }
   }
 
   const rankingWeights = params.ranking_basis_weight || {};
-  const rankingWeight = rankingWeights[rankingBasis] ?? rankingWeights.unknown ?? 0.75;
+  const rankingWeight = rankingWeights[rankingBasis] !== undefined
+    ? rankingWeights[rankingBasis]
+    : (rankingWeights.unknown !== undefined ? rankingWeights.unknown : 0.75);
   confidenceScore += rankingWeight - 0.75;
   if (rankingBasis === "unknown") {
     warnings.push("排名口径不明确，系统已降低置信度并放宽解释边界。");

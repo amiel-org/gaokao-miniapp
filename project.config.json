@@ -1,5 +1,8 @@
 {
   "appid": "touristappid",
+  "compileOptions": {
+    "ignoreGetWXAsyncSecInfoError": true
+  },
   "projectname": "gaokao-miniapp",
   "compileType": "miniprogram",
   "miniprogramRoot": "miniprogram/",
@@ -30,7 +33,7 @@
       "outputPath": ""
     }
   },
-  "libVersion": "trial",
+  "libVersion": "2.31.0",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "packOptions": {
