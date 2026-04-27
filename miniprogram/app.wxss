@@ -191,6 +191,10 @@ picker {
   gap: 12rpx;
 }
 
+.score-source {
+  margin-bottom: 14rpx;
+}
+
 .segment {
   padding: 22rpx 16rpx;
   border-radius: 18rpx;
@@ -279,4 +283,3 @@ picker {
     font-size: 52rpx;
   }
 }
-

@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/school-rank-entry/index",
-    "pages/position-result/index"
+    "pages/position-result/index",
+    "pages/volunteer-preview/index"
   ],
   "window": {
     "navigationBarTitleText": "北京高考志愿助手",

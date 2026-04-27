@@ -177,6 +177,7 @@
 - `docs/product_v1_increment_position_result_page.md`
 - `docs/frontend_logic_refactor_2026-04-27.md`
 - `docs/wechat_devtools_import_guide.md`
+- `docs/wechat_devtools_feedback_fixes_2026-04-27.md`
 - `docs/school_rank_entry_prototype.md`
 - `docs/school_rank_to_city_rank_prototype.md`
 - `docs/school_rank_estimation_data_layer.md`

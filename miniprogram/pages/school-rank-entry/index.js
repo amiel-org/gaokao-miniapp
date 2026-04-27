@@ -14,6 +14,7 @@ Page({
     gradeTotal: "",
     rankingBasis: "same_track",
     score: "",
+    examType: "mock_unknown",
     estimateResult: null,
   },
 
@@ -37,10 +38,13 @@ Page({
 
   handleSchoolQueryInput(event) {
     const schoolQuery = event.detail.value;
+    const searchResults = searchSchools(schoolQuery, this.data.districtLabel);
+    const shouldAutoSelect = searchResults.length > 0 && searchResults[0].matchScore >= 105;
+
     this.setData({
       schoolQuery,
-      searchResults: searchSchools(schoolQuery, this.data.districtLabel),
-      selectedSchool: {},
+      searchResults: shouldAutoSelect ? searchResults.slice(1) : searchResults,
+      selectedSchool: shouldAutoSelect ? searchResults[0] : {},
       estimateResult: null,
     });
   },
@@ -65,6 +69,13 @@ Page({
 
   handleScoreInput(event) {
     this.setData({ score: event.detail.value, estimateResult: null });
+  },
+
+  handleExamTypeSelect(event) {
+    this.setData({
+      examType: event.currentTarget.dataset.value,
+      estimateResult: null,
+    });
   },
 
   handleRankingBasisSelect(event) {
@@ -92,6 +103,7 @@ Page({
         rankingBasis,
         rankingBasisLabel: rankingBasisLabels[rankingBasis],
         score: numericScore,
+        examType: this.data.examType,
       },
       result: estimateResult,
     };
