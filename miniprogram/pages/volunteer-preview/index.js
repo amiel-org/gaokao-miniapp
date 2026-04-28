@@ -1,5 +1,6 @@
 
 const collegeAdmissionGroups = require("../../data/college-admission-groups.js");
+const majorCatalogStatus = require("../../data/major-catalog-status.js");
 
 function formatNumber(value) {
   if (value === null || value === undefined || value === "") return "-";
@@ -85,6 +86,7 @@ Page({
     payload: null,
     recommendations: [],
     subjectCombinationLabel: "",
+    majorCatalogStatusText: majorCatalogStatus.userFacingStatus,
   },
 
   onLoad() {
