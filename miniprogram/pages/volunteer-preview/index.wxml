@@ -18,15 +18,27 @@
       <view class="base-label">当前定位区间</view>
       <view class="base-range">{{payload.result.rankRange}}</view>
       <view class="base-meta">{{payload.result.level}}｜置信度 {{payload.result.confidence}}</view>
+      <view class="base-subject">选科：{{subjectCombinationLabel}}</view>
     </view>
 
-    <view class="group-list">
-      <view wx:for="{{groups}}" wx:key="type" class="group-item group-{{item.type}}">
-        <view class="group-mark">{{item.type}}</view>
-        <view class="group-content">
-          <view class="group-title">{{item.title}}</view>
-          <view class="group-range">参考位次：{{item.range}}</view>
-          <view class="group-desc">{{item.desc}}</view>
+    <view class="recommendation-list">
+      <view wx:for="{{recommendations}}" wx:key="level" class="recommendation-section section-{{item.level}}">
+        <view class="recommendation-head">
+          <view class="group-mark">{{item.level}}</view>
+          <view class="recommendation-title">{{item.title}}</view>
+        </view>
+
+        <view wx:if="{{item.items.length === 0}}" class="empty-recommendation">{{item.emptyText}}</view>
+
+        <view wx:for="{{item.items}}" wx:for-item="rec" wx:key="id" class="college-card">
+          <view class="college-card-top">
+            <view class="college-name">{{rec.collegeName}}</view>
+            <view class="level-badge">{{rec.level}}</view>
+          </view>
+          <view class="college-group">专业组：{{rec.groupName}}｜选科要求：{{rec.subjectRequirement}}</view>
+          <view class="college-rank">2025 投档：{{rec.minScore}} 分｜位次 {{rec.minRankText}}</view>
+          <view class="college-reason">{{rec.reason}}</view>
+          <view class="college-risk">{{rec.riskText}}</view>
         </view>
       </view>
     </view>
@@ -34,7 +46,7 @@
     <view class="notice-panel">
       <view class="notice-title">下一步怎么筛学校？</view>
       <view class="notice-copy">
-        先按位次范围把候选学校和专业组分层，再用选科要求、近年录取位次、体检限制和专业偏好逐项排除不适合的选项。
+        当前卡片来自北京教育考试院 2025 本科普通批投档线种子数据。下一步要继续补齐专业明细、招生计划、体检限制和色弱风险。
       </view>
     </view>
 

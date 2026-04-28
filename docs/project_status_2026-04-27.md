@@ -345,3 +345,27 @@
 - 微信开发者工具完整验收。
 - 阶段性 Git 提交纪律。
 - 正式 UI 打磨。
+
+## 9. 2026-04-28 选科与冲稳保推荐方向更新
+
+本次根据微信开发者工具实际体验，确认并推进以下调整：
+
+1. 首页新增北京 3+3 选科组合。
+   - 固定 20 种组合。
+   - 使用选择器，不自由输入。
+   - 选科组合写入 `latestPositionResult.input.subjectCombination`。
+
+2. 冲稳保页从“位次范围预览”升级为“院校专业组卡片”。
+   - 卡片展示学校名、专业组、推荐层级、2025 投档分、位次、选科要求、推荐理由和风险提醒。
+   - 推荐对象改为“院校 + 专业组”，不是单纯学校名。
+
+3. 新增官方投档线种子数据。
+   - 来源：北京教育考试院《2025年北京市高招本科普通批录取投档线》PDF。
+   - 小程序侧数据模块：`miniprogram/data/college-admission-groups.js`。
+   - 构建脚本：`scripts/build_college_admission_group_seed.py`。
+
+4. 新增文档：
+   - `docs/college_admission_groups_data_design.md`
+   - `docs/volunteer_recommendation_api_design.md`
+
+当前边界：专业明细、招生计划、体检限制、色弱/色盲限制尚未全量接入，后续继续从官方招生专业目录补齐。

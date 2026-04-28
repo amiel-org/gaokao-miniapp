@@ -128,3 +128,91 @@ page {
   background: rgba(255, 252, 247, 0.9);
   border: 1rpx solid rgba(86, 63, 45, 0.14);
 }
+
+
+.base-subject {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #7c604d;
+}
+
+.recommendation-list {
+  margin-top: 24rpx;
+}
+
+.recommendation-section {
+  margin-bottom: 28rpx;
+}
+
+.recommendation-head {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  margin-bottom: 14rpx;
+}
+
+.recommendation-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #2b211a;
+}
+
+.empty-recommendation,
+.college-card {
+  padding: 24rpx 22rpx;
+  margin-bottom: 16rpx;
+  border-radius: 24rpx;
+  background: rgba(255, 252, 247, 0.94);
+  border: 1rpx solid rgba(86, 63, 45, 0.1);
+}
+
+.college-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.college-name {
+  font-size: 31rpx;
+  font-weight: 700;
+  color: #1f1a17;
+}
+
+.level-badge {
+  min-width: 48rpx;
+  height: 48rpx;
+  padding: 0 16rpx;
+  border-radius: 999rpx;
+  background: #ab4f2a;
+  color: #fff8f1;
+  font-size: 24rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-weight: 700;
+}
+
+.college-group,
+.college-rank {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  line-height: 1.5;
+  color: #4f4036;
+}
+
+.college-reason {
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  line-height: 1.65;
+  color: #5f4f43;
+}
+
+.college-risk {
+  margin-top: 12rpx;
+  padding: 14rpx 16rpx;
+  border-radius: 18rpx;
+  background: rgba(171, 79, 42, 0.08);
+  color: #7a432b;
+  font-size: 22rpx;
+  line-height: 1.6;
+}

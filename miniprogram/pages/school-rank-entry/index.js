@@ -1,10 +1,14 @@
 const { districtOptions, rankingBasisLabels, entityTypeLabel } = require("../../utils/school-labels.js");
 const { searchSchools } = require("../../utils/school-search.js");
 const { estimateCityRank } = require("../../utils/school-rank-estimator.js");
+const subjectCombinations = require("../../data/subject-combinations.js");
 
 Page({
   data: {
     districtOptions,
+    subjectCombinationOptions: subjectCombinations.map((item) => item.label),
+    subjectCombinationIndex: -1,
+    subjectCombination: null,
     districtIndex: -1,
     districtLabel: "",
     schoolQuery: "",
@@ -82,6 +86,15 @@ Page({
     });
   },
 
+  handleSubjectCombinationChange(event) {
+    const index = Number(event.detail.value);
+    this.setData({
+      subjectCombinationIndex: index,
+      subjectCombination: subjectCombinations[index] || null,
+      estimateResult: null,
+    });
+  },
+
   buildPositionPayload({ selectedSchool, rank, total, rankingBasis, numericScore, estimateResult }) {
     return {
       source: "school_rank_entry",
@@ -99,6 +112,7 @@ Page({
         schoolPercentile: Math.round((rank / total) * 10000) / 100,
         rankingBasis,
         rankingBasisLabel: rankingBasisLabels[rankingBasis],
+        subjectCombination: this.data.subjectCombination,
         score: numericScore,
         referenceScoreSource: this.data.secondMockScore ? "second_mock" : (this.data.firstMockScore ? "first_mock" : "none"),
         firstMockScore: this.data.firstMockScore ? Number(this.data.firstMockScore) : null,
@@ -109,7 +123,7 @@ Page({
   },
 
   handleEstimate() {
-    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, firstMockScore, secondMockScore } = this.data;
+    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, subjectCombination, firstMockScore, secondMockScore } = this.data;
 
     if (!districtLabel) {
       wx.showToast({ title: "请先选择所在区", icon: "none" });
