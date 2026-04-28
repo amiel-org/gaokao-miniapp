@@ -80,3 +80,30 @@
 2. 支持手动指定院校代码页范围。
 3. 输出 OCR 原文缓存。
 4. 暂不直接进入正式数据。
+
+## 6. 2026-04-28 局部核验准备产物
+
+已基于当前冲稳保推荐逻辑，提取出可能命中的院校专业组：
+
+- 推荐目标专业组：33 个。
+- 涉及院校：21 所。
+- 目标清单：`data/staging/major_catalog_target_review_queue.json`。
+- 可读清单：`docs/major_catalog_target_review_queue.md`。
+
+已为扫描版专业目录生成缩略索引图：
+
+- `output/major-catalog-review/major_catalog_contact_sheet_01.jpg`
+- `output/major-catalog-review/major_catalog_contact_sheet_02.jpg`
+- `output/major-catalog-review/major_catalog_contact_sheet_03.jpg`
+- `output/major-catalog-review/major_catalog_contact_sheet_04.jpg`
+- `output/major-catalog-review/major_catalog_contact_sheet_05.jpg`
+- `output/major-catalog-review/major_catalog_contact_sheet_06.jpg`
+
+索引图和 staging JSON 默认不提交 Git；文档清单提交，方便后续接续。
+
+当前本机未检测到可用 OCR 引擎：
+
+- 未发现 `tesseract`。
+- 未安装 `pytesseract` / `easyocr` / `paddleocr`。
+
+下一步建议：安装 OCR 能力后，先处理 `major_catalog_target_review_queue.md` 里的 21 所院校，不做全量 115 页 OCR。
