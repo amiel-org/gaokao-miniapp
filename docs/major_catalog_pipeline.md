@@ -107,3 +107,29 @@
 - 未安装 `pytesseract` / `easyocr` / `paddleocr`。
 
 下一步建议：安装 OCR 能力后，先处理 `major_catalog_target_review_queue.md` 里的 21 所院校，不做全量 115 页 OCR。
+
+## 7. 2026-04-28 OCR 安装与首轮定位结果
+
+已安装 OCR 能力：
+
+- Tesseract：`C:\Program Files\Tesseract-OCR\tesseract.exe`
+- Python 调用层：`pytesseract`
+- 中文语言包：项目本地 `.tools/tessdata/chi_sim.traineddata`
+
+首轮 OCR 范围：
+
+- 第 14 页至第 45 页。
+- 命中目标院校页：21 个页记录。
+- 结果摘要：`docs/major_catalog_ocr_excerpts.md`
+
+新增脚本：
+
+- `scripts/ocr_major_catalog_targets.py`：渲染并 OCR 指定页范围，定位目标院校。
+- `scripts/extract_major_catalog_excerpts.py`：从 OCR 文本中截取目标院校附近片段。
+- `scripts/build_major_catalog_candidate_seed.py`：尝试抽取专业候选种子。
+
+重要结论：
+
+自动抽取专业明细暂不能直接使用。原因是官方专业目录为扫描版、多栏排版，OCR 文本会串列，不同院校和专业组内容可能混在一起。当前自动候选只作为调试过程文件，不进入正式数据、不接入前端。
+
+下一步应改为院校块裁切：先定位目标院校所在页，再裁切单个院校区域，最后对裁切区域 OCR 并人工校验。

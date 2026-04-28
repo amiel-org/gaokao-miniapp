@@ -43,3 +43,6 @@ output/page-preview/*
 output/imagegen/*
 !output/imagegen/.gitkeep
 output/chrome-user-data/
+
+# Local tools
+.tools/
