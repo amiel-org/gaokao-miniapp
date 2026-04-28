@@ -140,3 +140,32 @@ Using AppID: touristappid
 2. 清空 Console。
 3. 重新走一遍操作流程。
 4. 如果仍有红色错误，优先复制 Console 中第一条业务相关错误。
+
+## 2026-04-28 表单与代码质量修复验证
+
+本次根据微信开发者工具内反馈继续修复：
+
+1. 校排入口页“一模 / 二模分数”改为两个独立选填输入框。
+   - 去掉原来的“一模 / 二模 / 不确定”菜单。
+   - 一模、二模后面均可直接填写成绩。
+   - 两项都不填时仍可只按校排名估算。
+   - 两项都填时当前前端优先采用二模，其次采用一模，作为 2025 位次参考。
+
+2. 代码质量项“启动组件按需注入”修复。
+   - 在 `miniprogram/app.json` 增加：
+     - `lazyCodeLoading: "requiredComponents"`
+
+3. 本地校验结果：
+   - `node --check miniprogram/pages/school-rank-entry/index.js` 通过。
+   - `python scripts/run_estimation_test_cases.py` 输出 `cases=14`。
+   - `miniprogram/app.json` JSON 解析通过。
+   - 关键文件编码检查通过，无连续问号乱码。
+
+4. 微信开发者工具 CLI 预览结果：
+   - 端口：`38470`
+   - AppID：`wx21796206e965c6f2`
+   - `preview` 成功。
+   - 包体大小：`233.1 KB` / `238685 Byte`。
+   - 输出文件：
+     - `logs/preview-info-score-fields-2026-04-28.json`
+     - `logs/preview-qr-score-fields-2026-04-28.png`

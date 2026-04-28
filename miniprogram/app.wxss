@@ -191,9 +191,6 @@ picker {
   gap: 12rpx;
 }
 
-.score-source {
-  margin-bottom: 14rpx;
-}
 
 .segment {
   padding: 22rpx 16rpx;
@@ -282,4 +279,21 @@ picker {
   .hero-title {
     font-size: 52rpx;
   }
+}
+
+.mock-score-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14rpx;
+}
+
+.mock-score-item {
+  min-width: 0;
+}
+
+.mock-score-label {
+  display: block;
+  margin-bottom: 10rpx;
+  font-size: 22rpx;
+  color: #7a6252;
 }

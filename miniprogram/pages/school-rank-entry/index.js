@@ -13,8 +13,8 @@ Page({
     gradeRank: "",
     gradeTotal: "",
     rankingBasis: "same_track",
-    score: "",
-    examType: "mock_unknown",
+    firstMockScore: "",
+    secondMockScore: "",
     estimateResult: null,
   },
 
@@ -67,15 +67,12 @@ Page({
     this.setData({ gradeTotal: event.detail.value, estimateResult: null });
   },
 
-  handleScoreInput(event) {
-    this.setData({ score: event.detail.value, estimateResult: null });
+  handleFirstMockScoreInput(event) {
+    this.setData({ firstMockScore: event.detail.value, estimateResult: null });
   },
 
-  handleExamTypeSelect(event) {
-    this.setData({
-      examType: event.currentTarget.dataset.value,
-      estimateResult: null,
-    });
+  handleSecondMockScoreInput(event) {
+    this.setData({ secondMockScore: event.detail.value, estimateResult: null });
   },
 
   handleRankingBasisSelect(event) {
@@ -103,14 +100,16 @@ Page({
         rankingBasis,
         rankingBasisLabel: rankingBasisLabels[rankingBasis],
         score: numericScore,
-        examType: this.data.examType,
+        referenceScoreSource: this.data.secondMockScore ? "second_mock" : (this.data.firstMockScore ? "first_mock" : "none"),
+        firstMockScore: this.data.firstMockScore ? Number(this.data.firstMockScore) : null,
+        secondMockScore: this.data.secondMockScore ? Number(this.data.secondMockScore) : null,
       },
       result: estimateResult,
     };
   },
 
   handleEstimate() {
-    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, score } = this.data;
+    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, firstMockScore, secondMockScore } = this.data;
 
     if (!districtLabel) {
       wx.showToast({ title: "请先选择所在区", icon: "none" });
@@ -134,7 +133,11 @@ Page({
       return;
     }
 
-    const numericScore = score ? Number(score) : null;
+    const numericScore = secondMockScore ? Number(secondMockScore) : (firstMockScore ? Number(firstMockScore) : null);
+    if ((firstMockScore && Number(firstMockScore) <= 0) || (secondMockScore && Number(secondMockScore) <= 0)) {
+      wx.showToast({ title: "一模/二模成绩不合理", icon: "none" });
+      return;
+    }
     const estimateResult = estimateCityRank({
       school: selectedSchool,
       gradeRank: rank,

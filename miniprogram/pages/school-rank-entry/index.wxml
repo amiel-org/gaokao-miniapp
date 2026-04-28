@@ -102,26 +102,30 @@
       </view>
 
       <view class="field">
-        <text class="field-label">一模/二模分数（可选）</text>
-        <view class="segmented score-source">
-          <view class="segment {{examType === 'first_mock' ? 'active' : ''}}" data-value="first_mock" bindtap="handleExamTypeSelect">
-            一模
+        <text class="field-label">一模 / 二模分数（选填）</text>
+        <view class="mock-score-grid">
+          <view class="mock-score-item">
+            <text class="mock-score-label">一模</text>
+            <input
+              class="field-input"
+              type="number"
+              placeholder="可填一模成绩"
+              value="{{firstMockScore}}"
+              bindinput="handleFirstMockScoreInput"
+            />
           </view>
-          <view class="segment {{examType === 'second_mock' ? 'active' : ''}}" data-value="second_mock" bindtap="handleExamTypeSelect">
-            二模
-          </view>
-          <view class="segment {{examType === 'mock_unknown' ? 'active' : ''}}" data-value="mock_unknown" bindtap="handleExamTypeSelect">
-            不确定
+          <view class="mock-score-item">
+            <text class="mock-score-label">二模</text>
+            <input
+              class="field-input"
+              type="number"
+              placeholder="可填二模成绩"
+              value="{{secondMockScore}}"
+              bindinput="handleSecondMockScoreInput"
+            />
           </view>
         </view>
-        <input
-          class="field-input"
-          type="number"
-          placeholder="如果知道一模/二模分数，区间会更收窄"
-          value="{{score}}"
-          bindinput="handleScoreInput"
-        />
-        <view class="field-tip">不是必填。没有分数也可以先用校排名估算；有分数时会叠加 2025 位次参考。</view>
+        <view class="field-tip">两项都不是必填。都不填时只按校排名估算；填写后系统优先采用二模，其次采用一模，叠加 2025 位次参考。</view>
       </view>
     </view>
 
