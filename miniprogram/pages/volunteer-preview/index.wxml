@@ -1,16 +1,16 @@
 <view class="volunteer-shell">
   <view wx:if="{{!hasResult}}" class="empty-state">
     <view class="empty-title">还没有定位结果</view>
-    <view class="empty-copy">请先完成校排定位，再查看冲稳保预览。</view>
+    <view class="empty-copy">请先完成校排定位，再查看冲稳保建议。</view>
     <button class="secondary-button" bindtap="handleBackResult">返回定位结果</button>
   </view>
 
   <block wx:if="{{hasResult}}">
     <view class="volunteer-hero">
       <text class="eyebrow">下一步 · 志愿初筛</text>
-      <view class="volunteer-title">{{payload.input.schoolShortName}} 的冲稳保预览</view>
+      <view class="volunteer-title">{{payload.input.schoolShortName}} 的冲稳保建议</view>
       <view class="volunteer-copy">
-        这是根据当前北京市位次区间生成的预览层，不是最终推荐。正式版本会接入院校专业组、选科要求和专业限制。
+        先根据当前北京市位次区间给出冲、稳、保三档初筛方向。后续还要结合选科、院校专业组和专业限制逐项核对。
       </view>
     </view>
 
@@ -32,9 +32,9 @@
     </view>
 
     <view class="notice-panel">
-      <view class="notice-title">为什么现在先显示预览？</view>
+      <view class="notice-title">下一步怎么筛学校？</view>
       <view class="notice-copy">
-        因为真正的推荐必须接入院校专业组、近三年录取位次、选科要求和体检限制。当前页面先把产品路径跑通，避免按钮点完只弹提示。
+        先按位次范围把候选学校和专业组分层，再用选科要求、近年录取位次、体检限制和专业偏好逐项排除不适合的选项。
       </view>
     </view>
 
