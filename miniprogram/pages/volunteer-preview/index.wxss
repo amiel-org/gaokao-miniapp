@@ -216,3 +216,88 @@ page {
   font-size: 22rpx;
   line-height: 1.6;
 }
+
+
+.recommendation-summary {
+  margin: -4rpx 0 14rpx 72rpx;
+  font-size: 23rpx;
+  line-height: 1.5;
+  color: #7b6656;
+}
+
+.college-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.college-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rpx;
+  height: 100%;
+  background: rgba(171, 79, 42, 0.76);
+}
+
+.college-card-top > view:first-child {
+  min-width: 0;
+  flex: 1;
+}
+
+.major-block,
+.reason-block {
+  margin-top: 18rpx;
+  padding-top: 18rpx;
+  border-top: 1rpx solid rgba(86, 63, 45, 0.1);
+}
+
+.major-title,
+.reason-title {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: #2b211a;
+}
+
+.major-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin-top: 14rpx;
+}
+
+.major-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  background: rgba(171, 79, 42, 0.1);
+  color: #713f2a;
+  font-size: 23rpx;
+  line-height: 46rpx;
+}
+
+.major-source {
+  margin-top: 12rpx;
+  font-size: 21rpx;
+  color: #8a7463;
+}
+
+.reason-line {
+  display: flex;
+  gap: 10rpx;
+  margin-top: 12rpx;
+  font-size: 23rpx;
+  line-height: 1.6;
+  color: #5a4a3f;
+}
+
+.reason-dot {
+  flex: 0 0 auto;
+  width: 10rpx;
+  height: 10rpx;
+  margin-top: 14rpx;
+  border-radius: 50%;
+  background: #ab4f2a;
+}

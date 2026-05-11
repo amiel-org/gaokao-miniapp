@@ -1,6 +1,7 @@
 
 const collegeAdmissionGroups = require("../../data/college-admission-groups.js");
 const majorCatalogStatus = require("../../data/major-catalog-status.js");
+const { getFirstlookMajors } = require("../../data/college-major-firstlook.js");
 
 function formatNumber(value) {
   if (value === null || value === undefined || value === "") return "-";
@@ -23,20 +24,114 @@ function isSubjectMatched(group, subjectCombination) {
   return requiredSubjects.every((subject) => subjectCombination.subjects.indexOf(subject) >= 0);
 }
 
-function classifyGroup(group, minRank, maxRank) {
-  const rank = group.minRank;
-  if (!rank) return null;
-  if (rank >= Math.round(minRank * 0.72) && rank <= Math.round(minRank * 1.03)) return "\u51b2";
-  if (rank >= Math.round(minRank * 0.95) && rank <= Math.round(maxRank * 1.12)) return "\u7a33";
-  if (rank >= Math.round(maxRank * 1.02) && rank <= Math.round(maxRank * 1.75)) return "\u4fdd";
-  return null;
+
+function targetRankForLevel(level, minRank, maxRank) {
+  if (level === "冲") return Math.max(1, Math.round(minRank * 0.88));
+  if (level === "稳") return Math.round((minRank + maxRank) / 2);
+  return Math.round(maxRank * 1.2);
 }
 
-function groupReason(level, group, result) {
+function rankWindowForLevel(level, minRank, maxRank) {
+  const span = Math.max(1200, maxRank - minRank);
+  if (level === "冲") {
+    return {
+      min: Math.max(1, Math.round(minRank * 0.52)),
+      max: Math.round(minRank * 0.99),
+    };
+  }
+  if (level === "稳") {
+    return {
+      min: Math.max(1, Math.round(minRank * 0.9)),
+      max: Math.round(maxRank * 1.18 + span * 0.12),
+    };
+  }
+  return {
+    min: Math.max(1, Math.round(maxRank * 1.03)),
+    max: Math.round(maxRank * 2.2 + span * 0.25),
+  };
+}
+
+function levelTitle(level) {
+  if (level === "冲") return "冲刺层";
+  if (level === "稳") return "稳妥层";
+  return "保底层";
+}
+
+function levelTone(level) {
+  if (level === "冲") return "录取位次高于当前定位，适合少量冲刺。";
+  if (level === "稳") return "与当前定位区间接近，是优先精筛对象。";
+  return "录取位次低于当前定位，用来拉开保底梯度。";
+}
+
+function groupReason(level, group) {
   const rankText = formatNumber(group.minRank);
-  if (level === "\u51b2") return `2025 \u6295\u6863\u4f4d\u6b21 ${rankText}\uff0c\u9ad8\u4e8e\u5f53\u524d\u5b9a\u4f4d\u533a\u95f4\uff0c\u9002\u5408\u4f5c\u4e3a\u5c0f\u6bd4\u4f8b\u51b2\u523a\u3002`;
-  if (level === "\u7a33") return `2025 \u6295\u6863\u4f4d\u6b21 ${rankText}\uff0c\u4e0e\u5f53\u524d\u5b9a\u4f4d\u533a\u95f4\u91cd\u53e0\u5ea6\u8f83\u9ad8\uff0c\u662f\u540e\u7eed\u7cbe\u7b5b\u7684\u91cd\u70b9\u3002`;
-  return `2025 \u6295\u6863\u4f4d\u6b21 ${rankText}\uff0c\u4f4e\u4e8e\u5f53\u524d\u5b9a\u4f4d\u533a\u95f4\uff0c\u7528\u4e8e\u62c9\u5f00\u4fdd\u5e95\u68af\u5ea6\u3002`;
+  if (level === "冲") return `2025 投档位次 ${rankText}，高于当前定位区间，适合放在冲刺层观察。`;
+  if (level === "稳") return `2025 投档位次 ${rankText}，与当前定位区间重叠度较高，适合重点比较专业组。`;
+  return `2025 投档位次 ${rankText}，低于当前定位区间，适合作为保底梯度候选。`;
+}
+
+function subjectReason(group, subjectCombination) {
+  const label = subjectCombination && subjectCombination.label ? subjectCombination.label : "当前选科";
+  return `已按 ${label} 初步匹配该专业组的选科要求：${subjectRequirementText(group)}。`;
+}
+
+function majorReason(majorInfo) {
+  return `${majorInfo.sourceLabel}，先用于家长和孩子做第一轮方向筛选。`;
+}
+
+function makeRecommendation(level, group, subjectCombination) {
+  const majorInfo = getFirstlookMajors(group, 5);
+  return {
+    id: `${level}-${group.collegeCode}-${group.groupCode}`,
+    level,
+    collegeCode: group.collegeCode,
+    collegeName: group.collegeName,
+    groupName: `${group.groupCode}组`,
+    subjectRequirement: subjectRequirementText(group),
+    minScore: group.minScore,
+    minRank: group.minRank,
+    minRankText: formatNumber(group.minRank),
+    recommendedMajors: majorInfo.majors,
+    sourceLabel: majorInfo.sourceLabel,
+    reasonLines: [
+      groupReason(level, group),
+      subjectReason(group, subjectCombination),
+      majorReason(majorInfo),
+    ],
+    riskText: "本结果用于初筛，最终以当年官方招生目录、院校专业组要求和学校体检限制为准。",
+  };
+}
+
+function groupPriority(group, level, minRank, maxRank) {
+  const target = targetRankForLevel(level, minRank, maxRank);
+  let score = Math.abs((group.minRank || 0) - target);
+  const raw = group.subjectRequirement && group.subjectRequirement.raw ? group.subjectRequirement.raw : "";
+  if (raw.indexOf("中外合办") >= 0) score += 1800;
+  if (raw.indexOf("女") >= 0) score += 2500;
+  return score;
+}
+
+function pickLevelItems(candidates, level, minRank, maxRank, globalUsedColleges) {
+  const picked = [];
+  const localUsed = {};
+  const sorted = candidates
+    .slice()
+    .sort((a, b) => groupPriority(a, level, minRank, maxRank) - groupPriority(b, level, minRank, maxRank));
+
+  function tryPick(avoidGlobalDuplicate) {
+    for (let i = 0; i < sorted.length && picked.length < 3; i += 1) {
+      const group = sorted[i];
+      if (localUsed[group.collegeCode]) continue;
+      if (avoidGlobalDuplicate && globalUsedColleges[group.collegeCode]) continue;
+      localUsed[group.collegeCode] = true;
+      globalUsedColleges[group.collegeCode] = true;
+      picked.push(group);
+    }
+  }
+
+  tryPick(true);
+  tryPick(false);
+  return picked;
 }
 
 function buildRecommendations(payload) {
@@ -46,37 +141,34 @@ function buildRecommendations(payload) {
   const maxRank = result.maxRank || null;
   const subjectCombination = input.subjectCombination || null;
 
-  if (!minRank || !maxRank) return [];
+  const baseSections = ["冲", "稳", "保"].map((level) => ({
+    level,
+    title: levelTitle(level),
+    summary: levelTone(level),
+    items: [],
+    emptyText: "当前输入下暂未匹配到足够院校，可返回调整选科或补充分数后再试。",
+  }));
 
-  const buckets = { "\u51b2": [], "\u7a33": [], "\u4fdd": [] };
+  if (!minRank || !maxRank || !subjectCombination || !subjectCombination.subjects) return baseSections;
+
+  const buckets = { "冲": [], "稳": [], "保": [] };
   collegeAdmissionGroups.forEach((group) => {
     if (!group.minRank || !isSubjectMatched(group, subjectCombination)) return;
-    const level = classifyGroup(group, minRank, maxRank);
-    if (!level) return;
-    buckets[level].push(group);
+    ["冲", "稳", "保"].forEach((level) => {
+      const window = rankWindowForLevel(level, minRank, maxRank);
+      if (group.minRank >= window.min && group.minRank <= window.max) {
+        buckets[level].push(group);
+      }
+    });
   });
 
-  return ["\u51b2", "\u7a33", "\u4fdd"].map((level) => {
-    const items = buckets[level]
-      .sort((a, b) => Math.abs((a.minRank || 0) - (level === "\u51b2" ? minRank : level === "\u7a33" ? Math.round((minRank + maxRank) / 2) : maxRank)) - Math.abs((b.minRank || 0) - (level === "\u51b2" ? minRank : level === "\u7a33" ? Math.round((minRank + maxRank) / 2) : maxRank)))
-      .slice(0, 4)
-      .map((group) => ({
-        id: `${group.collegeCode}-${group.groupCode}`,
-        level,
-        collegeName: group.collegeName,
-        groupName: `${group.groupCode}\u7ec4`,
-        subjectRequirement: subjectRequirementText(group),
-        minScore: group.minScore,
-        minRankText: formatNumber(group.minRank),
-        reason: groupReason(level, group, result),
-        riskText: "\u5df2\u6309\u9009\u79d1\u521d\u6b65\u5339\u914d\uff1b\u4e13\u4e1a\u660e\u7ec6\u3001\u4f53\u68c0\u548c\u8272\u5f31\u9650\u5236\u9700\u7ed3\u5408\u62db\u751f\u4e13\u4e1a\u76ee\u5f55\u7ee7\u7eed\u6838\u5bf9\u3002",
-      }));
-    return {
-      level,
-      title: level === "\u51b2" ? "\u51b2\u523a\u5c42" : level === "\u7a33" ? "\u7a33\u59a5\u5c42" : "\u4fdd\u5e95\u5c42",
-      items,
-      emptyText: "\u5f53\u524d\u5b98\u65b9\u79cd\u5b50\u6570\u636e\u91cc\u6682\u672a\u547d\u4e2d\u8fd9\u4e00\u5c42\uff0c\u540e\u7eed\u6269\u5145\u5168\u91cf\u9662\u6821\u4e13\u4e1a\u7ec4\u540e\u4f1a\u8865\u9f50\u3002",
-    };
+  const globalUsedColleges = {};
+  return baseSections.map((section) => {
+    const selected = pickLevelItems(buckets[section.level], section.level, minRank, maxRank, globalUsedColleges);
+    return Object.assign({}, section, {
+      items: selected.map((group) => makeRecommendation(section.level, group, subjectCombination)),
+      emptyText: "当前官方投档线种子数据里这一档不足 3 所，后续扩展院校库后会继续补齐。",
+    });
   });
 }
 
