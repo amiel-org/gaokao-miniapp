@@ -161,3 +161,35 @@
 - 当前结果仍只进入审核清单，不直接写入正式推荐数据。
 
 下一步：针对审核图人工确认边界，优先挑选 3-5 个高频院校专业组，人工校验后生成第一批 `college_major_details` 正式种子。
+
+## 9. 2026-05-11 第一批专业明细草稿
+
+在用户确认裁切块整体可用后，已新增第一批专业明细草稿生成脚本：
+
+- `scripts/build_verified_major_seed_draft.py`
+
+处理方式：
+
+1. 读取 `college_block_manifest.json` 中已匹配的院校裁切块。
+2. 按院校代码、专业组代码截取对应 OCR 文本。
+3. 用规则提取专业代码、专业名称和招生计划数。
+4. 输出人工审核草稿，不进入正式前端数据。
+
+本轮结果：
+
+- 草稿专业组数：10 个。
+- 已抽取到候选专业的专业组数：9 个。
+- staging JSON：`data/staging/major_catalog_ocr/college_major_details_draft.json`。
+- 审核文档：`docs/college_major_details_draft_review.md`。
+
+质量判断：
+
+- 裁切块路线已能形成可审核的专业组草稿。
+- OCR 仍存在文字误识别、跨组选取、计划数错配风险。
+- 当前数据状态统一标记为 `needs_human_confirm`，不得直接接入正式推荐。
+
+下一步：
+
+1. 人工对照审核图校正 10 个专业组的专业名称、计划数、体检限制和色弱限制。
+2. 将确认后的记录写入正式 `college_major_details` seed。
+3. 再由前端读取“已核验专业明细”，未核验项继续展示官方目录待核验提示。
