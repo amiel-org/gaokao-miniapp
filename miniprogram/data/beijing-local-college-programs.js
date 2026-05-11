@@ -1,0 +1,8109 @@
+module.exports = [
+  {
+    "id": "local_0001",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "清华大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 689,
+    "minRank": 303,
+    "majorNames": [
+      "社会学(含国际事务与全球治理",
+      "经济学",
+      "英语",
+      "日语",
+      "建筑学",
+      "城乡规划",
+      "风景园林",
+      "历史学"
+    ],
+    "majors": [
+      {
+        "majorName": "社会学(含国际事务与全球治理",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "建筑学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城乡规划",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "风景园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "历史学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 18,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1023?examId=5550&schoolcode=1023&subjectName=1023"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0002",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 687,
+    "minRank": 385,
+    "majorNames": [
+      "数学类",
+      "物理学类",
+      "天文学类",
+      "电子信息类",
+      "计算机类",
+      "环境科学与工程类",
+      "地质学类",
+      "地球物理学类"
+    ],
+    "majors": [
+      {
+        "majorName": "数学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物理学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "天文学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境科学与工程类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境科学与工程类 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "地质学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "地球物理学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 57,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1021?examId=5550&schoolcode=1021&subjectName=1021"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0003",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 686,
+    "minRank": 419,
+    "majorNames": [
+      "心理学类",
+      "中国语言文学类",
+      "历史学类",
+      "社会学类",
+      "哲学类",
+      "经济学类",
+      "工商管理类",
+      "公共管理类"
+    ],
+    "majors": [
+      {
+        "majorName": "心理学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "中国语言文学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "历史学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "哲学类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学类",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理类",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共管理类",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 66,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1021?examId=5550&schoolcode=1021&subjectName=1021"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0004",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "清华大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 685,
+    "minRank": 461,
+    "majorNames": [
+      "航空航天类",
+      "土木工程",
+      "水利科学与工程",
+      "交通工程",
+      "生物科学",
+      "高分子材料与工程",
+      "数学与应用数学",
+      "物理学"
+    ],
+    "majors": [
+      {
+        "majorName": "航空航天类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土木工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "水利科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "交通工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "高分子材料与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "高分子材料与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "数学与应用数学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物理学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 45,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1023?examId=5550&schoolcode=1023&subjectName=1023"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0005",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国科学院大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 680,
+    "minRank": 685,
+    "majorNames": [
+      "数学与应用数学",
+      "环境科学",
+      "天文学",
+      "人文地理与城乡规划",
+      "生物科学",
+      "心理学",
+      "理论与应用力学",
+      "材料科学与工程"
+    ],
+    "majors": [
+      {
+        "majorName": "数学与应用数学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境科学 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "天文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人文地理与城乡规划",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "心理学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "理论与应用力学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      }
+    ],
+    "sourceRowCount": 15,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1019?examId=5550&schoolcode=1019&subjectName=1019"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0006",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国人民大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 671,
+    "minRank": 1244,
+    "majorNames": [
+      "行政管理",
+      "城市管理",
+      "土地资源管理",
+      "信息资源管理",
+      "档案学",
+      "农村区域发展",
+      "农林经济管理",
+      "资源与环境经济学"
+    ],
+    "majors": [
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城市管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土地资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "档案学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "农村区域发展",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "农林经济管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "资源与环境经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "资源与环境经济学 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      }
+    ],
+    "sourceRowCount": 53,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1022?examId=5550&schoolcode=1022&subjectName=1022"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0007",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国人民大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 671,
+    "minRank": 1244,
+    "majorNames": [
+      "统计学",
+      "应用统计学",
+      "经济统计学",
+      "数据科学与大数据技术",
+      "计算机科学与技术",
+      "信息安全",
+      "软件工程",
+      "信息管理与信息系统"
+    ],
+    "majors": [
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "软件工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息管理与信息系统",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 15,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1022?examId=5550&schoolcode=1022&subjectName=1022"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0008",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京大学医学部",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 667,
+    "minRank": 1552,
+    "majorNames": [
+      "英语（医学英语）"
+    ],
+    "majors": [
+      {
+        "majorName": "英语（医学英语）",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，英语（医学英语） 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1045?examId=5550&schoolcode=1045&subjectName=1045"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，英语（医学英语） 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0009",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京航空航天大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 665,
+    "minRank": 1732,
+    "majorNames": [
+      "工程力学",
+      "飞行技术",
+      "机械工程",
+      "航空航天工程",
+      "材料科学与工程",
+      "电子信息工程",
+      "通信工程",
+      "电磁场与无线技术"
+    ],
+    "majors": [
+      {
+        "majorName": "工程力学",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "飞行技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "航空航天工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电磁场与无线技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 55,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1047?examId=5550&schoolcode=1047&subjectName=1047"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，化学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0010",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京大学医学部",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 664,
+    "minRank": 1800,
+    "majorNames": [
+      "预防医学",
+      "药学",
+      "医学影像技术",
+      "医学检验技术",
+      "临床医学",
+      "基础医学",
+      "口腔医学"
+    ],
+    "majors": [
+      {
+        "majorName": "预防医学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，预防医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "药学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，药学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "医学影像技术",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，医学影像技术 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前"
+      },
+      {
+        "majorName": "医学检验技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，医学检验技术 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前"
+      },
+      {
+        "majorName": "临床医学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，临床医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "基础医学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，基础医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "口腔医学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，口腔医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      }
+    ],
+    "sourceRowCount": 7,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1045?examId=5550&schoolcode=1045&subjectName=1045"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，预防医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0011",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京理工大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 664,
+    "minRank": 1800,
+    "majorNames": [
+      "信息与计算科学",
+      "应用物理学",
+      "生物技术",
+      "统计学",
+      "工程力学",
+      "机械工程",
+      "材料成型及控制工程",
+      "机械电子工程"
+    ],
+    "majors": [
+      {
+        "majorName": "信息与计算科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用物理学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物技术",
+        "discipline": "理学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "生物技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工程力学",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料成型及控制工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料成型及控制工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "机械电子工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 55,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1048?examId=5550&schoolcode=1048&subjectName=1048"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0012",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京师范大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 659,
+    "minRank": 2246,
+    "majorNames": [
+      "人工智能",
+      "统计学",
+      "心理学",
+      "生态学",
+      "生物技术",
+      "生物科学",
+      "地理信息科学",
+      "人文地理与城乡规划"
+    ],
+    "majors": [
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "心理学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生态学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物技术",
+        "discipline": "理学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "生物技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "生物科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "地理信息科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人文地理与城乡规划",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 20,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1032?examId=5550&schoolcode=1032&subjectName=1032"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0013",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京师范大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 652,
+    "minRank": 2999,
+    "majorNames": [
+      "金融学",
+      "体育教育",
+      "哲学",
+      "数字媒体艺术",
+      "艺术设计学",
+      "书法学",
+      "美术学",
+      "戏剧影视文学"
+    ],
+    "majors": [
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "体育教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "哲学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术设计学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "书法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "美术学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 26,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1032?examId=5550&schoolcode=1032&subjectName=1032"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0014",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京邮电大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 651,
+    "minRank": 3101,
+    "majorNames": [
+      "网络空间安全（大类招生）",
+      "计算机科学与技术",
+      "网络工程",
+      "数据科学与大数据技术",
+      "人工智能（大类招生）",
+      "通信工程（大类招生）",
+      "电子信息科学与技术",
+      "电子科学与技术"
+    ],
+    "majors": [
+      {
+        "majorName": "网络空间安全（大类招生）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "网络工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能（大类招生）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程（大类招生）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 9,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1028?examId=5550&schoolcode=1028&subjectName=1028"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0015",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国政法大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 646,
+    "minRank": 3712,
+    "majorNames": [
+      "哲学",
+      "行政管理",
+      "经济学",
+      "公共事业管理",
+      "国际商务",
+      "工商管理",
+      "应用心理学",
+      "法学"
+    ],
+    "majors": [
+      {
+        "majorName": "哲学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共事业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际商务",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用心理学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 16,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1039?examId=5550&schoolcode=1039&subjectName=1039"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0016",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "对外经济贸易大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 644,
+    "minRank": 3976,
+    "majorNames": [
+      "国际经济与贸易",
+      "财政学",
+      "税收学",
+      "俄语",
+      "海关管理",
+      "行政管理",
+      "公共事业管理",
+      "文化产业管理"
+    ],
+    "majors": [
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财政学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "税收学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "俄语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "海关管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共事业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "文化产业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 32,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1038?examId=5550&schoolcode=1038&subjectName=1038"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0017",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央财经大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 643,
+    "minRank": 4102,
+    "majorNames": [
+      "工商管理",
+      "人力资源管理",
+      "供应链管理",
+      "会计学",
+      "财务管理",
+      "国际经济与贸易",
+      "国际商务",
+      "贸易经济"
+    ],
+    "majors": [
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "供应链管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际商务",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "贸易经济",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 19,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1037?examId=5550&schoolcode=1037&subjectName=1037"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0018",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京大学医学部",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "化学（必须选考）",
+      "subjects": [
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "化学"
+    },
+    "minScore": 641,
+    "minRank": 4368,
+    "majorNames": [
+      "护理学"
+    ],
+    "majors": [
+      {
+        "majorName": "护理学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，护理学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1045?examId=5550&schoolcode=1045&subjectName=1045"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，护理学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0019",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央财经大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 640,
+    "minRank": 4517,
+    "majorNames": [
+      "经济统计学",
+      "统计学",
+      "应用统计学",
+      "数据科学与大数据技术",
+      "数学与应用数学",
+      "信息与计算科学"
+    ],
+    "majors": [
+      {
+        "majorName": "经济统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数学与应用数学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息与计算科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 6,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1037?examId=5550&schoolcode=1037&subjectName=1037"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0020",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京交通大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 640,
+    "minRank": 4517,
+    "majorNames": [
+      "软件工程",
+      "计算机科学与技术",
+      "物联网工程",
+      "信息安全",
+      "保密技术",
+      "人工智能",
+      "通信工程",
+      "轨道交通信号与控制"
+    ],
+    "majors": [
+      {
+        "majorName": "软件工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物联网工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "保密技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "轨道交通信号与控制",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 22,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1025?examId=5550&schoolcode=1025&subjectName=1025"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0021",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国社会科学院大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 639,
+    "minRank": 4674,
+    "majorNames": [
+      "社会学",
+      "汉语言文学",
+      "英语",
+      "法语",
+      "新闻学",
+      "广播电视学",
+      "历史学",
+      "经济学"
+    ],
+    "majors": [
+      {
+        "majorName": "社会学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语言文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新闻学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "广播电视学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "历史学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 10,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1011?examId=5550&schoolcode=1011&subjectName=1011"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0022",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国农业大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 636,
+    "minRank": 5139,
+    "majorNames": [
+      "农村区域发展",
+      "市场营销",
+      "工商管理",
+      "会计学",
+      "电子商务",
+      "国际经济与贸易",
+      "金融学",
+      "农林经济管理"
+    ],
+    "majors": [
+      {
+        "majorName": "农村区域发展",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "市场营销",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子商务",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "农林经济管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 14,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1029?examId=5550&schoolcode=1029&subjectName=1029"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0023",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国农业大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 636,
+    "minRank": 5139,
+    "majorNames": [
+      "生物科学类",
+      "环境科学与工程类",
+      "食品科学与工程类",
+      "电子信息类",
+      "计算机类",
+      "农业工程类",
+      "机械类",
+      "水利类"
+    ],
+    "majors": [
+      {
+        "majorName": "生物科学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境科学与工程类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境科学与工程类 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "食品科学与工程类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品科学与工程类 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "电子信息类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "农业工程类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "水利类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 57,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1029?examId=5550&schoolcode=1029&subjectName=1029"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "食品科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0024",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国农业大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+生物（均须选考）",
+      "subjects": [
+        "物理",
+        "生物"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋生物"
+    },
+    "minScore": 636,
+    "minRank": 5139,
+    "majorNames": [
+      "园林"
+    ],
+    "majors": [
+      {
+        "majorName": "园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1029?examId=5550&schoolcode=1029&subjectName=1029"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0025",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "对外经济贸易大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 636,
+    "minRank": 5139,
+    "majorNames": [
+      "数据科学与大数据技术",
+      "统计学"
+    ],
+    "majors": [
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 2,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1038?examId=5550&schoolcode=1038&subjectName=1038"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0026",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京交通大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 635,
+    "minRank": 5304,
+    "majorNames": [
+      "建筑学",
+      "城乡规划",
+      "视觉传达设计",
+      "环境设计",
+      "数字媒体艺术",
+      "传播学",
+      "网络与新媒体",
+      "英语"
+    ],
+    "majors": [
+      {
+        "majorName": "建筑学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城乡规划",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "传播学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "网络与新媒体",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 11,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1025?examId=5550&schoolcode=1025&subjectName=1025"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0027",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京科技大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 634,
+    "minRank": 5441,
+    "majorNames": [
+      "计算机类",
+      "自动化类",
+      "机械类",
+      "能源动力类",
+      "数学类",
+      "土木类",
+      "矿业类",
+      "材料科学与工程"
+    ],
+    "majors": [
+      {
+        "majorName": "计算机类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "能源动力类",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数学类",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土木类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "矿业类",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      }
+    ],
+    "sourceRowCount": 35,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1026?examId=5550&schoolcode=1026&subjectName=1026"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0028",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京外国语大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 631,
+    "minRank": 5919,
+    "majorNames": [
+      "计算机科学与技术"
+    ],
+    "majors": [
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1033?examId=5550&schoolcode=1033&subjectName=1033"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0029",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京外国语大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 629,
+    "minRank": 6251,
+    "majorNames": [
+      "葡萄牙语",
+      "世界史",
+      "新闻学",
+      "传播学",
+      "乌克兰语",
+      "英语",
+      "俄语",
+      "西班牙语"
+    ],
+    "majors": [
+      {
+        "majorName": "葡萄牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "世界史",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新闻学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "传播学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "乌克兰语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "俄语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "西班牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 8,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1033?examId=5550&schoolcode=1033&subjectName=1033"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0030",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央民族大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 626,
+    "minRank": 6740,
+    "majorNames": [
+      "汉语国际教育",
+      "视觉传达设计",
+      "环境设计",
+      "服装与服饰设计",
+      "英语",
+      "翻译",
+      "日语",
+      "新闻学"
+    ],
+    "majors": [
+      {
+        "majorName": "汉语国际教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "服装与服饰设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "翻译",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新闻学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 45,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1020?examId=5550&schoolcode=1020&subjectName=1020"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0031",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京科技大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 626,
+    "minRank": 6740,
+    "majorNames": [
+      "工商管理",
+      "会计学",
+      "国际经济与贸易",
+      "英语",
+      "日语",
+      "德语",
+      "法学",
+      "行政管理"
+    ],
+    "majors": [
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "德语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 10,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1026?examId=5550&schoolcode=1026&subjectName=1026"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0032",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "华北电力大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 623,
+    "minRank": 7249,
+    "majorNames": [
+      "储能科学与工程",
+      "新能源科学与工程",
+      "新能源材料与器件",
+      "电气工程及其自动化",
+      "智能电网信息工程",
+      "电子科学与技术",
+      "电子信息工程",
+      "通信工程"
+    ],
+    "majors": [
+      {
+        "majorName": "储能科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新能源科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新能源材料与器件",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "新能源材料与器件 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "智能电网信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 30,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1040?examId=5550&schoolcode=1040&subjectName=1040"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0033",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国传媒大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 622,
+    "minRank": 7440,
+    "majorNames": [
+      "汉语言文学",
+      "艺术与科技",
+      "汉语国际教育",
+      "英语",
+      "西班牙语",
+      "日语",
+      "翻译",
+      "新闻学"
+    ],
+    "majors": [
+      {
+        "majorName": "汉语言文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术与科技",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语国际教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "西班牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "翻译",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新闻学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 38,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1036?examId=5550&schoolcode=1036&subjectName=1036"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0034",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央民族大学",
+    "collegeLevel": "985/211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 622,
+    "minRank": 7440,
+    "majorNames": [
+      "纳米材料与技术",
+      "统计学",
+      "应用统计学",
+      "生物科学",
+      "生态学",
+      "信息与计算科学",
+      "光电信息科学与工程",
+      "计算机科学与技术"
+    ],
+    "majors": [
+      {
+        "majorName": "纳米材料与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "纳米材料与技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生态学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息与计算科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "光电信息科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 14,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1020?examId=5550&schoolcode=1020&subjectName=1020"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "纳米材料与技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0035",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国传媒大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 617,
+    "minRank": 8325,
+    "majorNames": [
+      "数据科学与大数据技术",
+      "智能科学与技术",
+      "数字媒体技术",
+      "物联网工程",
+      "信息安全",
+      "网络工程",
+      "计算机科学与技术",
+      "智能装备与系统"
+    ],
+    "majors": [
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "智能科学与技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物联网工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "网络工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "智能装备与系统",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 14,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1036?examId=5550&schoolcode=1036&subjectName=1036"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0036",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京化工大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 617,
+    "minRank": 8325,
+    "majorNames": [
+      "财务管理",
+      "会计学",
+      "工商管理",
+      "国际经济与贸易",
+      "行政管理",
+      "公共事业管理",
+      "法学",
+      "产品设计"
+    ],
+    "majors": [
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共事业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "产品设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 12,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1027?examId=5550&schoolcode=1027&subjectName=1027"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0037",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国石油大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 616,
+    "minRank": 8526,
+    "majorNames": [
+      "英语"
+    ],
+    "majors": [
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1042?examId=5550&schoolcode=1042&subjectName=1042"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0038",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京化工大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 615,
+    "minRank": 8721,
+    "majorNames": [
+      "机械设计制造及其自动化",
+      "过程装备与控制工程",
+      "安全工程",
+      "机器人工程",
+      "自动化",
+      "测控技术与仪器",
+      "电子信息工程",
+      "通信工程"
+    ],
+    "majors": [
+      {
+        "majorName": "机械设计制造及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "过程装备与控制工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "安全工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机器人工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "测控技术与仪器",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 29,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1027?examId=5550&schoolcode=1027&subjectName=1027"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0039",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京林业大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "生物（必须选考）",
+      "subjects": [
+        "生物"
+      ],
+      "mode": "all_required",
+      "displayText": "生物"
+    },
+    "minScore": 614,
+    "minRank": 8923,
+    "majorNames": [
+      "园林"
+    ],
+    "majors": [
+      {
+        "majorName": "园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1030?examId=5550&schoolcode=1030&subjectName=1030"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0040",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国地质大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 612,
+    "minRank": 9327,
+    "majorNames": [
+      "会计学",
+      "英语",
+      "产品设计",
+      "自然资源登记与管理",
+      "土地资源管理",
+      "法学",
+      "工商管理"
+    ],
+    "majors": [
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "产品设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自然资源登记与管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土地资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 7,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1043?examId=5550&schoolcode=1043&subjectName=1043"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0041",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京中医药大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 610,
+    "minRank": 9714,
+    "majorNames": [
+      "英语（中医药国际传播）",
+      "法学（医药卫生）",
+      "公共事业管理(卫生健康事业管理)",
+      "工商管理(大健康产业管理)",
+      "英语（医学）"
+    ],
+    "majors": [
+      {
+        "majorName": "英语（中医药国际传播）",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学（医药卫生）",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共事业管理(卫生健康事业管理)",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理(大健康产业管理)",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语（医学）",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，英语（医学） 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前"
+      }
+    ],
+    "sourceRowCount": 5,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1031?examId=5550&schoolcode=1031&subjectName=1031"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0042",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京林业大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 610,
+    "minRank": 9714,
+    "majorNames": [
+      "金融学",
+      "环境设计",
+      "产品设计",
+      "视觉传达设计",
+      "数字媒体艺术",
+      "法学",
+      "英语",
+      "日语"
+    ],
+    "majors": [
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "产品设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 22,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1030?examId=5550&schoolcode=1030&subjectName=1030"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0043",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央美术学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 609,
+    "minRank": 9914,
+    "majorNames": [
+      "建筑学",
+      "艺术史论",
+      "艺术管理",
+      "文物保护与修复",
+      "视觉传达设计",
+      "服装与服饰设计",
+      "数字媒体艺术",
+      "摄影"
+    ],
+    "majors": [
+      {
+        "majorName": "建筑学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术史论",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "文物保护与修复",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "服装与服饰设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "摄影",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 20,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1008?examId=5550&schoolcode=1008&subjectName=1008"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0044",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京工业大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 607,
+    "minRank": 10332,
+    "majorNames": [
+      "绘画",
+      "雕塑",
+      "英语",
+      "环境设计",
+      "视觉传达设计",
+      "产品设计",
+      "服装与服饰设计",
+      "工艺美术"
+    ],
+    "majors": [
+      {
+        "majorName": "绘画",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "雕塑",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "产品设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "服装与服饰设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工艺美术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 13,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1049?examId=5550&schoolcode=1049&subjectName=1049"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0045",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国矿业大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 605,
+    "minRank": 10753,
+    "majorNames": [
+      "法学",
+      "英语",
+      "行政管理",
+      "建筑学"
+    ],
+    "majors": [
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "建筑学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 4,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1041?examId=5550&schoolcode=1041&subjectName=1041"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0046",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国石油大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 604,
+    "minRank": 10979,
+    "majorNames": [
+      "材料科学与工程",
+      "新能源科学与工程",
+      "储能科学与工程",
+      "自动化",
+      "计算机科学与技术",
+      "地质学",
+      "资源勘查工程",
+      "石油工程"
+    ],
+    "majors": [
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "新能源科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "储能科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "地质学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "资源勘查工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "石油工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 25,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1042?examId=5550&schoolcode=1042&subjectName=1042"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0047",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京体育大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 600,
+    "minRank": 11883,
+    "majorNames": [
+      "汉语国际教育",
+      "汉语言文学",
+      "俄语",
+      "德语",
+      "法语",
+      "西班牙语",
+      "波兰语",
+      "捷克语"
+    ],
+    "majors": [
+      {
+        "majorName": "汉语国际教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语言文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "俄语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "德语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "西班牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "波兰语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "捷克语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 40,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1010?examId=5550&schoolcode=1010&subjectName=1010"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0048",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京电影学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 600,
+    "minRank": 11883,
+    "majorNames": [
+      "数字媒体技术"
+    ],
+    "majors": [
+      {
+        "majorName": "数字媒体技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1016?examId=5550&schoolcode=1016&subjectName=1016"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0049",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京语言大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 599,
+    "minRank": 12103,
+    "majorNames": [
+      "葡萄牙语",
+      "绘画",
+      "人力资源管理",
+      "财务管理",
+      "汉语言文学",
+      "汉语国际教育",
+      "英语",
+      "商务英语"
+    ],
+    "majors": [
+      {
+        "majorName": "葡萄牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "绘画",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语言文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语国际教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "商务英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 33,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1035?examId=5550&schoolcode=1035&subjectName=1035"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0050",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国矿业大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 596,
+    "minRank": 12777,
+    "majorNames": [
+      "工业工程",
+      "材料科学与工程",
+      "新能源科学与工程",
+      "电气工程及其自动化",
+      "人工智能",
+      "计算机科学与技术",
+      "土木工程",
+      "城市地下空间工程"
+    ],
+    "majors": [
+      {
+        "majorName": "工业工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "新能源科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土木工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城市地下空间工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 26,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1041?examId=5550&schoolcode=1041&subjectName=1041"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0051",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中央戏剧学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 596,
+    "minRank": 12777,
+    "majorNames": [
+      "艺术管理",
+      "表演",
+      "戏剧学",
+      "戏剧影视文学",
+      "戏剧教育",
+      "戏剧影视美术设计",
+      "录音艺术",
+      "播音与主持艺术"
+    ],
+    "majors": [
+      {
+        "majorName": "艺术管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视美术设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "录音艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "播音与主持艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 9,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1009?examId=5550&schoolcode=1009&subjectName=1009"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0052",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京工业大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 592,
+    "minRank": 13650,
+    "majorNames": [
+      "机械工程",
+      "智能制造工程",
+      "测控技术与仪器",
+      "材料科学与工程",
+      "资源循环科学与工程",
+      "纳米材料与技术",
+      "能源与动力工程",
+      "新能源科学与工程"
+    ],
+    "majors": [
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "智能制造工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "测控技术与仪器",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "资源循环科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "纳米材料与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "纳米材料与技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "能源与动力工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新能源科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 43,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1049?examId=5550&schoolcode=1049&subjectName=1049"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0053",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国地质大学(北京)",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 591,
+    "minRank": 13897,
+    "majorNames": [
+      "材料科学与工程",
+      "材料物理",
+      "宝石及材料工艺学",
+      "电气工程及其自动化",
+      "电子信息工程",
+      "人工智能",
+      "计算机科学与技术",
+      "软件工程"
+    ],
+    "majors": [
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "材料物理",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料物理 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "宝石及材料工艺学",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "宝石及材料工艺学 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "软件工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 38,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1043?examId=5550&schoolcode=1043&subjectName=1043"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0054",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京语言大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 589,
+    "minRank": 14358,
+    "majorNames": [
+      "计算机科学与技术",
+      "数字媒体技术",
+      "信息管理与信息系统",
+      "计算机科学与技术(语言智能与技术实验班)"
+    ],
+    "majors": [
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息管理与信息系统",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术(语言智能与技术实验班)",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 4,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1035?examId=5550&schoolcode=1035&subjectName=1035"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0055",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京林业大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 588,
+    "minRank": 14588,
+    "majorNames": [
+      "林产化工",
+      "木材科学与工程",
+      "环境工程",
+      "环境科学",
+      "食品科学与工程",
+      "草业科学",
+      "园艺",
+      "野生动物与自然保护区管理"
+    ],
+    "majors": [
+      {
+        "majorName": "林产化工",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "木材科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "环境科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境科学 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "食品科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "草业科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "园艺",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "野生动物与自然保护区管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 32,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1030?examId=5550&schoolcode=1030&subjectName=1030"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0056",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京电影学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 588,
+    "minRank": 14588,
+    "majorNames": [
+      "播音与主持艺术",
+      "艺术与科技",
+      "数字媒体艺术",
+      "作曲与作曲技术理论",
+      "表演",
+      "电影学",
+      "戏剧影视文学",
+      "广播电视编导"
+    ],
+    "majors": [
+      {
+        "majorName": "播音与主持艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术与科技",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "作曲与作曲技术理论",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电影学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "广播电视编导",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 20,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1016?examId=5550&schoolcode=1016&subjectName=1016"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0057",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京体育大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 585,
+    "minRank": 15321,
+    "majorNames": [
+      "康复物理治疗",
+      "数据科学与大数据技术",
+      "生物医学工程"
+    ],
+    "majors": [
+      {
+        "majorName": "康复物理治疗",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物医学工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，生物医学工程 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前"
+      }
+    ],
+    "sourceRowCount": 3,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1010?examId=5550&schoolcode=1010&subjectName=1010"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0058",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都医科大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 582,
+    "minRank": 16019,
+    "majorNames": [
+      "法学",
+      "公共事业管理"
+    ],
+    "majors": [
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共事业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 2,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1051?examId=5550&schoolcode=1051&subjectName=1051"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0059",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都师范大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 570,
+    "minRank": 18955,
+    "majorNames": [
+      "哲学",
+      "数字媒体艺术",
+      "西班牙语",
+      "法语",
+      "德语",
+      "俄语",
+      "英语",
+      "秘书学"
+    ],
+    "majors": [
+      {
+        "majorName": "哲学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "西班牙语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "德语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "俄语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "秘书学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 32,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1052?examId=5550&schoolcode=1052&subjectName=1052"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0060",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京协和医学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 567,
+    "minRank": 19705,
+    "majorNames": [
+      "护理学"
+    ],
+    "majors": [
+      {
+        "majorName": "护理学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，护理学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1046?examId=5550&schoolcode=1046&subjectName=1046"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，护理学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0061",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都师范大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 560,
+    "minRank": 21423,
+    "majorNames": [
+      "电子商务",
+      "光电信息科学与工程",
+      "教育技术学",
+      "电子信息工程",
+      "统计学",
+      "生物技术",
+      "生物科学",
+      "地理信息科学"
+    ],
+    "majors": [
+      {
+        "majorName": "电子商务",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "光电信息科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "教育技术学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "生物技术",
+        "discipline": "理学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "生物技术 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "生物科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "地理信息科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 17,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1052?examId=5550&schoolcode=1052&subjectName=1052"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0062",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都经济贸易大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 557,
+    "minRank": 22217,
+    "majorNames": [
+      "金融学",
+      "投资学",
+      "财政学",
+      "经济学",
+      "行政管理",
+      "土地资源管理",
+      "城市管理",
+      "财务管理"
+    ],
+    "majors": [
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "投资学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财政学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "土地资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城市管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 37,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1055?examId=5550&schoolcode=1055&subjectName=1055"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0063",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京信息科技大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 554,
+    "minRank": 23002,
+    "majorNames": [
+      "智能科学与技术",
+      "数据科学与大数据技术",
+      "应用统计学",
+      "机械设计制造及其自动化",
+      "机械电子工程",
+      "工业设计",
+      "车辆工程",
+      "测控技术与仪器"
+    ],
+    "majors": [
+      {
+        "majorName": "智能科学与技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械设计制造及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械电子工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工业设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "车辆工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "测控技术与仪器",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 24,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1064?examId=5550&schoolcode=1064&subjectName=1064"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0064",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都医科大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 553,
+    "minRank": 23262,
+    "majorNames": [
+      "儿科学",
+      "康复治疗学",
+      "卫生检验与检疫",
+      "假肢矫形工程",
+      "口腔医学",
+      "预防医学",
+      "中医学",
+      "药学"
+    ],
+    "majors": [
+      {
+        "majorName": "儿科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "康复治疗学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "卫生检验与检疫",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "假肢矫形工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "口腔医学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，口腔医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "预防医学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，预防医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "中医学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，中医学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "药学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，药学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      }
+    ],
+    "sourceRowCount": 18,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1051?examId=5550&schoolcode=1051&subjectName=1051"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0065",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都医科大学",
+    "collegeLevel": "双一流/普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "化学（必须选考）",
+      "subjects": [
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "化学"
+    },
+    "minScore": 548,
+    "minRank": 24611,
+    "majorNames": [
+      "助产学",
+      "护理学"
+    ],
+    "majors": [
+      {
+        "majorName": "助产学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "护理学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，护理学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      }
+    ],
+    "sourceRowCount": 2,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1051?examId=5550&schoolcode=1051&subjectName=1051"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0066",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都经济贸易大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 546,
+    "minRank": 25137,
+    "majorNames": [
+      "统计学",
+      "计算机科学与技术",
+      "数据科学与大数据技术",
+      "数据科学与大数据技术（信息技术）",
+      "安全工程（注安师）",
+      "数学与应用数学（金融方向）"
+    ],
+    "majors": [
+      {
+        "majorName": "统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术（信息技术）",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "安全工程（注安师）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数学与应用数学（金融方向）",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 6,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1055?examId=5550&schoolcode=1055&subjectName=1055"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0067",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国音乐学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 545,
+    "minRank": 25410,
+    "majorNames": [
+      "音乐表演",
+      "音乐教育",
+      "作曲与作曲技术理论",
+      "音乐学"
+    ],
+    "majors": [
+      {
+        "majorName": "音乐表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "音乐教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "作曲与作曲技术理论",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "音乐学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 4,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1013?examId=5550&schoolcode=1013&subjectName=1013"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0068",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京工商大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 543,
+    "minRank": 25961,
+    "majorNames": [
+      "经济学",
+      "工商管理",
+      "市场营销",
+      "人力资源管理",
+      "会计学",
+      "财务管理",
+      "物流管理",
+      "供应链管理"
+    ],
+    "majors": [
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "市场营销",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物流管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "供应链管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 20,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1063?examId=5550&schoolcode=1063&subjectName=1063"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0069",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京信息科技大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 539,
+    "minRank": 26989,
+    "majorNames": [
+      "工商管理",
+      "翻译",
+      "国际经济与贸易",
+      "经济学",
+      "网络与新媒体",
+      "行政管理",
+      "人力资源管理",
+      "财务管理"
+    ],
+    "majors": [
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "翻译",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "网络与新媒体",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 11,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1064?examId=5550&schoolcode=1064&subjectName=1064"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0070",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京舞蹈学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 538,
+    "minRank": 27252,
+    "majorNames": [
+      "舞蹈表演",
+      "舞蹈学",
+      "舞蹈编导",
+      "艺术管理",
+      "表演",
+      "戏剧影视美术设计",
+      "文化产业管理",
+      "舞蹈教育"
+    ],
+    "majors": [
+      {
+        "majorName": "舞蹈表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "舞蹈学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "舞蹈编导",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "艺术管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视美术设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "文化产业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "舞蹈教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 8,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1017?examId=5550&schoolcode=1017&subjectName=1017"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0071",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京中医药大学",
+    "collegeLevel": "211/双一流",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 523,
+    "minRank": 31409,
+    "majorNames": [
+      "药事管理",
+      "中药制药",
+      "康复治疗学",
+      "大数据管理与应用",
+      "中医骨伤科学",
+      "针灸推拿学",
+      "药学",
+      "中药学"
+    ],
+    "majors": [
+      {
+        "majorName": "药事管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "中药制药",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "康复治疗学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "大数据管理与应用",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "中医骨伤科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "针灸推拿学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "药学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，药学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "中药学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "明确受限",
+        "notes": "依据教育部体检指导意见，中药学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      }
+    ],
+    "sourceRowCount": 16,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1031?examId=5550&schoolcode=1031&subjectName=1031"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，中西医临床医学（华佗班） 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录"
+  },
+  {
+    "id": "local_0072",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京建筑大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 523,
+    "minRank": 31409,
+    "majorNames": [
+      "建筑学",
+      "城乡规划",
+      "社会工作",
+      "法学",
+      "环境设计",
+      "风景园林",
+      "工商管理",
+      "历史建筑保护工程"
+    ],
+    "majors": [
+      {
+        "majorName": "建筑学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "城乡规划",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会工作",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "风景园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "历史建筑保护工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 11,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1067?examId=5550&schoolcode=1067&subjectName=1067"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0073",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京建筑大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 521,
+    "minRank": 31900,
+    "majorNames": [
+      "机械工程",
+      "机械电子工程",
+      "无机非金属材料工程",
+      "能源与动力工程",
+      "电气工程及其自动化",
+      "人工智能",
+      "自动化",
+      "机器人工程"
+    ],
+    "majors": [
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械电子工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "无机非金属材料工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "无机非金属材料工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能"
+      },
+      {
+        "majorName": "能源与动力工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机器人工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 29,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1067?examId=5550&schoolcode=1067&subjectName=1067"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0074",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北方工业大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 521,
+    "minRank": 31900,
+    "majorNames": [
+      "新能源科学与工程",
+      "信息与计算科学",
+      "电子信息工程",
+      "通信工程",
+      "微电子科学与工程",
+      "人工智能",
+      "自动化",
+      "计算机科学与技术"
+    ],
+    "majors": [
+      {
+        "majorName": "新能源科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息与计算科学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "通信工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "微电子科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人工智能",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 23,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1062?examId=5550&schoolcode=1062&subjectName=1062"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0075",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京工商大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 517,
+    "minRank": 32972,
+    "majorNames": [
+      "食品质量与安全",
+      "计算机科学与技术",
+      "软件工程",
+      "食品营养与健康",
+      "智能制造工程",
+      "高分子材料与工程",
+      "功能材料",
+      "电气工程及其自动化"
+    ],
+    "majors": [
+      {
+        "majorName": "食品质量与安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品质量与安全 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "软件工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "食品营养与健康",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品营养与健康 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "智能制造工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "高分子材料与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "高分子材料与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "功能材料",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "功能材料 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 25,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1063?examId=5550&schoolcode=1063&subjectName=1063"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "食品质量与安全 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0076",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国劳动关系学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 516,
+    "minRank": 33240,
+    "majorNames": [
+      "经济学",
+      "戏剧影视文学",
+      "法学",
+      "劳动经济学",
+      "酒店管理",
+      "劳动与社会保障",
+      "行政管理",
+      "劳动关系"
+    ],
+    "majors": [
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "劳动经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "酒店管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "劳动与社会保障",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "行政管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "劳动关系",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 13,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1060?examId=5550&schoolcode=1060&subjectName=1060"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0077",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京第二外国语学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 514,
+    "minRank": 33743,
+    "majorNames": [
+      "金融学",
+      "会展经济与管理",
+      "贸易经济",
+      "法学",
+      "国际经济与贸易",
+      "酒店管理",
+      "旅游管理",
+      "财务管理"
+    ],
+    "majors": [
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会展经济与管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "贸易经济",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "酒店管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "旅游管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 40,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1053?examId=5550&schoolcode=1053&subjectName=1053"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0078",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北方工业大学",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 512,
+    "minRank": 34272,
+    "majorNames": [
+      "经济与金融",
+      "环境设计",
+      "法学",
+      "知识产权",
+      "汉语言文学",
+      "英语",
+      "日语",
+      "广告学"
+    ],
+    "majors": [
+      {
+        "majorName": "经济与金融",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "知识产权",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语言文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "日语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "广告学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 15,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1062?examId=5550&schoolcode=1062&subjectName=1062"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0079",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国戏曲学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 510,
+    "minRank": 34871,
+    "majorNames": [
+      "文化产业管理",
+      "数字媒体艺术",
+      "音乐表演",
+      "音乐学",
+      "作曲与作曲技术理论",
+      "表演",
+      "戏剧影视文学",
+      "戏剧影视导演"
+    ],
+    "majors": [
+      {
+        "majorName": "文化产业管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "音乐表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "音乐学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "作曲与作曲技术理论",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "表演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视文学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "戏剧影视导演",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 15,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1015?examId=5550&schoolcode=1015&subjectName=1015"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0080",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中华女子学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 509,
+    "minRank": 35136,
+    "majorNames": [
+      "金融学",
+      "服装与服饰设计",
+      "社会学",
+      "社会工作",
+      "女性学",
+      "学前教育",
+      "汉语国际教育",
+      "网络与新媒体"
+    ],
+    "majors": [
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "服装与服饰设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会工作",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "女性学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "学前教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "汉语国际教育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "网络与新媒体",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 16,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1061?examId=5550&schoolcode=1061&subjectName=1061"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0081",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中华女子学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 506,
+    "minRank": 35953,
+    "majorNames": [
+      "数字媒体技术"
+    ],
+    "majors": [
+      {
+        "majorName": "数字媒体技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1061?examId=5550&schoolcode=1061&subjectName=1061"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0082",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京联合大学",
+    "collegeLevel": "普通二本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 503,
+    "minRank": 36716,
+    "majorNames": [
+      "针灸推拿学",
+      "机械工程",
+      "工业设计",
+      "电气工程及其自动化",
+      "电子信息工程",
+      "自动化",
+      "机器人工程",
+      "计算机科学与技术"
+    ],
+    "majors": [
+      {
+        "majorName": "针灸推拿学",
+        "discipline": "医学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工业设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电气工程及其自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子信息工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机器人工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 19,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1076?examId=5550&schoolcode=1076&subjectName=1076"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0083",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "中国劳动关系学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 502,
+    "minRank": 36988,
+    "majorNames": [
+      "安全工程",
+      "计算机科学与技术",
+      "职业卫生工程",
+      "应急技术与管理"
+    ],
+    "majors": [
+      {
+        "majorName": "安全工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "职业卫生工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应急技术与管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 4,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1060?examId=5550&schoolcode=1060&subjectName=1060"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0084",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京联合大学",
+    "collegeLevel": "普通二本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 500,
+    "minRank": 37553,
+    "majorNames": [
+      "工商管理",
+      "市场营销",
+      "财务管理",
+      "国际商务",
+      "人力资源管理",
+      "档案学",
+      "电子商务",
+      "旅游管理"
+    ],
+    "majors": [
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "市场营销",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "财务管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际商务",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "档案学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子商务",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "旅游管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 40,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1076?examId=5550&schoolcode=1076&subjectName=1076"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0085",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京农学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "生物（必须选考）",
+      "subjects": [
+        "生物"
+      ],
+      "mode": "all_required",
+      "displayText": "生物"
+    },
+    "minScore": 499,
+    "minRank": 37822,
+    "majorNames": [
+      "园林"
+    ],
+    "majors": [
+      {
+        "majorName": "园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 1,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1069?examId=5550&schoolcode=1069&subjectName=1069"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0086",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京印刷学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 499,
+    "minRank": 37822,
+    "majorNames": [
+      "传播学",
+      "数字媒体艺术",
+      "产品设计",
+      "视觉传达设计",
+      "摄影",
+      "绘画",
+      "动画",
+      "物流管理"
+    ],
+    "majors": [
+      {
+        "majorName": "传播学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "产品设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "视觉传达设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "摄影",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "绘画",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "动画",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物流管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 17,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1066?examId=5550&schoolcode=1066&subjectName=1066"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0087",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京物资学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 499,
+    "minRank": 37822,
+    "majorNames": [
+      "经济学",
+      "金融学",
+      "国际经济与贸易",
+      "法学",
+      "商务英语",
+      "电子商务",
+      "供应链管理",
+      "采购管理"
+    ],
+    "majors": [
+      {
+        "majorName": "经济学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "金融学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "商务英语",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子商务",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "供应链管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "采购管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 20,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1070?examId=5550&schoolcode=1070&subjectName=1070"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0088",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "首都体育学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 493,
+    "minRank": 39384,
+    "majorNames": [
+      "武术与民族传统体育",
+      "体育旅游",
+      "运动训练",
+      "休闲体育",
+      "体能训练",
+      "电子竞技运动与管理",
+      "社会体育指导与管理",
+      "新闻学"
+    ],
+    "majors": [
+      {
+        "majorName": "武术与民族传统体育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "体育旅游",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "运动训练",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "休闲体育",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "体能训练",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子竞技运动与管理",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会体育指导与管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "新闻学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 12,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1012?examId=5550&schoolcode=1012&subjectName=1012"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0089",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京物资学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 490,
+    "minRank": 40167,
+    "majorNames": [
+      "计算机科学与技术",
+      "物联网工程",
+      "应用统计学",
+      "数据科学与大数据技术",
+      "计算机科学与技术（实验班）"
+    ],
+    "majors": [
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物联网工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "应用统计学",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术（实验班）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 5,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1070?examId=5550&schoolcode=1070&subjectName=1070"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0090",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京石油化工学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 482,
+    "minRank": 42293,
+    "majorNames": [
+      "物流管理",
+      "人力资源管理",
+      "市场营销",
+      "会展",
+      "国际经济与贸易",
+      "旅游管理",
+      "会计学（注册会计师）",
+      "电子商务（商务智能）"
+    ],
+    "majors": [
+      {
+        "majorName": "物流管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "人力资源管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "市场营销",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会展",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "旅游管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学（注册会计师）",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "电子商务（商务智能）",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 8,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1068?examId=5550&schoolcode=1068&subjectName=1068"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "allowed_or_not_found",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0091",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京服装学院",
+    "collegeLevel": "普通二本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 480,
+    "minRank": 42782,
+    "majorNames": [
+      "国际经济与贸易",
+      "数字媒体艺术",
+      "传播学",
+      "广告学",
+      "公共艺术",
+      "服装与服饰设计",
+      "工商管理",
+      "市场营销"
+    ],
+    "majors": [
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "传播学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "广告学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "公共艺术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "服装与服饰设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "市场营销",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 29,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1065?examId=5550&schoolcode=1065&subjectName=1065"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0092",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京农学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "不限选考科目",
+      "subjects": [],
+      "mode": "unlimited",
+      "displayText": "不限"
+    },
+    "minScore": 479,
+    "minRank": 43065,
+    "majorNames": [
+      "国际经济与贸易",
+      "社会工作",
+      "法学",
+      "环境设计",
+      "农林经济管理",
+      "会计学",
+      "工商管理",
+      "风景园林"
+    ],
+    "majors": [
+      {
+        "majorName": "国际经济与贸易",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "社会工作",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "法学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境设计 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "农林经济管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "会计学",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "工商管理",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "风景园林",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 11,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1069?examId=5550&schoolcode=1069&subjectName=1069"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0093",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京印刷学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 467,
+    "minRank": 46071,
+    "majorNames": [
+      "包装工程",
+      "印刷工程",
+      "智能科学与技术",
+      "数字媒体技术",
+      "物联网工程",
+      "信息安全",
+      "计算机科学与技术",
+      "自动化"
+    ],
+    "majors": [
+      {
+        "majorName": "包装工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "印刷工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "智能科学与技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "数字媒体技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物联网工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "信息安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "计算机科学与技术",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "自动化",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 12,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1066?examId=5550&schoolcode=1066&subjectName=1066"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0094",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京石油化工学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 454,
+    "minRank": 49117,
+    "majorNames": [
+      "生物制药",
+      "机械工程",
+      "机械电子工程",
+      "材料科学与工程",
+      "高分子材料与工程",
+      "能源与动力工程",
+      "环境工程",
+      "数据科学与大数据技术"
+    ],
+    "majors": [
+      {
+        "majorName": "生物制药",
+        "discipline": "理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "机械电子工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "材料科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "材料科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "高分子材料与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "高分子材料与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "能源与动力工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "环境工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "环境工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 17,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1068?examId=5550&schoolcode=1068&subjectName=1068"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0095",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京服装学院",
+    "collegeLevel": "普通二本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 439,
+    "minRank": 52288,
+    "majorNames": [
+      "信息管理与信息系统",
+      "轻化工程",
+      "服装设计与工程",
+      "高分子材料与工程",
+      "工业设计"
+    ],
+    "majors": [
+      {
+        "majorName": "信息管理与信息系统",
+        "discipline": "经济学/管理学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "轻化工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "服装设计与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "高分子材料与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "高分子材料与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明"
+      },
+      {
+        "majorName": "工业设计",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 5,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1065?examId=5550&schoolcode=1065&subjectName=1065"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "caution",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  },
+  {
+    "id": "local_0096",
+    "year": 2025,
+    "province": "北京",
+    "batch": "本科普通批",
+    "collegeName": "北京农学院",
+    "collegeLevel": "普通一本",
+    "groupName": "专业方向组/首轮筛选组",
+    "subjectRequirement": {
+      "raw": "物理+化学（均须选考）",
+      "subjects": [
+        "物理",
+        "化学"
+      ],
+      "mode": "all_required",
+      "displayText": "物理＋化学"
+    },
+    "minScore": 438,
+    "minRank": 52495,
+    "majorNames": [
+      "农业资源与环境",
+      "动物科学",
+      "酿酒工程",
+      "食品质量与安全",
+      "食品科学与工程",
+      "数据科学与大数据技术",
+      "物联网工程",
+      "园艺"
+    ],
+    "majors": [
+      {
+        "majorName": "农业资源与环境",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "农业资源与环境 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "动物科学",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "酿酒工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "食品质量与安全",
+        "discipline": "其他",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品质量与安全 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "食品科学与工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "受限慎报",
+        "notes": "食品科学与工程 常见涉及实验辨色或专业体检风险。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确"
+      },
+      {
+        "majorName": "数据科学与大数据技术",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "物联网工程",
+        "discipline": "工学",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      },
+      {
+        "majorName": "园艺",
+        "discipline": "其他",
+        "colorWeaknessStatus": "可以报考",
+        "notes": "当前证据中未见与色弱直接冲突的体检条款。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未"
+      }
+    ],
+    "sourceRowCount": 15,
+    "source": {
+      "publisher": "北京教育考试院 高校选考查询 + 北京教育考试院2025本科普通批投档线 + 北京2025高考分数分布 + 教育部体检指导意见",
+      "title": "北京本地院校色弱本科志愿规划工作簿",
+      "workbook": "D:\\codex\\school\\output\\spreadsheet\\beijing_色弱_本科规划_2026.xlsx",
+      "url": "https://query.bjeea.cn/queryService/rest/plan/134/1069?examId=5550&schoolcode=1069&subjectName=1069"
+    },
+    "dataStatus": "local_workbook_firstlook_seed",
+    "limitations": [
+      "由本地规划工作簿聚合为首轮筛选专业方向，不伪造院校专业组代码。",
+      "正式填报前需以当年官方招生目录、院校专业组和学校要求为准。"
+    ],
+    "colorWeaknessRisk": "limited",
+    "hasMedicalRestriction": true,
+    "restrictionSummary": "依据教育部体检指导意见，应用化学 常见包含色觉限制。 专业与选科依据北京教育考试院高校选考查询； 分数依据北京教育考试院2025本科普通批投档线； 位次依据北京2025高考分数分布； 录取人数当前仅能明确为官方未公开分专业录取人数。"
+  }
+];

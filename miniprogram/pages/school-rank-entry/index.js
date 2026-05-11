@@ -140,6 +140,11 @@ Page({
       return;
     }
 
+    if (!subjectCombination) {
+      wx.showToast({ title: "请选择选科组合，用于生成院校推荐", icon: "none" });
+      return;
+    }
+
     const rank = Number(gradeRank);
     const total = Number(gradeTotal);
     if (rank <= 0 || total <= 0 || rank > total) {

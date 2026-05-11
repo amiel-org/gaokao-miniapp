@@ -1,5 +1,6 @@
 
 const collegeAdmissionGroups = require("../../data/college-admission-groups.js");
+const beijingLocalCollegePrograms = require("../../data/beijing-local-college-programs.js");
 const majorCatalogStatus = require("../../data/major-catalog-status.js");
 const { getFirstlookMajors } = require("../../data/college-major-firstlook.js");
 
@@ -11,19 +12,22 @@ function formatNumber(value) {
 function subjectRequirementText(group) {
   const requirement = group.subjectRequirement || {};
   if (requirement.raw) return requirement.raw;
-  if (requirement.mode === "unlimited") return "\u4e0d\u9650";
-  return (requirement.subjects || []).join(" + ") || "\u5f85\u6838\u5bf9";
+  if (requirement.mode === "unlimited") return "不限";
+  return (requirement.subjects || []).join(" + ") || "待核对";
+}
+
+function hasSelectedSubject(subjectCombination) {
+  return !!(subjectCombination && subjectCombination.subjects && subjectCombination.subjects.length > 0);
 }
 
 function isSubjectMatched(group, subjectCombination) {
   const requirement = group.subjectRequirement || {};
   const raw = requirement.raw || "";
   const requiredSubjects = requirement.subjects || [];
-  if (requirement.mode === "unlimited" || raw === "\u4e0d\u9650" || requiredSubjects.indexOf("\u4e0d\u9650") >= 0) return true;
-  if (!subjectCombination || !subjectCombination.subjects) return false;
+  if (!hasSelectedSubject(subjectCombination)) return true;
+  if (requirement.mode === "unlimited" || raw.indexOf("不限") >= 0 || requiredSubjects.indexOf("不限") >= 0) return true;
   return requiredSubjects.every((subject) => subjectCombination.subjects.indexOf(subject) >= 0);
 }
-
 
 function targetRankForLevel(level, minRank, maxRank) {
   if (level === "冲") return Math.max(1, Math.round(minRank * 0.88));
@@ -35,8 +39,8 @@ function rankWindowForLevel(level, minRank, maxRank) {
   const span = Math.max(1200, maxRank - minRank);
   if (level === "冲") {
     return {
-      min: Math.max(1, Math.round(minRank * 0.52)),
-      max: Math.round(minRank * 0.99),
+      min: Math.max(1, Math.round(minRank * 0.25)),
+      max: Math.max(Math.round(minRank * 0.99), minRank - 1),
     };
   }
   if (level === "稳") {
@@ -46,7 +50,7 @@ function rankWindowForLevel(level, minRank, maxRank) {
     };
   }
   return {
-    min: Math.max(1, Math.round(maxRank * 1.03)),
+    min: Math.max(1, Math.round(maxRank * 0.98)),
     max: Math.round(maxRank * 2.2 + span * 0.25),
   };
 }
@@ -71,22 +75,75 @@ function groupReason(level, group) {
 }
 
 function subjectReason(group, subjectCombination) {
+  if (!hasSelectedSubject(subjectCombination)) {
+    return `当前未选择选科，已按宽松口径纳入候选；补充选科后会进一步过滤专业方向。`;
+  }
   const label = subjectCombination && subjectCombination.label ? subjectCombination.label : "当前选科";
-  return `已按 ${label} 初步匹配该专业组的选科要求：${subjectRequirementText(group)}。`;
+  return `已按 ${label} 初步匹配该组的选科要求：${subjectRequirementText(group)}。`;
 }
 
 function majorReason(majorInfo) {
   return `${majorInfo.sourceLabel}，先用于家长和孩子做第一轮方向筛选。`;
 }
 
-function makeRecommendation(level, group, subjectCombination) {
-  const majorInfo = getFirstlookMajors(group, 5);
+function ensureMajorCount(majors, group) {
+  const fallback = getFirstlookMajors(group, 5).majors;
+  const seen = {};
+  const result = [];
+  (majors || []).concat(fallback).forEach((name) => {
+    if (!name || seen[name]) return;
+    seen[name] = true;
+    result.push(name);
+  });
+  return result.slice(0, 5);
+}
+
+function normalizeCandidate(group, sourceType) {
+  if (sourceType === "official") {
+    const majorInfo = getFirstlookMajors(group, 5);
+    return {
+      id: `official-${group.collegeCode}-${group.groupCode}`,
+      sourceType,
+      collegeCode: group.collegeCode,
+      collegeName: group.collegeName,
+      groupName: `${group.groupCode}组`,
+      collegeLevel: group.collegeLevel || "",
+      subjectRequirement: group.subjectRequirement,
+      minScore: group.minScore,
+      minRank: group.minRank,
+      recommendedMajors: majorInfo.majors,
+      sourceLabel: majorInfo.sourceLabel,
+      riskText: "本结果用于首轮初筛，最终以当年官方招生目录、院校专业组和学校要求为准。",
+    };
+  }
   return {
-    id: `${level}-${group.collegeCode}-${group.groupCode}`,
+    id: `local-${group.id}`,
+    sourceType,
+    collegeCode: group.id,
+    collegeName: group.collegeName,
+    groupName: group.groupName || "专业方向组/首轮筛选组",
+    collegeLevel: group.collegeLevel || "",
+    subjectRequirement: group.subjectRequirement,
+    minScore: group.minScore,
+    minRank: group.minRank,
+    recommendedMajors: ensureMajorCount(group.majorNames || [], group),
+    sourceLabel: "本地院校专业方向库",
+    riskText: group.restrictionSummary || "本结果用于首轮初筛，最终以当年官方招生目录、院校专业组和学校要求为准。",
+  };
+}
+
+function makeRecommendation(level, group, subjectCombination) {
+  const majorInfo = {
+    majors: group.recommendedMajors || [],
+    sourceLabel: group.sourceLabel,
+  };
+  return {
+    id: `${level}-${group.id}`,
     level,
     collegeCode: group.collegeCode,
     collegeName: group.collegeName,
-    groupName: `${group.groupCode}组`,
+    collegeLevel: group.collegeLevel,
+    groupName: group.groupName,
     subjectRequirement: subjectRequirementText(group),
     minScore: group.minScore,
     minRank: group.minRank,
@@ -98,7 +155,7 @@ function makeRecommendation(level, group, subjectCombination) {
       subjectReason(group, subjectCombination),
       majorReason(majorInfo),
     ],
-    riskText: "本结果用于初筛，最终以当年官方招生目录、院校专业组要求和学校体检限制为准。",
+    riskText: group.riskText || "本结果用于首轮初筛，最终以当年官方招生目录、院校专业组和学校要求为准。",
   };
 }
 
@@ -108,13 +165,14 @@ function groupPriority(group, level, minRank, maxRank) {
   const raw = group.subjectRequirement && group.subjectRequirement.raw ? group.subjectRequirement.raw : "";
   if (raw.indexOf("中外合办") >= 0) score += 1800;
   if (raw.indexOf("女") >= 0) score += 2500;
+  if (group.sourceType === "local") score += 900;
   return score;
 }
 
-function pickLevelItems(candidates, level, minRank, maxRank, globalUsedColleges) {
+function pickLevelItems(candidates, level, minRank, maxRank, globalUsedColleges, allCandidates) {
   const picked = [];
   const localUsed = {};
-  const sorted = candidates
+  const sorted = (candidates.length ? candidates : allCandidates)
     .slice()
     .sort((a, b) => groupPriority(a, level, minRank, maxRank) - groupPriority(b, level, minRank, maxRank));
 
@@ -131,6 +189,7 @@ function pickLevelItems(candidates, level, minRank, maxRank, globalUsedColleges)
 
   tryPick(true);
   tryPick(false);
+  if (picked.length === 0 && sorted.length > 0) picked.push(sorted[0]);
   return picked;
 }
 
@@ -149,11 +208,23 @@ function buildRecommendations(payload) {
     emptyText: "当前输入下暂未匹配到足够院校，可返回调整选科或补充分数后再试。",
   }));
 
-  if (!minRank || !maxRank || !subjectCombination || !subjectCombination.subjects) return baseSections;
+  if (!minRank || !maxRank) return baseSections;
+
+  const candidates = [];
+  const officialCollegeNames = {};
+  collegeAdmissionGroups.forEach((group) => {
+    if (group.collegeName) officialCollegeNames[group.collegeName] = true;
+    if (!group.minRank || !isSubjectMatched(group, subjectCombination)) return;
+    candidates.push(normalizeCandidate(group, "official"));
+  });
+  beijingLocalCollegePrograms.forEach((group) => {
+    if (officialCollegeNames[group.collegeName]) return;
+    if (!group.minRank || !isSubjectMatched(group, subjectCombination)) return;
+    candidates.push(normalizeCandidate(group, "local"));
+  });
 
   const buckets = { "冲": [], "稳": [], "保": [] };
-  collegeAdmissionGroups.forEach((group) => {
-    if (!group.minRank || !isSubjectMatched(group, subjectCombination)) return;
+  candidates.forEach((group) => {
     ["冲", "稳", "保"].forEach((level) => {
       const window = rankWindowForLevel(level, minRank, maxRank);
       if (group.minRank >= window.min && group.minRank <= window.max) {
@@ -164,10 +235,10 @@ function buildRecommendations(payload) {
 
   const globalUsedColleges = {};
   return baseSections.map((section) => {
-    const selected = pickLevelItems(buckets[section.level], section.level, minRank, maxRank, globalUsedColleges);
+    const selected = pickLevelItems(buckets[section.level], section.level, minRank, maxRank, globalUsedColleges, candidates);
     return Object.assign({}, section, {
       items: selected.map((group) => makeRecommendation(section.level, group, subjectCombination)),
-      emptyText: "当前官方投档线种子数据里这一档不足 3 所，后续扩展院校库后会继续补齐。",
+      emptyText: "当前输入下这一档候选较少，建议补充选科或分数后再做一次初筛。",
     });
   });
 }
@@ -178,6 +249,7 @@ Page({
     payload: null,
     recommendations: [],
     subjectCombinationLabel: "",
+    subjectWarningText: "",
     majorCatalogStatusText: majorCatalogStatus.userFacingStatus,
   },
 
@@ -197,7 +269,8 @@ Page({
     this.setData({
       hasResult: true,
       payload,
-      subjectCombinationLabel: payload.input && payload.input.subjectCombination ? payload.input.subjectCombination.label : "\u672a\u9009\u62e9\u9009\u79d1",
+      subjectCombinationLabel: payload.input && payload.input.subjectCombination ? payload.input.subjectCombination.label : "未选择选科",
+      subjectWarningText: payload.input && payload.input.subjectCombination ? "" : "未选择选科，当前为宽松初筛；补充选科后推荐会更准确。",
       recommendations: buildRecommendations(payload),
     });
   },

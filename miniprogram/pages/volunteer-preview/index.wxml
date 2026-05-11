@@ -19,6 +19,7 @@
       <view class="base-range">{{payload.result.rankRange}}</view>
       <view class="base-meta">{{payload.result.level}}｜置信度 {{payload.result.confidence}}</view>
       <view class="base-subject">选科：{{subjectCombinationLabel}}</view>
+      <view wx:if="{{subjectWarningText}}" class="subject-warning">{{subjectWarningText}}</view>
     </view>
 
     <view class="recommendation-list">
@@ -35,11 +36,11 @@
           <view class="college-card-top">
             <view>
               <view class="college-name">{{rec.collegeName}}</view>
-              <view class="college-group">专业组：{{rec.groupName}}｜选科要求：{{rec.subjectRequirement}}</view>
+              <view class="college-group">{{rec.groupName}}｜选科要求：{{rec.subjectRequirement}}</view>
             </view>
             <view class="level-badge">{{rec.level}}</view>
           </view>
-          <view class="college-rank">2025 投档：{{rec.minScore}} 分｜位次 {{rec.minRankText}}</view>
+          <view class="college-rank">2025 参考：{{rec.minScore}} 分｜位次 {{rec.minRankText}}</view>
 
           <view class="major-block">
             <view class="major-title">建议重点查看的专业方向</view>
@@ -64,7 +65,7 @@
     <view class="notice-panel">
       <view class="notice-title">下一步怎么筛学校？</view>
       <view class="notice-copy">
-        当前结果来自北京教育考试院 2025 本科普通批投档线，并结合选科做初筛。专业方向用于第一轮比较，正式填报前仍需核对当年官方招生目录和学校要求。
+        当前结果结合北京教育考试院 2025 本科普通批投档线和本地院校专业方向库做首轮初筛。正式填报前仍需核对当年官方招生目录、院校专业组和学校要求。
       </view>
     </view>
 

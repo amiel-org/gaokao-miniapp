@@ -301,3 +301,14 @@ page {
   border-radius: 50%;
   background: #ab4f2a;
 }
+
+
+.subject-warning {
+  margin-top: 12rpx;
+  padding: 12rpx 14rpx;
+  border-radius: 16rpx;
+  background: rgba(171, 79, 42, 0.09);
+  color: #7a432b;
+  font-size: 22rpx;
+  line-height: 1.5;
+}
