@@ -193,3 +193,25 @@
 1. 人工对照审核图校正 10 个专业组的专业名称、计划数、体检限制和色弱限制。
 2. 将确认后的记录写入正式 `college_major_details` seed。
 3. 再由前端读取“已核验专业明细”，未核验项继续展示官方目录待核验提示。
+
+## 10. 2026-05-11 人工核验队列与正式 seed 出口
+
+已建立从 OCR 草稿到正式专业明细的中间层：
+
+- 人工核验 JSON：`data/review/college_major_details_manual_review_queue.json`
+- 人工核验说明：`docs/college_major_details_manual_review_queue.md`
+- 正式 seed 导出脚本：`scripts/export_verified_college_major_details.py`
+- 前端数据出口：`miniprogram/data/college-major-details.js`
+
+导出规则：
+
+- OCR 候选只作为对照，不会直接导出。
+- 只有 `manualReview.status = verified` 且 `verifiedMajors` 非空的记录，才会进入 `college-major-details.js`。
+- 当前尚无人工核验完成项，因此前端出口为 `module.exports = []`，这是有意设计，不代表流程失败。
+
+后续人工核验完成后，重新运行：
+
+```powershell
+python scripts\export_verified_college_major_details.py
+node --check miniprogram\data\college-major-details.js
+```
