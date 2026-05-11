@@ -102,6 +102,25 @@
       </view>
 
       <view class="field">
+        <text class="field-label">选科组合<text class="required">*</text></text>
+        <view class="subject-help">请选择 3 门等级考科目，系统会据此过滤院校专业组。</view>
+        <view class="subject-grid">
+          <view
+            wx:for="{{subjectOptions}}"
+            wx:key="name"
+            class="subject-chip {{item.selected ? 'active' : ''}}"
+            data-subject="{{item.name}}"
+            bindtap="handleSubjectToggle"
+          >
+            {{item.name}}
+          </view>
+        </view>
+        <view class="subject-summary {{subjectCombination ? 'ready' : ''}}">
+          {{subjectCombination ? '已选择：' + subjectCombination.label : selectedSubjects.length > 0 ? '已选 ' + selectedSubjects.length + ' 门：' + subjectCombinationLabel : '请点选 3 门科目'}}
+        </view>
+      </view>
+
+      <view class="field">
         <text class="field-label">一模 / 二模分数（选填）</text>
         <view class="mock-score-grid">
           <view class="mock-score-item">

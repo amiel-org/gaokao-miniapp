@@ -3,10 +3,30 @@ const { searchSchools } = require("../../utils/school-search.js");
 const { estimateCityRank } = require("../../utils/school-rank-estimator.js");
 const subjectCombinations = require("../../data/subject-combinations.js");
 
+const subjectOptions = ["物理", "化学", "生物", "思想政治", "历史", "地理"];
+
+function normalizeSubjectKey(subjects) {
+  return subjectOptions.filter((subject) => subjects.indexOf(subject) >= 0).join("|");
+}
+
+function findSubjectCombination(subjects) {
+  const key = normalizeSubjectKey(subjects);
+  return subjectCombinations.find((item) => normalizeSubjectKey(item.subjects) === key) || null;
+}
+
+function buildSubjectOptionItems(selectedSubjects) {
+  return subjectOptions.map((name) => ({
+    name,
+    selected: selectedSubjects.indexOf(name) >= 0,
+  }));
+}
+
 Page({
   data: {
     districtOptions,
-    subjectCombinationOptions: subjectCombinations.map((item) => item.label),
+    subjectOptions: buildSubjectOptionItems([]),
+    selectedSubjects: [],
+    subjectCombinationLabel: "",
     subjectCombinationIndex: -1,
     subjectCombination: null,
     districtIndex: -1,
@@ -86,11 +106,28 @@ Page({
     });
   },
 
-  handleSubjectCombinationChange(event) {
-    const index = Number(event.detail.value);
+  handleSubjectToggle(event) {
+    const subject = event.currentTarget.dataset.subject;
+    const selectedSubjects = this.data.selectedSubjects.slice();
+    const existingIndex = selectedSubjects.indexOf(subject);
+
+    if (existingIndex >= 0) {
+      selectedSubjects.splice(existingIndex, 1);
+    } else {
+      if (selectedSubjects.length >= 3) {
+        wx.showToast({ title: "最多选择 3 门，请先取消一个科目", icon: "none" });
+        return;
+      }
+      selectedSubjects.push(subject);
+    }
+
+    const combination = selectedSubjects.length === 3 ? findSubjectCombination(selectedSubjects) : null;
     this.setData({
-      subjectCombinationIndex: index,
-      subjectCombination: subjectCombinations[index] || null,
+      selectedSubjects,
+      subjectOptions: buildSubjectOptionItems(selectedSubjects),
+      subjectCombination: combination,
+      subjectCombinationLabel: combination ? combination.label : selectedSubjects.join("＋"),
+      subjectCombinationIndex: combination ? subjectCombinations.findIndex((item) => item.id === combination.id) : -1,
       estimateResult: null,
     });
   },
@@ -141,7 +178,7 @@ Page({
     }
 
     if (!subjectCombination) {
-      wx.showToast({ title: "请选择选科组合，用于生成院校推荐", icon: "none" });
+      wx.showToast({ title: "请选择 3 门选科，用于生成院校推荐", icon: "none" });
       return;
     }
 
