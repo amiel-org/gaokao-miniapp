@@ -1,8 +1,16 @@
 
 const collegeAdmissionGroups = require("../../data/college-admission-groups.js");
 const beijingLocalCollegePrograms = require("../../data/beijing-local-college-programs.js");
+const beijingSchoolCoverage = require("../../data/beijing-undergraduate-school-coverage.js");
 const majorCatalogStatus = require("../../data/major-catalog-status.js");
 const { getFirstlookMajors } = require("../../data/college-major-firstlook.js");
+
+function buildCoverageText() {
+  const total = beijingSchoolCoverage.length;
+  const withProgram = beijingSchoolCoverage.filter((item) => item.hasProgramSeed).length;
+  const pending = total - withProgram;
+  return `已纳入北京非民办本科院校覆盖库 ${total} 所；其中 ${withProgram} 所已有普通批/专业方向数据，${pending} 所特殊类型或暂无普通批数据院校待 2026 官方专业目录补齐。`;
+}
 
 function formatNumber(value) {
   if (value === null || value === undefined || value === "") return "-";
@@ -251,6 +259,7 @@ Page({
     subjectCombinationLabel: "",
     subjectWarningText: "",
     majorCatalogStatusText: majorCatalogStatus.userFacingStatus,
+    coverageText: buildCoverageText(),
   },
 
   onLoad() {
