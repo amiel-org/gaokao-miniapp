@@ -14,10 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "data/review/college_major_details_manual_review_queue.json"
 OUT_JS = ROOT / "miniprogram/data/college-major-details.js"
 
-SOURCE_TITLE = "2025普通高等学校招生专业目录"
-SOURCE_URL = "https://www.bjeea.cn/uploads/20250613/202506131926-3.pdf"
-
-
+SOURCE_TITLE = "北京市2026年普通高等学校招生专业目录"
+SOURCE_URL = "https://www.bjeea.cn/uploads/soft/260621/北京市2026年普通高等学校招生专业目录.pdf"
 def normalize_major(raw: dict) -> dict:
     return {
         "majorCode": str(raw.get("majorCode", "")).strip(),
@@ -40,7 +38,7 @@ def build_record(item: dict) -> dict | None:
         return None
     return {
         "id": item["id"],
-        "year": item.get("year", 2025),
+        "year": item.get("year", 2026),
         "province": item.get("province", "北京"),
         "batch": item.get("batch", "本科普通批"),
         "collegeCode": item["collegeCode"],
@@ -52,6 +50,7 @@ def build_record(item: dict) -> dict | None:
         "majors": majors,
         "majorNames": [x["majorName"] for x in majors],
         "groupRestrictionTags": review.get("groupRestrictionTags", []),
+        "groupNotes": review.get("groupNotes", ""),
         "colorWeaknessRisk": review.get("colorWeaknessRisk", "unknown"),
         "hasMedicalRestriction": review.get("hasMedicalRestriction"),
         "review": {
@@ -68,8 +67,8 @@ def build_record(item: dict) -> dict | None:
             "reviewImage": item.get("reviewImage", ""),
         },
         "dataStatus": "official_catalog_manual_verified",
-        "version": "2025.official.major_details.v1",
-        "updatedAt": "2026-05-11",
+        "version": "2026.official.major_details.v1",
+        "updatedAt": "2026-06-22",
     }
 
 

@@ -28,7 +28,7 @@
 
 ```json
 {
-  "appid": "touristappid",
+  "appid": "wx21796206e965c6f2",
   "projectname": "gaokao-miniapp",
   "compileType": "miniprogram",
   "miniprogramRoot": "miniprogram/",
@@ -41,7 +41,7 @@
 - 项目类型是小程序。
 - 小程序源码在 `miniprogram/`。
 - 云函数目录预留在 `cloudfunctions/`。
-- 当前 AppID 使用游客/测试占位，适合先本地开发验证。
+- 当前配置已写入项目 AppID，导入时按 `project.config.json` 即可。
 
 ## 3. 导入步骤
 
@@ -67,12 +67,14 @@
 左侧文件树应能看到：
 
 - `miniprogram/app.json`
+- `miniprogram/pages/cover/index`
 - `miniprogram/pages/school-rank-entry/index`
 - `miniprogram/pages/position-result/index`
+- `miniprogram/pages/volunteer-preview/index`
 - `miniprogram/data/`
 - `miniprogram/utils/`
 
-模拟器默认应打开校排入口页。
+模拟器默认应先打开金红封面页，再进入校排填写页。
 
 ## 5. 首次导入后建议检查
 
@@ -84,14 +86,16 @@
 
 建议测试：
 
-1. 选择所在区。
-2. 搜索高中。
-3. 选中学校。
-4. 输入校排名。
-5. 输入年级总人数。
-6. 选择排名口径。
-7. 点击查看北京定位结果。
-8. 确认能跳转到结果页。
+1. 先点金红封面页的“开始定位”。
+2. 选择所在区。
+3. 搜索高中。
+4. 选中学校。
+5. 输入校排名。
+6. 输入年级总人数。
+7. 选择排名口径。
+8. 如已出分，补填最终成绩。
+9. 点击查看北京定位结果。
+10. 确认能跳转到结果页。
 
 ### 5.3 暂时不需要构建 npm
 
@@ -140,4 +144,3 @@
 - 是否能搜索学校。
 - 是否能跳转北京定位结果页。
 - Console 是否有红色报错。
-

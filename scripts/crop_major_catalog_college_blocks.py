@@ -8,12 +8,13 @@ import subprocess
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-HITS_PATH = ROOT / "data/staging/major_catalog_ocr/target_page_hits.json"
-IMAGES_DIR = ROOT / "data/staging/major_catalog_ocr/images"
-OUT_DIR = ROOT / "data/staging/major_catalog_ocr/college_blocks"
-DOC_DIR = ROOT / "output/major-catalog-review/college-blocks"
-MANIFEST_PATH = ROOT / "data/staging/major_catalog_ocr/college_block_manifest.json"
-SUMMARY_MD = ROOT / "docs/major_catalog_college_block_review.md"
+OCR_ROOT = Path(os.environ.get("MAJOR_CATALOG_OCR_DIR", str(ROOT / "data/staging/major_catalog_ocr")))
+HITS_PATH = Path(os.environ.get("MAJOR_CATALOG_HITS", str(OCR_ROOT / "target_page_hits.json")))
+IMAGES_DIR = Path(os.environ.get("MAJOR_CATALOG_IMAGES_DIR", str(OCR_ROOT / "images")))
+OUT_DIR = Path(os.environ.get("MAJOR_CATALOG_BLOCKS_DIR", str(OCR_ROOT / "college_blocks")))
+DOC_DIR = Path(os.environ.get("MAJOR_CATALOG_REVIEW_DIR", str(ROOT / "output/major-catalog-review/college-blocks")))
+MANIFEST_PATH = Path(os.environ.get("MAJOR_CATALOG_MANIFEST", str(OCR_ROOT / "college_block_manifest.json")))
+SUMMARY_MD = Path(os.environ.get("MAJOR_CATALOG_SUMMARY_MD", str(ROOT / "docs/major_catalog_college_block_review.md")))
 TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 TESSDATA = ROOT / ".tools/tessdata"
 

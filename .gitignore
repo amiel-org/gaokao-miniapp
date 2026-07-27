@@ -43,6 +43,11 @@ output/page-preview/*
 output/imagegen/*
 !output/imagegen/.gitkeep
 output/chrome-user-data/
+output/hero_test/
+output/share-fix-*
+
+# Temporary OCR / crop working files
+tmp/
 
 # Local tools
 .tools/

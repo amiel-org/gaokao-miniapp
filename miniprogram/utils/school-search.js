@@ -1,5 +1,13 @@
-const schoolLibrary = require("../data/school-library.js");
 const { entityTypeLabel } = require("./school-labels.js");
+
+let schoolLibraryCache = null;
+
+function getSchoolLibrary() {
+  if (!schoolLibraryCache) {
+    schoolLibraryCache = require("../data/school-library.js");
+  }
+  return schoolLibraryCache;
+}
 
 function normalize(text) {
   return (text || "")
@@ -69,6 +77,7 @@ function scoreSchoolMatch(item, normalized) {
 function searchSchools(query, district) {
   const normalized = normalize(query);
   if (!normalized) return [];
+  const schoolLibrary = getSchoolLibrary();
 
   return schoolLibrary
     .filter((item) => !district || item.district === district)

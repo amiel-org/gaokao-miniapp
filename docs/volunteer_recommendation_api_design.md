@@ -96,6 +96,11 @@
   },
   "subjectCombinationId": "phy_chem_bio",
   "riskPreference": "balanced",
+  "majorPreference": {
+    "mode": "major_first",
+    "selectedDirectionIds": ["computer-ai", "electronic-automation"],
+    "undecided": false
+  },
   "province": "北京",
   "year": 2025,
   "filters": {
@@ -120,6 +125,16 @@
       "minScore": 640,
       "minRank": 4431,
       "reason": "2025投档位次与当前定位区间重叠度较高",
+      "majorMatch": {
+        "priority": 1,
+        "directionLabel": "计算机与人工智能",
+        "matchedMajors": ["计算机科学与技术", "人工智能"]
+      },
+      "nationalStrengthEvidence": {
+        "label": "国家级优势学科证据",
+        "disciplines": ["计算机科学与技术"],
+        "source": "教育部第二轮“双一流”建设学科名单"
+      },
       "riskTags": ["需核查具体专业体检限制"],
       "sourceVersion": "2025.official.seed.v1"
     }
@@ -173,6 +188,9 @@ GET /college-groups?year=2025&collegeCode=1025&subjectCombinationId=phy_chem_bio
 - 2025 投档分和位次。
 - 选科要求。
 - 推荐理由。
+- 专业方向命中与优先级。
+- 可追溯的全国专业实力证据。
+- “专业组投档不等于目标专业录取”的风险提醒。
 - 风险提醒。
 
 UI 不应出现“正式版”“预览层”“不是最终推荐”等开发话术。用户看到的是产品化建议，而内部边界写在文档和数据状态里。

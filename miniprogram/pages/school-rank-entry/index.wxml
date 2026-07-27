@@ -1,35 +1,65 @@
 <view class="page-shell">
-  <view class="hero">
-    <text class="eyebrow">北京 2025 基线版</text>
-    <view class="hero-title">先选中高中，再用校排名看孩子大概在北京什么位置。</view>
-    <view class="hero-lead">
-      这不是填一堆表，而是先把学校选准，再补齐年级人数和排名口径，才开始估算市级区间。
+  <view class="hero themed-hero entry-hero">
+    <image class="hero-art" src="/assets/hero/hero-dragon-gate.jpg" mode="aspectFill"></image>
+    <view class="hero-content">
+      <view class="hero-kicker">鱼跃龙门</view>
+      <view class="hero-title">高考择校定位</view>
+      <view class="hero-lead">
+        先定位置，再定学校。重点支持已出分后的填报，也兼容未出分前的预测。
+      </view>
+      <view class="hero-flow">
+        <view class="flow-step">确认高中</view>
+        <view class="flow-line"></view>
+        <view class="flow-step">校排定位</view>
+        <view class="flow-line"></view>
+        <view class="flow-step">择校初筛</view>
+      </view>
     </view>
-    <view class="hero-note">当前结果为预测参考，不替代官方位次。</view>
   </view>
 
   <view class="form-block">
-    <view class="section-title">校排入口</view>
+    <view class="section-title">定位参数</view>
     <view class="section-subtitle">
-      家长通常只记得学校和校排。这个入口会强制补上最低必要信息，避免把结果算偏。
+      只保留影响判断的关键参数；定位越清晰，后续学校梯度越可靠。
     </view>
 
     <view class="field-list">
       <view class="field">
-        <text class="field-label">所在区<text class="required">*</text></text>
+        <view class="field-head">
+          <text class="field-label">使用场景</text>
+        </view>
+        <view class="segmented score-mode">
+          <view class="segment {{scoreMode === 'after_exam' ? 'active' : ''}}" data-mode="after_exam" bindtap="handleScoreModeSelect">
+            已出分填报
+          </view>
+          <view class="segment {{scoreMode === 'before_exam' ? 'active' : ''}}" data-mode="before_exam" bindtap="handleScoreModeSelect">
+            未出分预测
+          </view>
+        </view>
+        <view class="field-tip">默认建议用“已出分填报”；最终成绩是优先参考项，不是硬性必填。</view>
+      </view>
+
+      <view class="field">
+        <view class="field-head">
+          <text class="field-label">所在区</text>
+          <text class="required">必填</text>
+        </view>
         <picker mode="selector" range="{{districtOptions}}" value="{{districtIndex}}" bindchange="handleDistrictChange">
           <view class="field-picker {{districtLabel ? '' : 'placeholder'}}">
-            {{districtLabel || '先选所在区，能明显降低学校混淆'}}
+            {{districtLabel || '选择学校所在区'}}
           </view>
         </picker>
       </view>
 
       <view class="field">
-        <text class="field-label">搜索高中<text class="required">*</text></text>
+        <view class="field-head">
+          <text class="field-label">就读高中</text>
+          <text class="required">必填</text>
+        </view>
         <view class="search-box">
           <input
             class="field-input"
-            placeholder="例如：人大附、北交附中、汇文中学"
+            placeholder="输入学校简称或全称，例如：人大附、汇文中学"
             value="{{schoolQuery}}"
             bindinput="handleSchoolQueryInput"
             confirm-type="search"
@@ -55,39 +85,49 @@
         </view>
 
         <view wx:if="{{selectedSchool.school_id}}" class="selected-school">
+          <view class="selected-school-mark">已确认高中</view>
           <view class="selected-school-title">{{selectedSchool.short_name}}</view>
           <view class="selected-school-meta">
             {{selectedSchool.official_name}}｜{{selectedSchool.district}}｜{{selectedSchool.entityTypeLabel}}
           </view>
-          <view class="field-tip">已选中这所学校，可以继续填写排名。如果不是这所，请重新搜索或点候选结果切换。</view>
         </view>
       </view>
 
-      <view class="field">
-        <text class="field-label">校排名<text class="required">*</text></text>
-        <input
-          class="field-input"
-          type="number"
-          placeholder="请输入年级排名，例如 120"
-          value="{{gradeRank}}"
-          bindinput="handleGradeRankInput"
-        />
+      <view class="field two-col-field">
+        <view class="half-field">
+          <view class="field-head">
+            <text class="field-label">校排</text>
+            <text class="required">必填</text>
+          </view>
+          <input
+            class="field-input"
+            type="number"
+            placeholder="例如 120"
+            value="{{gradeRank}}"
+            bindinput="handleGradeRankInput"
+          />
+        </view>
+        <view class="half-field">
+          <view class="field-head">
+            <text class="field-label">年级规模</text>
+            <text class="required">必填</text>
+          </view>
+          <input
+            class="field-input"
+            type="number"
+            placeholder="例如 680"
+            value="{{gradeTotal}}"
+            bindinput="handleGradeTotalInput"
+          />
+        </view>
       </view>
+      <view class="field-tip compact-tip">用于换算校内百分位，是定位精度的关键。</view>
 
       <view class="field">
-        <text class="field-label">年级总人数<text class="required">*</text></text>
-        <input
-          class="field-input"
-          type="number"
-          placeholder="请输入年级总人数，例如 680"
-          value="{{gradeTotal}}"
-          bindinput="handleGradeTotalInput"
-        />
-        <view class="field-tip">如果缺这个值，系统只能给非常粗的区间，不建议直接估算。</view>
-      </view>
-
-      <view class="field">
-        <text class="field-label">排名口径<text class="required">*</text></text>
+        <view class="field-head">
+          <text class="field-label">校排口径</text>
+          <text class="required">必填</text>
+        </view>
         <view class="segmented">
           <view class="segment {{rankingBasis === 'same_track' ? 'active' : ''}}" data-value="same_track" bindtap="handleRankingBasisSelect">
             同类选科
@@ -96,14 +136,17 @@
             全年级
           </view>
           <view class="segment {{rankingBasis === 'unknown' ? 'active' : ''}}" data-value="unknown" bindtap="handleRankingBasisSelect">
-            不确定
+            暂不确定
           </view>
         </view>
       </view>
 
       <view class="field">
-        <text class="field-label">选科组合<text class="required">*</text></text>
-        <view class="subject-help">请选择 3 门等级考科目，系统会据此过滤院校专业组。</view>
+        <view class="field-head">
+          <text class="field-label">选科组合</text>
+          <text class="required">必填</text>
+        </view>
+        <view class="subject-help">选择 3 门等级考科目，后续将用于匹配院校专业组。</view>
         <view class="subject-grid">
           <view
             wx:for="{{subjectOptions}}"
@@ -116,19 +159,37 @@
           </view>
         </view>
         <view class="subject-summary {{subjectCombination ? 'ready' : ''}}">
-          {{subjectCombination ? '已选择：' + subjectCombination.label : selectedSubjects.length > 0 ? '已选 ' + selectedSubjects.length + ' 门：' + subjectCombinationLabel : '请点选 3 门科目'}}
+          {{subjectCombination ? '已选择：' + subjectCombination.label : selectedSubjects.length > 0 ? '已选 ' + selectedSubjects.length + ' 门：' + subjectCombinationLabel : '选择 3 门科目'}}
         </view>
       </view>
 
       <view class="field">
-        <text class="field-label">一模 / 二模分数（选填）</text>
+        <view class="field-head">
+          <text class="field-label">最终成绩</text>
+          <text class="optional">{{scoreMode === 'after_exam' ? '建议填写' : '可选'}}</text>
+        </view>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="例如 645"
+          value="{{finalExamScore}}"
+          bindinput="handleFinalExamScoreInput"
+        />
+        <view class="field-tip">如果已经出分，建议填最终成绩；不填也能先按校排定位。</view>
+      </view>
+
+      <view wx:if="{{scoreMode === 'before_exam'}}" class="field">
+        <view class="field-head">
+          <text class="field-label">模考分数</text>
+          <text class="optional">选填</text>
+        </view>
         <view class="mock-score-grid">
           <view class="mock-score-item">
             <text class="mock-score-label">一模</text>
             <input
               class="field-input"
               type="number"
-              placeholder="可填一模成绩"
+              placeholder="可不填"
               value="{{firstMockScore}}"
               bindinput="handleFirstMockScoreInput"
             />
@@ -138,49 +199,25 @@
             <input
               class="field-input"
               type="number"
-              placeholder="可填二模成绩"
+              placeholder="可不填"
               value="{{secondMockScore}}"
               bindinput="handleSecondMockScoreInput"
             />
           </view>
         </view>
-        <view class="field-tip">两项都不是必填。都不填时只按校排名估算；填写后系统优先采用二模，其次采用一模，叠加 2025 位次参考。</view>
+        <view class="field-tip">可用于交叉校准；暂未出分也可以先完成校排定位。</view>
       </view>
     </view>
 
     <view class="cta-area">
-      <button class="primary-button" bindtap="handleEstimate">估算北京市位次区间</button>
+      <button class="primary-button" bindtap="handleEstimate">生成择校定位</button>
     </view>
   </view>
 
   <view class="info-panel">
-    <view class="info-title">为什么要补“年级总人数”和“排名口径”？</view>
+    <view class="info-title">为什么先做定位？</view>
     <view class="info-copy">
-      同样写“第 400 名”，如果是全年级大排名和同类选科排名，含义完全不同。年级人数也会直接改变你在校内所处百分位。
-    </view>
-  </view>
-
-  <view wx:if="{{estimateResult}}" class="result-block">
-    <view class="result-title">当前原型结果</view>
-    <view class="result-row">
-      <text class="result-key">命中学校</text>
-      <text class="result-value">{{estimateResult.selectedSchool}}</text>
-    </view>
-    <view class="result-row">
-      <text class="result-key">实体类型</text>
-      <text class="result-value">{{estimateResult.entityType}}</text>
-    </view>
-    <view class="result-row">
-      <text class="result-key">估算区间</text>
-      <text class="result-value">{{estimateResult.rankRange}}</text>
-    </view>
-    <view class="result-row">
-      <text class="result-key">置信度</text>
-      <text class="result-value">{{estimateResult.confidence}}</text>
-    </view>
-    <view class="result-row">
-      <text class="result-key">说明</text>
-      <text class="result-value">{{estimateResult.explanation}}</text>
+      高考择校的第一步不是罗列学校，而是确认所处位置。系统先将校排转换为北京市位次锚点，再结合选科、投档线和专业组数据形成冲稳保梯度。
     </view>
   </view>
 </view>

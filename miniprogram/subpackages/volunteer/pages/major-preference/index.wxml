@@ -1,0 +1,80 @@
+<view class="major-preference-shell">
+  <view wx:if="{{!hasResult}}" class="empty-state">
+    <view class="empty-title">还没有定位结果</view>
+    <view class="empty-copy">请先完成校排定位，再设置专业方向优先级。</view>
+    <button class="secondary-button" bindtap="handleBackResult">返回定位</button>
+  </view>
+
+  <block wx:if="{{hasResult}}">
+    <view class="major-hero">
+      <image class="hero-art" src="/assets/hero/hero-rank-coordinate.jpg" mode="aspectFill"></image>
+      <view class="hero-shade"></view>
+      <view class="hero-content">
+        <text class="eyebrow">专业与院校匹配</text>
+        <view class="hero-title">专业方向优先级</view>
+        <view class="hero-copy">先明确更看重的专业方向，再比较北京高校的专业实力与录取梯度。</view>
+      </view>
+    </view>
+
+    <view class="context-strip">
+      <view>
+        <view class="context-label">当前位次区间</view>
+        <view class="context-value">{{payload.result.rankRange}}</view>
+      </view>
+      <view class="context-subject">{{subjectCombinationLabel}}</view>
+    </view>
+
+    <view class="mode-section">
+      <view class="section-head">
+        <view>
+          <view class="section-title">决策侧重</view>
+          <view class="section-copy">不同侧重会改变同一冲稳保档位内的排序。</view>
+        </view>
+      </view>
+      <view class="mode-segments">
+        <view wx:for="{{modeOptions}}" wx:key="id" class="mode-segment {{item.active ? 'active' : ''}}" data-mode="{{item.id}}" bindtap="handleModeTap">
+          <view class="mode-label">{{item.label}}</view>
+          <view class="mode-copy">{{item.description}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="direction-section">
+      <view class="section-head direction-head">
+        <view>
+          <view class="section-title">专业方向</view>
+          <view class="section-copy">选择顺序即为推荐优先级，最多保留三个方向。</view>
+        </view>
+        <view class="selected-count">{{selectedDirectionIds.length}} / 3</view>
+      </view>
+
+      <view class="direction-grid">
+        <view wx:for="{{directionOptions}}" wx:key="id" class="direction-chip {{item.selected ? 'selected' : ''}}" data-direction-id="{{item.id}}" bindtap="handleDirectionTap">
+          <view class="direction-top">
+            <view class="direction-label">{{item.label}}</view>
+            <view wx:if="{{item.selected}}" class="priority-mark">{{item.priority}}</view>
+          </view>
+          <view class="direction-copy">{{item.description}}</view>
+        </view>
+      </view>
+
+      <view class="undecided-row">
+        <view>
+          <view class="undecided-title">暂未确定专业方向</view>
+          <view class="undecided-copy">按均衡口径保留更宽的院校专业组范围。</view>
+        </view>
+        <switch checked="{{undecided}}" color="#1687d9" bindchange="handleUndecidedChange"></switch>
+      </view>
+    </view>
+
+    <view class="evidence-band">
+      <view class="evidence-title">专业实力口径</view>
+      <view class="evidence-copy">全国优势证据优先采用教育部第二轮“双一流”建设学科名单；招生专业与计划以北京教育考试院2026年官方目录为准。</view>
+    </view>
+
+    <view class="page-actions">
+      <button class="secondary-button" bindtap="handleBackResult">返回位次</button>
+      <button class="primary-button" bindtap="handleSubmit">生成专业与院校方案</button>
+    </view>
+  </block>
+</view>

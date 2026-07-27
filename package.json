@@ -4,8 +4,33 @@
   "private": true,
   "description": "北京高考志愿填报小程序工程骨架",
   "scripts": {
-    "check:data": "python scripts/check_data.py",
-    "build:exports": "python scripts/build_exports.py"
+    "check:syntax": "node scripts/check_syntax.js",
+    "check:data": "node scripts/check_data.js",
+    "check:estimation": "python scripts/run_estimation_test_cases.py",
+    "check:plan2026": "node scripts/check_bjeea_2026_admission_plan_coverage.js",
+    "check:plan2026:ready": "node scripts/check_bjeea_2026_admission_plan_coverage.js --require-ready",
+    "check:plan2026:partial": "node scripts/check_bjeea_2026_admission_plan_coverage.js --allow-manual-verified",
+    "check:release": "node scripts/check_release_readiness.js && npm run check:plan2026:partial",
+    "check:release:full": "node scripts/check_release_readiness.js && npm run check:plan2026:ready",
+    "check:all": "npm run check:syntax && npm run check:data && npm run check:estimation && npm run check:release",
+    "build:major-strength": "python scripts/build_major_strength_evidence.py",
+    "preview:major": "node scripts/build_major_recommendation_preview.js",
+    "discover:plan2026": "python scripts/discover_bjeea_2026_catalog_sources.py",
+    "fetch:plan2026": "python scripts/fetch_bjeea_admission_plan_2026.py --probe-dwr --probe-start 5700 --probe-end 5900",
+    "export:plan2026": "node scripts/export_bjeea_2026_admission_plan_firstlook.js",
+    "refresh:plan2026": "npm run discover:plan2026 && npm run fetch:plan2026 && npm run export:plan2026 && npm run check:plan2026",
+    "probe:plan2026:full": "python scripts/fetch_bjeea_admission_plan_2026.py --full-probe --delay 0",
+    "status:plan2026": "node scripts/report_bjeea_2026_plan_status.js",
+    "monitor:plan2026": "npm run refresh:plan2026 && npm run status:plan2026",
+    "discover:plan2026:download": "python scripts/discover_bjeea_2026_catalog_sources.py --download",
+    "monitor:plan2026:download": "npm run discover:plan2026:download && npm run sync:plan2026:downloaded && npm run fetch:plan2026 && npm run export:plan2026 && npm run check:plan2026 && npm run status:plan2026",
+    "sync:plan2026:downloaded": "python scripts/sync_bjeea_2026_downloaded_catalog.py",
+    "sync:plan2026:downloaded:ready": "python scripts/sync_bjeea_2026_downloaded_catalog.py --require-ready",
+    "backfill:plan2026:targets": "python scripts/build_bjeea_2026_target_colleges.py && python scripts/locate_bjeea_2026_pdf_target_colleges.py",
+    "backfill:plan2026:ocr-columns": "python scripts/ocr_bjeea_2026_ordinary_columns.py",
+    "backfill:plan2026:draft": "python scripts/extract_bjeea_2026_pdf_major_draft.py",
+    "backfill:plan2026:backlog": "python scripts/report_bjeea_2026_major_review_backlog.py",
+    "discover:plan2026:probe": "python scripts/discover_bjeea_2026_catalog_sources.py --probe-attachment-guesses --probe-probable-notices",
+    "discover:plan2026:download:probe": "python scripts/discover_bjeea_2026_catalog_sources.py --download --probe-attachment-guesses --probe-probable-notices"
   }
 }
-

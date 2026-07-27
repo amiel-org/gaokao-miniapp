@@ -7,12 +7,16 @@ formal recommendation data without manual verification.
 
 from pathlib import Path
 import json
+import os
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "data/staging/major_catalog_ocr/college_block_manifest.json"
-OUT_JSON = ROOT / "data/staging/major_catalog_ocr/college_major_details_draft.json"
-OUT_MD = ROOT / "docs/college_major_details_draft_review.md"
+OCR_ROOT = Path(os.environ.get("MAJOR_CATALOG_OCR_DIR", str(ROOT / "data/staging/major_catalog_ocr")))
+MANIFEST = Path(os.environ.get("MAJOR_CATALOG_MANIFEST", str(OCR_ROOT / "college_block_manifest.json")))
+OUT_JSON = Path(os.environ.get("MAJOR_CATALOG_DRAFT_JSON", str(OCR_ROOT / "college_major_details_draft.json")))
+OUT_MD = Path(os.environ.get("MAJOR_CATALOG_DRAFT_MD", str(ROOT / "docs/college_major_details_draft_review.md")))
+SOURCE_TITLE = os.environ.get("MAJOR_CATALOG_SOURCE_TITLE", "2025普通高等学校招生专业目录")
+SOURCE_URL = os.environ.get("MAJOR_CATALOG_SOURCE_URL", "https://www.bjeea.cn/uploads/20250613/202506131926-3.pdf")
 
 COLLEGE_CODE_RE = re.compile(r"(?m)^\s*(\d{4})\s+[^\n]{2,30}")
 GROUP_RE_TEMPLATE = r"[{{(（]\s*{group}\s*[}})）]\s*(?P<req>[^:\n]{{0,40}}?(?:选考科目|必须选考))\s*[：:]"
@@ -98,8 +102,8 @@ def main():
                 "reviewStatus": "needs_human_confirm",
                 "source": {
                     "publisher": "北京教育考试院",
-                    "title": "2025普通高等学校招生专业目录",
-                    "url": "https://www.bjeea.cn/uploads/20250613/202506131926-3.pdf",
+                    "title": SOURCE_TITLE,
+                    "url": SOURCE_URL,
                 },
             }
             # Keep the candidate with more extracted majors for same group.

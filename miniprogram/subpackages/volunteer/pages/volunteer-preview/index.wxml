@@ -1,0 +1,142 @@
+<view class="volunteer-shell">
+  <view wx:if="{{!hasResult}}" class="empty-state">
+    <view class="empty-title">还没有定位结果</view>
+    <view class="empty-copy">请先完成校排定位和专业方向设置，再查看推荐方案。</view>
+    <button class="secondary-button" bindtap="handleBackEntry">返回定位</button>
+  </view>
+
+  <block wx:if="{{hasResult}}">
+    <view class="volunteer-hero themed-hero crown-hero">
+      <image class="hero-art" src="/assets/hero/hero-crown-laurel.jpg" mode="aspectFill"></image>
+      <view class="hero-content">
+        <text class="eyebrow">一举夺魁</text>
+        <view class="volunteer-title">专业与院校方案</view>
+        <view class="volunteer-copy">{{payload.input.schoolShortName}}｜先按专业方向匹配北京高校，再结合位次形成冲、稳、保三档方案。</view>
+      </view>
+    </view>
+
+    <view class="base-panel">
+      <view class="base-label">定位区间</view>
+      <view class="base-range">{{payload.result.rankRange}}</view>
+      <view class="base-meta">{{payload.result.level}}｜置信度 {{payload.result.confidence}}</view>
+      <view class="base-subject">选科：{{subjectCombinationLabel}}</view>
+      <view wx:if="{{subjectWarningText}}" class="subject-notice">{{subjectWarningText}}</view>
+    </view>
+
+    <view class="preference-panel">
+      <view class="preference-head">
+        <view>
+          <view class="preference-label">当前决策侧重</view>
+          <view class="preference-mode">{{preferenceModeLabel}}</view>
+        </view>
+        <button class="adjust-button" bindtap="handleAdjustMajor">调整专业</button>
+      </view>
+      <view class="preference-directions">{{preferenceDirectionText}}</view>
+      <view class="preference-note">专业优先级用于同档排序，冲稳保仍由历史投档位次确定。</view>
+    </view>
+
+    <view wx:if="{{hasMajorPreference}}" class="major-priority-panel">
+      <view class="priority-panel-title">专业优先级</view>
+      <view wx:for="{{directionSummaries}}" wx:key="id" class="priority-row">
+        <view class="priority-number">{{item.priority}}</view>
+        <view class="priority-content">
+          <view class="priority-title">{{item.label}}</view>
+          <view class="priority-copy">{{item.description}}</view>
+          <view class="priority-metrics">当前选科覆盖 {{item.collegeCount}} 所北京高校｜国家级优势证据 {{item.evidenceCollegeCount}} 所</view>
+          <view class="priority-sample">专业示例：{{item.sampleMajorText}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="official-plan-panel {{admissionPlanStatus.tone}}">
+      <view class="official-plan-top">
+        <view>
+          <view class="official-plan-label">北京教育考试院</view>
+          <view class="official-plan-title">{{admissionPlanStatus.title}}</view>
+        </view>
+        <view class="official-plan-tag">{{admissionPlanStatus.tag}}</view>
+      </view>
+      <view class="official-plan-copy">{{admissionPlanStatus.text}}</view>
+    </view>
+
+    <view class="recommendation-list">
+      <view wx:for="{{recommendations}}" wx:key="level" class="recommendation-section">
+        <view class="recommendation-head">
+          <view class="group-mark">{{item.level}}</view>
+          <view>
+            <view class="recommendation-title">{{item.title}}</view>
+            <view class="recommendation-summary">{{item.summary}}</view>
+          </view>
+        </view>
+
+        <view wx:if="{{item.items.length === 0}}" class="empty-recommendation">{{item.emptyText}}</view>
+
+        <view wx:for="{{item.items}}" wx:for-item="rec" wx:key="id" class="college-card">
+          <view class="college-card-top">
+            <view>
+              <view class="college-name">{{rec.collegeName}}</view>
+              <view class="college-group">{{rec.groupName}}｜{{rec.collegeLevel || '本科院校'}}｜选科要求：{{rec.subjectRequirement}}</view>
+            </view>
+            <view class="level-badge">{{rec.level}}</view>
+          </view>
+          <view class="college-rank">历史投档参考：{{rec.minScore}} 分｜位次 {{rec.minRankText}}</view>
+
+          <view wx:if="{{rec.hasMajorMatch}}" class="major-match-strip">
+            <view class="major-match-label">优先专业命中</view>
+            <view class="major-match-value">{{rec.matchedMajorText}}</view>
+            <view class="major-match-meta">{{rec.majorCoverageText}}</view>
+          </view>
+
+          <view class="reason-block featured-reason">
+            <view class="reason-title">为什么推荐</view>
+            <view wx:for="{{rec.reasonLines}}" wx:key="*this" class="reason-line">
+              <text class="reason-dot"></text><text>{{item}}</text>
+            </view>
+          </view>
+
+          <view wx:if="{{rec.hasStrengthEvidence}}" class="strength-block">
+            <view class="strength-top">
+              <view class="strength-label">全国专业实力</view>
+              <view class="strength-band">{{rec.strengthLabel}}</view>
+            </view>
+            <view class="strength-detail">{{rec.strengthDetail}}</view>
+            <view class="strength-source">来源：{{rec.strengthSourceLabel}}</view>
+          </view>
+
+          <view wx:if="{{rec.hasOfficial2026Plan || rec.hasVerified2026Catalog || rec.hasPlanHighlights}}" class="plan-block">
+            <view class="plan-title">{{rec.planBlockTitle}}</view>
+            <view wx:for="{{rec.planHighlights}}" wx:for-item="plan" wx:key="majorCode" class="plan-row">
+              <view class="plan-major">{{plan.majorCode}}｜{{plan.majorName}}</view>
+              <view class="plan-meta">计划 {{plan.planCountText}}｜学制 {{plan.durationYears}}｜学费 {{plan.tuition}}｜外语 {{plan.foreignLanguage}}</view>
+              <view class="plan-subject">选科：{{plan.subjectRequirement}}</view>
+            </view>
+          </view>
+
+          <view class="major-block">
+            <view class="major-title">建议重点核对的招生专业</view>
+            <view class="major-tags">
+              <text wx:for="{{rec.recommendedMajors}}" wx:key="*this" class="major-tag">{{item}}</text>
+            </view>
+            <view class="major-source">{{rec.sourceLabel}}</view>
+          </view>
+
+          <view class="college-risk">{{rec.riskText}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="notice-panel">
+      <view class="notice-title">数据口径</view>
+      <view class="notice-copy">
+        当前方案只覆盖北京地区二本及以上目标院校，二本以下不收录。专业方向以官方投档线、院校专业组和2026官方目录已核验专业库生成。{{majorStrengthScopeText}}{{coverageText}}{{admissionPlanStatusText}}{{majorCatalogStatusText}}
+      </view>
+    </view>
+
+    <view class="result-actions">
+      <button class="secondary-button" bindtap="handleAdjustMajor">调整专业</button>
+      <button class="primary-button compact" bindtap="handleBackResult">返回位次</button>
+    </view>
+  </block>
+</view>
+
+

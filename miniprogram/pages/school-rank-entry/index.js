@@ -5,6 +5,33 @@ const subjectCombinations = require("../../data/subject-combinations.js");
 
 const subjectOptions = ["物理", "化学", "生物", "思想政治", "历史", "地理"];
 
+function getReferenceScoreLabel(source) {
+  if (source === "final_exam") return "最终成绩";
+  if (source === "second_mock") return "二模";
+  if (source === "first_mock") return "一模";
+  return "未填写";
+}
+
+function resolveReferenceScore({ scoreMode, finalExamScore, secondMockScore, firstMockScore }) {
+  if (scoreMode === "after_exam") {
+    if (finalExamScore) {
+      return { source: "final_exam", value: Number(finalExamScore) };
+    }
+    return { source: "none", value: null };
+  }
+
+  if (secondMockScore) {
+    return { source: "second_mock", value: Number(secondMockScore) };
+  }
+  if (firstMockScore) {
+    return { source: "first_mock", value: Number(firstMockScore) };
+  }
+  if (finalExamScore) {
+    return { source: "final_exam", value: Number(finalExamScore) };
+  }
+  return { source: "none", value: null };
+}
+
 function normalizeSubjectKey(subjects) {
   return subjectOptions.filter((subject) => subjects.indexOf(subject) >= 0).join("|");
 }
@@ -21,6 +48,15 @@ function buildSubjectOptionItems(selectedSubjects) {
   }));
 }
 
+function enableShareMenu() {
+  if (typeof wx !== "undefined" && wx.showShareMenu) {
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage", "shareTimeline"],
+    });
+  }
+}
+
 Page({
   data: {
     districtOptions,
@@ -34,12 +70,36 @@ Page({
     schoolQuery: "",
     searchResults: [],
     selectedSchool: {},
+    scoreMode: "after_exam",
     gradeRank: "",
     gradeTotal: "",
     rankingBasis: "same_track",
+    finalExamScore: "",
     firstMockScore: "",
     secondMockScore: "",
     estimateResult: null,
+  },
+
+  onLoad() {
+    enableShareMenu();
+  },
+
+  onShow() {
+    enableShareMenu();
+  },
+
+  onShareAppMessage() {
+    return {
+      title: "京考择校指南｜用校排先定位大学层次",
+      path: "/pages/school-rank-entry/index",
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: "京考择校指南｜高考择校定位",
+      query: "",
+    };
   },
 
   handleDistrictChange(event) {
@@ -91,12 +151,23 @@ Page({
     this.setData({ gradeTotal: event.detail.value, estimateResult: null });
   },
 
+  handleScoreModeSelect(event) {
+    this.setData({
+      scoreMode: event.currentTarget.dataset.mode,
+      estimateResult: null,
+    });
+  },
+
   handleFirstMockScoreInput(event) {
     this.setData({ firstMockScore: event.detail.value, estimateResult: null });
   },
 
   handleSecondMockScoreInput(event) {
     this.setData({ secondMockScore: event.detail.value, estimateResult: null });
+  },
+
+  handleFinalExamScoreInput(event) {
+    this.setData({ finalExamScore: event.detail.value, estimateResult: null });
   },
 
   handleRankingBasisSelect(event) {
@@ -132,12 +203,16 @@ Page({
     });
   },
 
-  buildPositionPayload({ selectedSchool, rank, total, rankingBasis, numericScore, estimateResult }) {
+  buildPositionPayload({ selectedSchool, rank, total, rankingBasis, numericScore, referenceScoreSource, estimateResult }) {
+    const referenceScoreSourceLabel = getReferenceScoreLabel(referenceScoreSource);
+    const scoreModeLabel = this.data.scoreMode === "after_exam" ? "已出分填报" : "未出分预测";
     return {
       source: "school_rank_entry",
-      baselineYear: 2025,
+      baselineYear: 2026,
       generatedAt: new Date().toISOString(),
       input: {
+        scoreMode: this.data.scoreMode,
+        scoreModeLabel,
         district: this.data.districtLabel,
         schoolId: selectedSchool.school_id,
         schoolName: selectedSchool.official_name,
@@ -151,7 +226,10 @@ Page({
         rankingBasisLabel: rankingBasisLabels[rankingBasis],
         subjectCombination: this.data.subjectCombination,
         score: numericScore,
-        referenceScoreSource: this.data.secondMockScore ? "second_mock" : (this.data.firstMockScore ? "first_mock" : "none"),
+        scoreDisplayText: numericScore === null ? "未填写" : `${referenceScoreSourceLabel} ${numericScore}`,
+        referenceScoreSource,
+        referenceScoreSourceLabel,
+        finalExamScore: this.data.finalExamScore ? Number(this.data.finalExamScore) : null,
         firstMockScore: this.data.firstMockScore ? Number(this.data.firstMockScore) : null,
         secondMockScore: this.data.secondMockScore ? Number(this.data.secondMockScore) : null,
       },
@@ -160,7 +238,7 @@ Page({
   },
 
   handleEstimate() {
-    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, subjectCombination, firstMockScore, secondMockScore } = this.data;
+    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, subjectCombination, finalExamScore, firstMockScore, secondMockScore, scoreMode } = this.data;
 
     if (!districtLabel) {
       wx.showToast({ title: "请先选择所在区", icon: "none" });
@@ -168,30 +246,35 @@ Page({
     }
 
     if (!selectedSchool.school_id) {
-      wx.showToast({ title: "请先选中高中", icon: "none" });
+      wx.showToast({ title: "请先确认就读高中", icon: "none" });
       return;
     }
 
     if (!gradeRank || !gradeTotal) {
-      wx.showToast({ title: "请补全年级排名和总人数", icon: "none" });
+      wx.showToast({ title: "请补全校排和年级规模", icon: "none" });
       return;
     }
 
     if (!subjectCombination) {
-      wx.showToast({ title: "请选择 3 门选科，用于生成院校推荐", icon: "none" });
+      wx.showToast({ title: "请选择 3 门选科，用于后续择校匹配", icon: "none" });
       return;
     }
 
     const rank = Number(gradeRank);
     const total = Number(gradeTotal);
     if (rank <= 0 || total <= 0 || rank > total) {
-      wx.showToast({ title: "校排和总人数不合理", icon: "none" });
+      wx.showToast({ title: "校排或年级规模不合理", icon: "none" });
       return;
     }
 
-    const numericScore = secondMockScore ? Number(secondMockScore) : (firstMockScore ? Number(firstMockScore) : null);
-    if ((firstMockScore && Number(firstMockScore) <= 0) || (secondMockScore && Number(secondMockScore) <= 0)) {
-      wx.showToast({ title: "一模/二模成绩不合理", icon: "none" });
+    const referenceScore = resolveReferenceScore({ scoreMode, finalExamScore, secondMockScore, firstMockScore });
+    const numericScore = referenceScore.value;
+    if (
+      (finalExamScore && Number(finalExamScore) <= 0) ||
+      (firstMockScore && Number(firstMockScore) <= 0) ||
+      (secondMockScore && Number(secondMockScore) <= 0)
+    ) {
+      wx.showToast({ title: "成绩分数不合理", icon: "none" });
       return;
     }
     const estimateResult = estimateCityRank({
@@ -208,6 +291,7 @@ Page({
       total,
       rankingBasis,
       numericScore,
+      referenceScoreSource: referenceScore.source,
       estimateResult,
     });
 
@@ -226,3 +310,6 @@ Page({
     });
   },
 });
+
+
+

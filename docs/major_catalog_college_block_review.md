@@ -6,7 +6,6 @@
 
 | 页码 | 院校代码 | 院校名称 | 目标专业组 | 状态 | 审核图 |
 | --- | --- | --- | --- | --- | --- |
-| 14 | 1052 | 首都师范大学 | 01组、06组、08组 | grid_block_not_matched |  |
 | 18 | 1032 | 北京师范大学 | 02组、03组、05组 | grid_crop_ocr_matched | output\major-catalog-review\college-blocks\p018_1032_m1.png |
 | 18 | 1038 | 对外经济贸易大学 | 02组 | grid_crop_ocr_matched | output\major-catalog-review\college-blocks\p018_1038_m1.png |
 | 18 | 1033 | 北京外国语大学 | 03组 | grid_crop_ocr_matched | output\major-catalog-review\college-blocks\p018_1033_m1.png |

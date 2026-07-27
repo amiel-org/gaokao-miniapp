@@ -1,17 +1,25 @@
 {
   "pages": [
     "pages/school-rank-entry/index",
-    "pages/position-result/index",
-    "pages/volunteer-preview/index"
+    "pages/position-result/index"
   ],
   "window": {
-    "navigationBarTitleText": "北京高考志愿助手",
-    "navigationBarBackgroundColor": "#f5efe4",
+    "navigationBarTitleText": "高考择校定位",
+    "navigationBarBackgroundColor": "#F7FBFF",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#f5efe4",
+    "backgroundColor": "#F7FBFF",
     "backgroundTextStyle": "light"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "subPackages": [
+    {
+      "root": "subpackages/volunteer",
+      "pages": [
+        "pages/major-preference/index",
+        "pages/volunteer-preview/index"
+      ]
+    }
+  ]
 }
