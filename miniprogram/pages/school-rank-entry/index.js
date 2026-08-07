@@ -65,12 +65,17 @@ Page({
     subjectCombinationLabel: "",
     subjectCombinationIndex: -1,
     subjectCombination: null,
+    gender: "unknown",
+    colorVision: "unknown",
+    foreignLanguage: "unknown",
+    acceptCooperative: "unknown",
     districtIndex: -1,
     districtLabel: "",
     schoolQuery: "",
     searchResults: [],
     selectedSchool: {},
     scoreMode: "after_exam",
+    knownCityRank: "",
     gradeRank: "",
     gradeTotal: "",
     rankingBasis: "same_track",
@@ -90,7 +95,7 @@ Page({
 
   onShareAppMessage() {
     return {
-      title: "京考择校指南｜用校排先定位大学层次",
+      title: "京考择校指南｜从位次到专业与院校方案",
       path: "/pages/school-rank-entry/index",
     };
   },
@@ -170,11 +175,22 @@ Page({
     this.setData({ finalExamScore: event.detail.value, estimateResult: null });
   },
 
+  handleKnownCityRankInput(event) {
+    this.setData({ knownCityRank: event.detail.value, estimateResult: null });
+  },
+
   handleRankingBasisSelect(event) {
     this.setData({
       rankingBasis: event.currentTarget.dataset.value,
       estimateResult: null,
     });
+  },
+
+  handleProfileSelect(event) {
+    const field = event.currentTarget.dataset.field;
+    const value = event.currentTarget.dataset.value;
+    if (["gender", "colorVision", "foreignLanguage", "acceptCooperative"].indexOf(field) < 0) return;
+    this.setData({ [field]: value, estimateResult: null });
   },
 
   handleSubjectToggle(event) {
@@ -203,28 +219,58 @@ Page({
     });
   },
 
-  buildPositionPayload({ selectedSchool, rank, total, rankingBasis, numericScore, referenceScoreSource, estimateResult }) {
+  buildPositionPayload({ selectedSchool, rank, total, rankingBasis, numericScore, referenceScoreSource, knownCityRank, estimateResult }) {
     const referenceScoreSourceLabel = getReferenceScoreLabel(referenceScoreSource);
     const scoreModeLabel = this.data.scoreMode === "after_exam" ? "已出分填报" : "未出分预测";
+    const school = selectedSchool || {};
     return {
       source: "school_rank_entry",
-      baselineYear: 2026,
+      schemaVersion: 2,
+      dataYears: {
+        rankMap: estimateResult.dataYear || null,
+        admissionReference: 2025,
+        targetMajorCatalog: 2026,
+        majorStrengthEvidence: 2022,
+      },
       generatedAt: new Date().toISOString(),
       input: {
         scoreMode: this.data.scoreMode,
         scoreModeLabel,
-        district: this.data.districtLabel,
-        schoolId: selectedSchool.school_id,
-        schoolName: selectedSchool.official_name,
-        schoolShortName: selectedSchool.short_name,
-        entityType: selectedSchool.entity_type,
-        entityTypeLabel: entityTypeLabel(selectedSchool.entity_type),
+        positionSource: estimateResult.positionSource,
+        positionSourceLabel: estimateResult.positionSourceLabel,
+        knownCityRank: knownCityRank || null,
+        district: this.data.districtLabel || "",
+        schoolId: school.school_id || "",
+        schoolName: school.official_name || "",
+        schoolShortName: school.short_name || "",
+        entityType: school.entity_type || "",
+        entityTypeLabel: school.entity_type ? entityTypeLabel(school.entity_type) : "-",
         gradeRank: rank,
         gradeTotal: total,
-        schoolPercentile: Math.round((rank / total) * 10000) / 100,
+        schoolPercentile: rank && total ? Math.round((rank / total) * 10000) / 100 : null,
         rankingBasis,
         rankingBasisLabel: rankingBasisLabels[rankingBasis],
         subjectCombination: this.data.subjectCombination,
+        studentProfile: {
+          gender: this.data.gender,
+          colorVision: this.data.colorVision,
+          foreignLanguage: this.data.foreignLanguage,
+          acceptCooperative: this.data.acceptCooperative === "yes"
+            ? true
+            : (this.data.acceptCooperative === "no" ? false : null),
+        },
+        studentProfileLabel: [
+          this.data.gender === "male" ? "男生" : (this.data.gender === "female" ? "女生" : "性别未填"),
+          this.data.colorVision === "normal" ? "色觉正常" : (
+            this.data.colorVision === "color_weak" ? "色弱" : (
+              this.data.colorVision === "color_blind" ? "色盲" : (
+                this.data.colorVision === "monochromacy" ? "单色识别异常" : "色觉未填"
+              )
+            )
+          ),
+          this.data.foreignLanguage === "english" ? "英语" : (this.data.foreignLanguage === "other" ? "非英语" : "外语未填"),
+          this.data.acceptCooperative === "yes" ? "接受中外合作" : (this.data.acceptCooperative === "no" ? "不接受中外合作" : "中外合作未定"),
+        ].join("｜"),
         score: numericScore,
         scoreDisplayText: numericScore === null ? "未填写" : `${referenceScoreSourceLabel} ${numericScore}`,
         referenceScoreSource,
@@ -238,41 +284,51 @@ Page({
   },
 
   handleEstimate() {
-    const { districtLabel, selectedSchool, gradeRank, gradeTotal, rankingBasis, subjectCombination, finalExamScore, firstMockScore, secondMockScore, scoreMode } = this.data;
-
-    if (!districtLabel) {
-      wx.showToast({ title: "请先选择所在区", icon: "none" });
-      return;
-    }
-
-    if (!selectedSchool.school_id) {
-      wx.showToast({ title: "请先确认就读高中", icon: "none" });
-      return;
-    }
-
-    if (!gradeRank || !gradeTotal) {
-      wx.showToast({ title: "请补全校排和年级规模", icon: "none" });
-      return;
-    }
+    const { districtLabel, selectedSchool, knownCityRank, gradeRank, gradeTotal, rankingBasis, subjectCombination, finalExamScore, firstMockScore, secondMockScore, scoreMode } = this.data;
 
     if (!subjectCombination) {
       wx.showToast({ title: "请选择 3 门选科，用于后续择校匹配", icon: "none" });
       return;
     }
 
-    const rank = Number(gradeRank);
-    const total = Number(gradeTotal);
-    if (rank <= 0 || total <= 0 || rank > total) {
-      wx.showToast({ title: "校排或年级规模不合理", icon: "none" });
-      return;
+    const isAfterExam = scoreMode === "after_exam";
+    const numericKnownCityRank = knownCityRank ? Number(knownCityRank) : null;
+    const rank = gradeRank ? Number(gradeRank) : null;
+    const total = gradeTotal ? Number(gradeTotal) : null;
+    if (isAfterExam) {
+      if (!knownCityRank && !finalExamScore) {
+        wx.showToast({ title: "请填写北京市位次或最终成绩", icon: "none" });
+        return;
+      }
+      if (knownCityRank && (!Number.isFinite(numericKnownCityRank) || numericKnownCityRank <= 0 || numericKnownCityRank > 100000)) {
+        wx.showToast({ title: "北京市位次不合理", icon: "none" });
+        return;
+      }
+    } else {
+      if (!districtLabel) {
+        wx.showToast({ title: "请先选择所在区", icon: "none" });
+        return;
+      }
+      if (!selectedSchool.school_id) {
+        wx.showToast({ title: "请先确认就读高中", icon: "none" });
+        return;
+      }
+      if (!gradeRank || !gradeTotal) {
+        wx.showToast({ title: "请补全校排和年级规模", icon: "none" });
+        return;
+      }
+      if (rank <= 0 || total <= 0 || rank > total) {
+        wx.showToast({ title: "校排或年级规模不合理", icon: "none" });
+        return;
+      }
     }
 
     const referenceScore = resolveReferenceScore({ scoreMode, finalExamScore, secondMockScore, firstMockScore });
     const numericScore = referenceScore.value;
     if (
-      (finalExamScore && Number(finalExamScore) <= 0) ||
-      (firstMockScore && Number(firstMockScore) <= 0) ||
-      (secondMockScore && Number(secondMockScore) <= 0)
+      (finalExamScore && (Number(finalExamScore) <= 0 || Number(finalExamScore) > 750)) ||
+      (firstMockScore && (Number(firstMockScore) <= 0 || Number(firstMockScore) > 750)) ||
+      (secondMockScore && (Number(secondMockScore) <= 0 || Number(secondMockScore) > 750))
     ) {
       wx.showToast({ title: "成绩分数不合理", icon: "none" });
       return;
@@ -283,6 +339,8 @@ Page({
       gradeTotal: total,
       rankingBasis,
       score: numericScore,
+      referenceScoreSource: referenceScore.source,
+      knownCityRank: numericKnownCityRank,
     });
 
     const payload = this.buildPositionPayload({
@@ -292,6 +350,7 @@ Page({
       rankingBasis,
       numericScore,
       referenceScoreSource: referenceScore.source,
+      knownCityRank: numericKnownCityRank,
       estimateResult,
     });
 

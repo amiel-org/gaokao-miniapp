@@ -10,7 +10,7 @@
       <image class="hero-art" src="/assets/hero/hero-gold-result.jpg" mode="aspectFill"></image>
       <view class="hero-content">
         <view class="gold-result-label">定位结果</view>
-        <view class="result-school">{{payload.input.schoolShortName}}</view>
+        <view class="result-school">{{positionHeadline}}</view>
         <view class="result-summary">北京市位次参考已生成，金榜有位，步步登高</view>
         <view class="result-disclaimer">先看清位置，再确定专业方向与院校梯度。</view>
       </view>
@@ -19,14 +19,14 @@
     <view class="rank-plate">
       <view class="plate-label">位次参考区间</view>
       <view class="rank-range">{{rangeDisplay}}</view>
-      <view class="plate-meta">{{payload.input.district}}｜{{payload.result.entityType}}｜{{payload.input.rankingBasisLabel}}</view>
+      <view class="plate-meta">{{basisMeta}}</view>
     </view>
 
     <view class="insight-section">
       <view class="insight-title">定位解读</view>
       <view class="insight-copy">{{payload.result.bandText}}</view>
       <view class="metric-grid">
-        <view class="metric-item">
+        <view wx:if="{{payload.input.schoolPercentile}}" class="metric-item">
           <text class="metric-label">校内百分位</text>
           <text class="metric-value">前 {{payload.input.schoolPercentile}}%</text>
         </view>
@@ -34,9 +34,13 @@
           <text class="metric-label">置信度</text>
           <text class="metric-value confidence {{confidenceTone}}">{{payload.result.confidence}}</text>
         </view>
-        <view class="metric-item">
+        <view wx:if="{{payload.result.parameterSnapshot.tierName}}" class="metric-item">
           <text class="metric-label">参数梯队</text>
           <text class="metric-value">{{payload.result.parameterSnapshot.tierName || '-'}}</text>
+        </view>
+        <view wx:else class="metric-item">
+          <text class="metric-label">位次来源</text>
+          <text class="metric-value">{{payload.result.positionSourceLabel}}</text>
         </view>
       </view>
     </view>
@@ -49,11 +53,15 @@
     <view class="detail-section">
       <view class="detail-title">定位依据</view>
       <view class="detail-row"><text class="detail-key">场景</text><text class="detail-value">{{payload.input.scoreModeLabel || '已出分填报'}}</text></view>
-      <view class="detail-row"><text class="detail-key">学校</text><text class="detail-value">{{payload.input.schoolName}}</text></view>
-      <view class="detail-row"><text class="detail-key">校排</text><text class="detail-value">第 {{payload.input.gradeRank}} / {{payload.input.gradeTotal}} 名</text></view>
+      <view class="detail-row"><text class="detail-key">定位方式</text><text class="detail-value">{{payload.result.positionSourceLabel}}</text></view>
+      <view wx:if="{{payload.input.knownCityRank}}" class="detail-row"><text class="detail-key">官方位次</text><text class="detail-value">{{payload.input.knownCityRank}}</text></view>
+      <view wx:if="{{payload.input.schoolName}}" class="detail-row"><text class="detail-key">学校</text><text class="detail-value">{{payload.input.schoolName}}</text></view>
+      <view wx:if="{{payload.input.gradeRank && payload.input.gradeTotal}}" class="detail-row"><text class="detail-key">校排</text><text class="detail-value">第 {{payload.input.gradeRank}} / {{payload.input.gradeTotal}} 名</text></view>
       <view class="detail-row"><text class="detail-key">参考成绩</text><text class="detail-value">{{payload.input.scoreDisplayText || '未填写'}}</text></view>
       <view class="detail-row"><text class="detail-key">选科</text><text class="detail-value">{{payload.input.subjectCombination.label}}</text></view>
-      <view class="detail-row"><text class="detail-key">口径</text><text class="detail-value">{{payload.input.rankingBasisLabel}}</text></view>
+      <view wx:if="{{payload.input.studentProfileLabel}}" class="detail-row"><text class="detail-key">限制条件</text><text class="detail-value">{{payload.input.studentProfileLabel}}</text></view>
+      <view wx:if="{{payload.input.rankingBasisLabel && payload.input.gradeRank}}" class="detail-row"><text class="detail-key">校排口径</text><text class="detail-value">{{payload.input.rankingBasisLabel}}</text></view>
+      <view class="detail-row"><text class="detail-key">数据年份</text><text class="detail-value">位次 {{payload.result.dataYear || '-'}}｜录取参考 2025｜招生专业 2026</text></view>
     </view>
 
     <view class="next-section">

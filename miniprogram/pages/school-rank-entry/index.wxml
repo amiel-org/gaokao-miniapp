@@ -8,9 +8,9 @@
         先定位置，再定学校。重点支持已出分后的填报，也兼容未出分前的预测。
       </view>
       <view class="hero-flow">
-        <view class="flow-step">确认高中</view>
+        <view class="flow-step">{{scoreMode === 'after_exam' ? '官方位次' : '确认高中'}}</view>
         <view class="flow-line"></view>
-        <view class="flow-step">校排定位</view>
+        <view class="flow-step">{{scoreMode === 'after_exam' ? '成绩定位' : '校排定位'}}</view>
         <view class="flow-line"></view>
         <view class="flow-step">择校初筛</view>
       </view>
@@ -36,9 +36,40 @@
             未出分预测
           </view>
         </view>
-        <view class="field-tip">默认建议用“已出分填报”；最终成绩是优先参考项，不是硬性必填。</view>
+        <view class="field-tip">已出分时优先填写考试院公布的北京市位次；未出分时再使用校排预测。</view>
       </view>
 
+      <view wx:if="{{scoreMode === 'after_exam'}}" class="field">
+        <view class="field-head">
+          <text class="field-label">北京市位次</text>
+          <text class="optional">优先填写</text>
+        </view>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="例如 7804"
+          value="{{knownCityRank}}"
+          bindinput="handleKnownCityRankInput"
+        />
+        <view class="field-tip">填写本人官方位次后直接采用，不再经过高中或校排参数调整。</view>
+      </view>
+
+      <view wx:if="{{scoreMode === 'after_exam'}}" class="field">
+        <view class="field-head">
+          <text class="field-label">最终成绩</text>
+          <text class="optional">未填位次时填写</text>
+        </view>
+        <input
+          class="field-input"
+          type="number"
+          placeholder="例如 645"
+          value="{{finalExamScore}}"
+          bindinput="handleFinalExamScoreInput"
+        />
+        <view class="field-tip">使用北京教育考试院 2026 一分一段生成同分位次区间；已知本人确切位次时仍优先填写位次。</view>
+      </view>
+
+      <block wx:if="{{scoreMode === 'before_exam'}}">
       <view class="field">
         <view class="field-head">
           <text class="field-label">所在区</text>
@@ -49,6 +80,7 @@
             {{districtLabel || '选择学校所在区'}}
           </view>
         </picker>
+        <view class="field-tip">当前校排预测覆盖东城、西城、朝阳、海淀、丰台、石景山、通州和大兴；其他区请在已出分后直接填写官方位次或最终成绩。</view>
       </view>
 
       <view class="field">
@@ -140,6 +172,7 @@
           </view>
         </view>
       </view>
+      </block>
 
       <view class="field">
         <view class="field-head">
@@ -165,17 +198,48 @@
 
       <view class="field">
         <view class="field-head">
-          <text class="field-label">最终成绩</text>
-          <text class="optional">{{scoreMode === 'after_exam' ? '建议填写' : '可选'}}</text>
+          <text class="field-label">报考限制条件</text>
+          <text class="optional">建议准确填写</text>
         </view>
-        <input
-          class="field-input"
-          type="number"
-          placeholder="例如 645"
-          value="{{finalExamScore}}"
-          bindinput="handleFinalExamScoreInput"
-        />
-        <view class="field-tip">如果已经出分，建议填最终成绩；不填也能先按校排定位。</view>
+        <view class="subject-help">用于排除不符合性别、色觉、外语和培养类型要求的专业，不参与身份展示。</view>
+
+        <view class="profile-control">
+          <view class="mock-score-label">性别</view>
+          <view class="segmented">
+            <view class="segment {{gender === 'male' ? 'active' : ''}}" data-field="gender" data-value="male" bindtap="handleProfileSelect">男生</view>
+            <view class="segment {{gender === 'female' ? 'active' : ''}}" data-field="gender" data-value="female" bindtap="handleProfileSelect">女生</view>
+            <view class="segment {{gender === 'unknown' ? 'active' : ''}}" data-field="gender" data-value="unknown" bindtap="handleProfileSelect">暂不填</view>
+          </view>
+        </view>
+
+        <view class="profile-control">
+          <view class="mock-score-label">色觉情况</view>
+          <view class="profile-grid">
+            <view class="profile-chip {{colorVision === 'normal' ? 'active' : ''}}" data-field="colorVision" data-value="normal" bindtap="handleProfileSelect">正常</view>
+            <view class="profile-chip {{colorVision === 'color_weak' ? 'active' : ''}}" data-field="colorVision" data-value="color_weak" bindtap="handleProfileSelect">色弱</view>
+            <view class="profile-chip {{colorVision === 'color_blind' ? 'active' : ''}}" data-field="colorVision" data-value="color_blind" bindtap="handleProfileSelect">色盲</view>
+            <view class="profile-chip {{colorVision === 'monochromacy' ? 'active' : ''}}" data-field="colorVision" data-value="monochromacy" bindtap="handleProfileSelect">单色识别异常</view>
+            <view class="profile-chip {{colorVision === 'unknown' ? 'active' : ''}}" data-field="colorVision" data-value="unknown" bindtap="handleProfileSelect">暂不确定</view>
+          </view>
+        </view>
+
+        <view class="profile-control">
+          <view class="mock-score-label">高考外语</view>
+          <view class="segmented">
+            <view class="segment {{foreignLanguage === 'english' ? 'active' : ''}}" data-field="foreignLanguage" data-value="english" bindtap="handleProfileSelect">英语</view>
+            <view class="segment {{foreignLanguage === 'other' ? 'active' : ''}}" data-field="foreignLanguage" data-value="other" bindtap="handleProfileSelect">其他语种</view>
+            <view class="segment {{foreignLanguage === 'unknown' ? 'active' : ''}}" data-field="foreignLanguage" data-value="unknown" bindtap="handleProfileSelect">暂不填</view>
+          </view>
+        </view>
+
+        <view class="profile-control">
+          <view class="mock-score-label">中外合作办学</view>
+          <view class="segmented">
+            <view class="segment {{acceptCooperative === 'yes' ? 'active' : ''}}" data-field="acceptCooperative" data-value="yes" bindtap="handleProfileSelect">接受</view>
+            <view class="segment {{acceptCooperative === 'no' ? 'active' : ''}}" data-field="acceptCooperative" data-value="no" bindtap="handleProfileSelect">不接受</view>
+            <view class="segment {{acceptCooperative === 'unknown' ? 'active' : ''}}" data-field="acceptCooperative" data-value="unknown" bindtap="handleProfileSelect">暂不确定</view>
+          </view>
+        </view>
       </view>
 
       <view wx:if="{{scoreMode === 'before_exam'}}" class="field">
@@ -205,7 +269,7 @@
             />
           </view>
         </view>
-        <view class="field-tip">可用于交叉校准；暂未出分也可以先完成校排定位。</view>
+        <view class="field-tip">仅记录为预测背景，不直接套用高考一分一段；当前校排模型尚待真实样本回测。</view>
       </view>
     </view>
 
@@ -217,7 +281,7 @@
   <view class="info-panel">
     <view class="info-title">为什么先做定位？</view>
     <view class="info-copy">
-      高考择校的第一步不是罗列学校，而是确认所处位置。系统先将校排转换为北京市位次锚点，再结合选科、投档线和专业组数据形成冲稳保梯度。
+      高考择校的第一步不是罗列学校，而是确认所处位置。已出分时直接使用北京市位次；未出分时才用校排生成预测区间，再结合选科、历史投档线和当年专业组形成冲稳保梯度。
     </view>
   </view>
 </view>

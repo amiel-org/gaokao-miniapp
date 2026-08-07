@@ -22,6 +22,7 @@ function uniq(values) {
 const schoolLibrary = load('school-library');
 const estimationParams = load('school-estimation-params');
 const rankMap = load('beijing-rank-map');
+const rankMap2026 = load('beijing-rank-map-2026');
 const subjectCombinations = load('subject-combinations');
 const admissionGroups = load('college-admission-groups');
 const localPrograms = load('beijing-local-college-programs');
@@ -35,6 +36,10 @@ const majorRecommendation = require(path.join(root, 'miniprogram', 'subpackages'
 assert(Array.isArray(schoolLibrary) && schoolLibrary.length >= 80, `school-library count too small: ${schoolLibrary.length}`);
 assert(Array.isArray(estimationParams) && estimationParams.length === schoolLibrary.length, `estimation params count ${estimationParams.length} != schools ${schoolLibrary.length}`);
 assert(Object.keys(rankMap).length > 0, 'beijing-rank-map is empty');
+assert(rankMap2026.meta && rankMap2026.meta.year === 2026, '2026 rank map metadata missing');
+assert(rankMap2026.meta.publisher === '北京教育考试院', '2026 rank map should use official publisher');
+assert(Object.keys(rankMap2026.ranks || {}).length === 313, `2026 rank map should contain 313 exact score rows, got ${Object.keys(rankMap2026.ranks || {}).length}`);
+assert(rankMap2026.ranks['620'] === 8112 && rankMap2026.ranks['621'] === 7903, '2026 rank map 620/621 official points mismatch');
 assert(Array.isArray(subjectCombinations) && subjectCombinations.length === 20, `subject combinations should be 20, got ${subjectCombinations.length}`);
 assert(Array.isArray(admissionGroups) && admissionGroups.length > 0, 'college-admission-groups is empty');
 assert(Array.isArray(localPrograms) && localPrograms.length > 0, 'beijing-local-college-programs is empty');
@@ -140,6 +145,25 @@ const levels = uniq(coverage.map((item) => item.collegeLevel));
   assert(levels.some((item) => item.indexOf(level) >= 0), `coverage missing level ${level}`);
 });
 const coreOrdinaryLevels = ['985/211/双一流', '211/双一流', '双一流/普通一本', '普通一本', '普通二本'];
+const targetExportPath = path.join(root, 'output', 'beijing_colleges_second_tier_or_above.tsv');
+assert(fs.existsSync(targetExportPath), 'beijing target college TSV export is missing');
+const targetExportLines = fs.readFileSync(targetExportPath, 'utf8').trim().split(/\r?\n/);
+assert(targetExportLines[0] === '院校\t层次\t录取类别', 'beijing target college TSV header mismatch');
+const targetExportNames = targetExportLines.slice(1).map((line) => line.split('\t')[0]);
+const currentTargetNames = coverage.filter((item) => (
+  item.admissionCategory === 'ordinary_batch'
+  && coreOrdinaryLevels.includes(item.collegeLevel)
+)).map((item) => item.name);
+assert(targetExportNames.length === 46, `beijing target college TSV should contain 46 colleges, got ${targetExportNames.length}`);
+assert(
+  targetExportNames.length === new Set(targetExportNames).size,
+  'beijing target college TSV contains duplicate colleges',
+);
+assert(
+  currentTargetNames.every((name) => targetExportNames.includes(name))
+    && targetExportNames.every((name) => currentTargetNames.includes(name)),
+  'beijing target college TSV does not match current recommendation scope',
+);
 const missingCoreOrdinary = coverage.filter((item) => (
   !allRecommendationNames.includes(item.name)
   && item.admissionCategory === 'ordinary_batch'
@@ -151,6 +175,7 @@ const summary = {
   schools: schoolLibrary.length,
   estimationParams: estimationParams.length,
   scoreRankPoints: Object.keys(rankMap).length,
+  scoreRankPoints2026: Object.keys(rankMap2026.ranks).length,
   subjectCombinations: subjectCombinations.length,
   officialAdmissionGroups: admissionGroups.length,
   officialGroupColleges: officialCollegeNames.length,
@@ -165,6 +190,7 @@ const summary = {
   firstlookProbeGroups: firstlookProbeGroups.length,
   majorDirections: majorDirections.length,
   majorStrengthEvidenceColleges: strengthEvidence.evidenceCollegeCount,
+  targetCollegeExport: targetExportNames.length,
   coverageLevels: levels,
 };
 console.log(JSON.stringify(summary, null, 2));

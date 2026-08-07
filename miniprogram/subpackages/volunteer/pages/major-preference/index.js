@@ -3,6 +3,10 @@ const {
   majorDirections,
   normalizePreference,
 } = require("../../utils/major-recommendation.js");
+const {
+  isCurrentPositionPayload,
+  removeStalePositionPayload,
+} = require("../../../../utils/position-payload.js");
 
 function enableShareMenu() {
   if (typeof wx !== "undefined" && wx.showShareMenu) {
@@ -54,7 +58,8 @@ Page({
       payload = null;
       storedPreference = null;
     }
-    if (!payload || !payload.result) {
+    if (!isCurrentPositionPayload(payload)) {
+      removeStalePositionPayload();
       this.setData({ hasResult: false });
       return;
     }

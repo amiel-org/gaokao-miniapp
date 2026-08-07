@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "checkedAt": "2026-08-07T05:36:31.819Z",
+  "viewportWidth": 375,
+  "normalResult": {
+    "rankRange": "7904",
+    "positionSource": "official_city_rank",
+    "positionSourceLabel": "北京市官方位次",
+    "dataYear": 2026
+  },
+  "normalRecommendation": {
+    "sections": [
+      {
+        "level": "冲",
+        "count": 3,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      },
+      {
+        "level": "稳",
+        "count": 0,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      },
+      {
+        "level": "保",
+        "count": 3,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      }
+    ],
+    "cardCount": 6,
+    "firstRecommendation": {
+      "collegeName": "华北电力大学(北京)",
+      "targetGroupName": "04组",
+      "referenceGroupText": "03组",
+      "professionalFidelityBand": "高",
+      "hasStrengthEvidence": true
+    }
+  },
+  "emptyRecommendation": {
+    "sections": [
+      {
+        "level": "冲",
+        "count": 0,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      },
+      {
+        "level": "稳",
+        "count": 0,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      },
+      {
+        "level": "保",
+        "count": 0,
+        "emptyText": "当前位次档内没有同时满足选科、专业方向和可靠历史映射的候选，不跨档补位。"
+      }
+    ],
+    "cardCount": 0,
+    "firstRecommendation": null
+  },
+  "consoleErrorCount": 0,
+  "exceptionCount": 0
+}

@@ -350,6 +350,37 @@ button::after {
   color: #7890a4;
 }
 
+.profile-control {
+  margin-top: 20rpx;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.profile-chip {
+  flex: 0 0 calc((100% - 12rpx) / 2);
+  min-height: 72rpx;
+  padding: 18rpx 12rpx;
+  border-radius: 18rpx;
+  border: 1rpx solid rgba(78, 124, 164, 0.14);
+  background: #ffffff;
+  color: #496278;
+  font-size: 23rpx;
+  font-weight: 700;
+  line-height: 36rpx;
+  text-align: center;
+}
+
+.profile-chip.active {
+  border-color: transparent;
+  background: linear-gradient(135deg, #1687d9, #17a9b5);
+  color: #ffffff;
+  box-shadow: 0 12rpx 24rpx rgba(22, 135, 217, 0.18);
+}
+
 .cta-area {
   margin-top: 22rpx;
 }

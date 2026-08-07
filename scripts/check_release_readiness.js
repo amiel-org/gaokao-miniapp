@@ -80,10 +80,17 @@ function buildSamplePayload() {
     gradeTotal: total,
     rankingBasis: 'same_track',
     score: 620,
+    referenceScoreSource: 'second_mock',
   });
   return {
     source: 'release_readiness_check',
-    baselineYear: 2026,
+    schemaVersion: 2,
+    dataYears: {
+      rankMap: result.dataYear,
+      admissionReference: 2025,
+      targetMajorCatalog: 2026,
+      majorStrengthEvidence: 2022,
+    },
     generatedAt: new Date('2026-05-19T00:00:00+08:00').toISOString(),
     input: {
       district: selectedSchool.district,
@@ -100,6 +107,15 @@ function buildSamplePayload() {
       subjectCombination,
       score: 620,
       referenceScoreSource: 'second_mock',
+      positionSource: result.positionSource,
+      positionSourceLabel: result.positionSourceLabel,
+      studentProfile: {
+        gender: 'unknown',
+        colorVision: 'normal',
+        foreignLanguage: 'english',
+        acceptCooperative: false,
+      },
+      studentProfileLabel: '性别未填｜色觉正常｜英语｜不接受中外合作',
       firstMockScore: null,
       secondMockScore: 620,
     },
@@ -128,7 +144,7 @@ assert(appJson.window && appJson.window.navigationBarTitleText === '高考择校
 const expectedPageSpecs = {
   'pages/school-rank-entry/index': {
     navTitle: '高考择校定位',
-    phrases: ['鱼跃龙门', '高考择校定位', '确认高中', '校排定位', '择校初筛', '生成择校定位', '为什么先做定位？'],
+    phrases: ['鱼跃龙门', '高考择校定位', '北京市位次', '确认高中', '校排定位', '当前校排预测覆盖', '报考限制条件', '择校初筛', '生成择校定位', '为什么先做定位？'],
   },
   'pages/position-result/index': {
     navTitle: '位次参考',
@@ -152,7 +168,6 @@ Object.entries(expectedPageSpecs).forEach(([page, spec]) => {
   assert(pageJson.navigationBarTitleText === spec.navTitle, `${page} nav title mismatch: ${pageJson.navigationBarTitleText}`);
   const wxml = read(`miniprogram/${page}.wxml`);
   spec.phrases.forEach((phrase) => assert(wxml.includes(phrase), `${page}.wxml missing phrase: ${phrase}`));
-  assert(!/2025年|2025 数据|2025数据/.test(wxml), `${page}.wxml should not expose 2025 wording`);
   extractImageSrcs(wxml).forEach((src) => {
     if (!src.startsWith('/')) return;
     const rel = 'miniprogram' + src.replace(/\//g, path.sep);
@@ -173,13 +188,15 @@ heroAssets.forEach((rel) => {
 });
 
 const majorStatus = load('miniprogram/subpackages/volunteer/data/major-catalog-status.js');
-assert(majorStatus.userFacingStatus.includes('2026 数据基线'), 'userFacingStatus should say 2026 数据基线');
-assert(!majorStatus.userFacingStatus.includes('2025'), 'userFacingStatus should not expose 2025');
+assert(majorStatus.year === 2026, 'major catalog should identify its 2026 data year');
+assert(majorStatus.manualVerifiedSummary.verifiedGroupCount === 292, 'verified 2026 major group count mismatch');
 assert(majorStatus.subjectRequirementReference && majorStatus.subjectRequirementReference.status === 'staging_reference_available', 'subject requirement reference status missing');
 
 const majorDirections = load('miniprogram/subpackages/volunteer/data/major-directions.js');
+const rankMap2026 = load('miniprogram/data/beijing-rank-map-2026.js');
 const strengthEvidence = load('miniprogram/subpackages/volunteer/data/beijing-major-strength-evidence.js');
 assert(Array.isArray(majorDirections) && majorDirections.length >= 15, 'major directions coverage too small');
+assert(rankMap2026.meta.year === 2026 && rankMap2026.ranks['620'] === 8112, 'official 2026 score-rank map missing');
 assert(strengthEvidence.source && strengthEvidence.source.publisher.includes('教育部'), 'major strength official source missing');
 assert(strengthEvidence.targetCollegeCount === 46, `major strength target scope should be 46, got ${strengthEvidence.targetCollegeCount}`);
 assert(strengthEvidence.evidenceCollegeCount >= 25, 'major strength evidence college coverage too small');
@@ -235,19 +252,44 @@ assert(
   volunteerPage.data.admissionPlanStatus.text.includes('北京教育考试院') && volunteerPage.data.admissionPlanStatus.text.includes('2026'),
   'admission plan status should name official 2026 source',
 );
+const recommendationEngine = load('miniprogram/subpackages/volunteer/utils/volunteer-recommendation-engine.js');
+let recommendationItemCount = 0;
 volunteerPage.data.recommendations.forEach((section) => {
   assert(['冲', '稳', '保'].includes(section.level), `invalid recommendation level ${section.level}`);
-  assert(section.items.length > 0, `${section.level} recommendation has no items`);
   section.items.forEach((rec) => {
+    recommendationItemCount += 1;
     assert(rec.collegeName, `${section.level} rec missing collegeName`);
     assert(Array.isArray(rec.reasonLines) && rec.reasonLines.length >= 5, `${rec.collegeName} missing recommendation reasons`);
-    assert(Array.isArray(rec.recommendedMajors) && rec.recommendedMajors.length >= 3, `${rec.collegeName} has too few recommended majors`);
+    assert(Array.isArray(rec.recommendedMajors) && rec.recommendedMajors.length >= 1, `${rec.collegeName} has no recommended majors`);
     assert(rec.hasMajorMatch === true, `${rec.collegeName} should match selected major directions in major-first mode`);
     assert(rec.matchedMajors.length > 0, `${rec.collegeName} missing matched majors`);
     assert(rec.sourceLabel, `${rec.collegeName} missing sourceLabel`);
-    assert(rec.riskText && rec.riskText.includes('官方') && rec.riskText.includes('不等同于目标专业录取保证'), `${rec.collegeName} risk text should distinguish group and major admission`);
+    assert(rec.targetYear === 2026 && rec.referenceYear === 2025, `${rec.collegeName} data years should be explicit`);
+    assert(rec.referenceGroupText && rec.targetGroupName, `${rec.collegeName} cross-year entities should be separate`);
+    assert(rec.riskText && rec.riskText.includes('未按相同组号直接跨年拼接'), `${rec.collegeName} risk text should reject direct group-code joins`);
+    assert(
+      recommendationEngine.isRankWithinLevel(rec.minRank, section.level, samplePayload.result.minRank, samplePayload.result.maxRank),
+      `${rec.collegeName} escaped ${section.level} rank window`,
+    );
   });
 });
+
+Object.keys(expectedPageSpecs).forEach((page) => {
+  const pageConfig = capturePage(`${page}.js`, null, null);
+  try {
+    assert(typeof pageConfig.onShareAppMessage === 'function', `${page} share handler missing`);
+    assert(typeof pageConfig.onShareTimeline === 'function', `${page} timeline share handler missing`);
+    const appMessage = pageConfig.onShareAppMessage.call(pageConfig);
+    const timeline = pageConfig.onShareTimeline.call(pageConfig);
+    assert(appMessage && appMessage.title, `${page} share title missing`);
+    assert(appMessage.path === '/pages/school-rank-entry/index', `${page} must share the privacy-safe entry path`);
+    assert(!/[?&](rank|score|school|profile|payload)=/i.test(appMessage.path), `${page} share path leaked result data`);
+    assert(timeline && timeline.title && !timeline.query, `${page} timeline share must not carry result data`);
+  } finally {
+    pageConfig.__restoreGlobals();
+  }
+});
+assert(recommendationItemCount > 0, 'sample recommendation should return at least one reliable item');
 
 const sourceLabels = volunteerPage.data.recommendations.flatMap((section) => section.items.map((item) => item.sourceLabel));
 assert(sourceLabels.some((label) => label.includes('北京教育考试院') || label.includes('本地院校专业方向库') || label.includes('已核验')), 'recommendation source labels are too weak');

@@ -8,13 +8,15 @@ PDF before extracting/validating majors.
 
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-COVERAGE_JS = ROOT / "miniprogram/data/beijing-undergraduate-school-coverage.js"
-ADMISSION_GROUPS_JS = ROOT / "miniprogram/data/college-admission-groups.js"
+COVERAGE_JS = ROOT / "miniprogram/subpackages/volunteer/data/beijing-undergraduate-school-coverage.js"
+ADMISSION_GROUPS_JS = ROOT / "miniprogram/subpackages/volunteer/data/college-admission-groups.js"
 OUT_JSON = ROOT / "data/staging/major_catalog_ocr/bjeea_2026_target_colleges.json"
+OUT_TSV = ROOT / "output/beijing_colleges_second_tier_or_above.tsv"
 
 CORE_LEVELS = {"985/211/双一流", "211/双一流", "双一流/普通一本", "普通一本", "普通二本"}
 
@@ -39,7 +41,7 @@ PDF_CONFIRMED_CODES = {
 def load_js_module(path: Path):
     text = path.read_text(encoding="utf-8-sig").strip()
     if text.startswith("module.exports"):
-        text = text.replace("module.exports =", "", 1).strip()
+        text = text.split("=", 1)[1].strip()
     if text.endswith(";"):
         text = text[:-1]
     return json.loads(text)
@@ -96,9 +98,18 @@ def main() -> None:
         + "\n",
         encoding="utf-8",
     )
+    OUT_TSV.parent.mkdir(parents=True, exist_ok=True)
+    with OUT_TSV.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
+        writer.writerow(["院校", "层次", "录取类别"])
+        writer.writerows(
+            [item["collegeName"], item["collegeLevel"], item["admissionCategory"]]
+            for item in targets
+        )
     print(f"target_count={len(targets)}")
     print(f"missing_code_count={len(missing_codes)}")
     print(f"out={OUT_JSON}")
+    print(f"tsv={OUT_TSV}")
 
 
 if __name__ == "__main__":

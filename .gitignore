@@ -45,6 +45,8 @@ output/imagegen/*
 output/chrome-user-data/
 output/hero_test/
 output/share-fix-*
+output/pre_release_preview_*
+output/qa-*.png
 
 # Temporary OCR / crop working files
 tmp/
