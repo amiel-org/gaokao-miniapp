@@ -53,7 +53,11 @@ Page({
     confidenceTone: "tone-low",
     nextSteps: [],
     positionHeadline: "北京市位次",
+    resultHeadline: "位次参考区间",
+    resultSummary: "官方位次已确认，接下来比较专业与院校",
     basisMeta: "-",
+    isPlanning: false,
+    planningGuide: null,
   },
 
   onLoad() {
@@ -87,8 +91,17 @@ Page({
       result.dataYear ? `${result.dataYear} 数据口径` : "",
     ].filter(Boolean).join("｜") || "-";
 
+    const isPlanning = result.positionSource === "school_rank_prediction" || result.positionSource === "mock_school_rank_prediction";
     this.setData({
       hasResult: true,
+      isPlanning,
+      resultHeadline: isPlanning ? "校排推演区间" : "位次参考区间",
+      resultSummary: isPlanning ? "提前规划已生成：先看选择范围，再逐步收窄" : "官方位次已确认，接下来比较专业与院校",
+      planningGuide: isPlanning ? {
+        title: "这是一份提前规划区间",
+        copy: "区间用于比较院校层次和专业要求，不是官方位次或录取承诺。可以收藏候选，但不要把最低位次当成保底依据。",
+        steps: ["先筛掉选科、身体条件和培养方式不符合的专业组。", "按专业接受度建立候选池，保留不同位次层次。", "出分后使用官方位次重新生成方案，不沿用当前档位。"],
+      } : null,
       payload,
       rangeDisplay,
       confidenceTone: confidenceTone(result.confidence),

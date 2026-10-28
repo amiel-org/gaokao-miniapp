@@ -228,6 +228,7 @@ function normalizeStudentProfile(input) {
 function tagConflictsWithProfile(tag, profile) {
   const text = String(tag || "");
   if (profile.gender === "male" && text.indexOf("只招女生") >= 0) return true;
+  if (profile.gender === "female" && text.indexOf("只招男生") >= 0) return true;
   if (profile.colorVision === "color_weak" && (
     text.indexOf("不招色弱") >= 0 || text.indexOf("色弱、色盲") >= 0
   )) return true;
@@ -235,7 +236,8 @@ function tagConflictsWithProfile(tag, profile) {
     text.indexOf("不招色盲") >= 0 || text.indexOf("色弱、色盲") >= 0
   )) return true;
   if (profile.colorVision === "monochromacy" && (
-    text.indexOf("单色识别") >= 0 || text.indexOf("不招色盲") >= 0 || text.indexOf("色弱、色盲") >= 0
+    text.indexOf("单色识别") >= 0 || text.indexOf("不招色盲") >= 0
+    || text.indexOf("不招色弱") >= 0 || text.indexOf("色弱、色盲") >= 0
   )) return true;
   if (profile.foreignLanguage === "other" && text.indexOf("只招英语") >= 0) return true;
   return false;
@@ -477,14 +479,14 @@ function isRankWithinLevel(rank, level, minRank, maxRank) {
 
 function levelTitle(level) {
   if (level === "冲") return "冲刺层";
-  if (level === "稳") return "稳妥层";
-  return "保底层";
+  if (level === "稳") return "匹配参考层";
+  return "低位次参考层";
 }
 
 function levelTone(level) {
   if (level === "冲") return "2025 同选科历史参考高于当前定位，用于保留少量上探空间。";
-  if (level === "稳") return "2025 同选科历史参考落在当前定位区间内，适合优先精筛。";
-  return "2025 同选科历史参考低于当前定位，用于拉开安全边界。";
+  if (level === "稳") return "2025 同选科历史参考落在当前定位区间内，不代表录取稳定。";
+  return "2025 同选科历史参考低于当前定位，仅作梯度参考，不构成保底承诺。";
 }
 
 function majorPreferenceReason(candidate, preferenceValue) {
@@ -557,12 +559,11 @@ function groupPriority(candidate, level, minRank, maxRank, preferenceValue) {
 function pickLevelItems(candidates, level, minRank, maxRank, preferenceValue) {
   const preference = normalizePreference(preferenceValue);
   const picked = [];
-  const usedColleges = {};
   candidates.slice()
     .sort((a, b) => groupPriority(a, level, minRank, maxRank, preference) - groupPriority(b, level, minRank, maxRank, preference))
     .forEach((candidate) => {
-      if (picked.length >= 3 || usedColleges[candidate.collegeCode]) return;
-      usedColleges[candidate.collegeCode] = true;
+      // The full candidate pool must retain multiple groups from one college.
+      // Summary pages may choose their own preview limit without changing ranking semantics.
       picked.push(candidate);
     });
   return picked;
@@ -576,6 +577,7 @@ function makeRecommendation(level, candidate, subjectCombination, preferenceValu
   const fidelity = candidate.professionalFidelity;
   return {
     id: `${level}-${candidate.id}`,
+    candidateId: candidate.id,
     level,
     collegeCode: candidate.collegeCode,
     collegeName: candidate.collegeName,
@@ -597,6 +599,8 @@ function makeRecommendation(level, candidate, subjectCombination, preferenceValu
     recommendedMajors: candidate.recommendedMajors,
     matchedMajors: majorMatch.matchedMajors || [],
     matchedMajorText: (majorMatch.matchedMajors || []).slice(0, 3).join("、"),
+    eligibleMajorNames: (candidate.restrictionAssessment.eligibleMajors || []).map((major) => major.majorName),
+    eligibleMajorCount: (candidate.restrictionAssessment.eligibleMajors || []).length,
     matchedDirectionText: (majorMatch.matchedDirectionLabels || []).join("、"),
     hasMajorMatch: !!majorMatch.hasMatch,
     majorCoverageText: majorMatch.hasMatch
@@ -680,6 +684,7 @@ module.exports = {
   assessRestrictions,
   buildProfessionalFidelity,
   buildCandidatePool,
+  makeRecommendation,
   rankWindowForLevel,
   levelForRank,
   isRankWithinLevel,

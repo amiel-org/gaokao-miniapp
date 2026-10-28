@@ -6,16 +6,7 @@
   </view>
 
   <block wx:if="{{hasResult}}">
-    <view class="major-hero">
-      <image class="hero-art" src="/assets/hero/hero-rank-coordinate.jpg" mode="aspectFill"></image>
-      <view class="hero-shade"></view>
-      <view class="hero-content">
-        <text class="eyebrow">专业与院校匹配</text>
-        <view class="hero-title">专业方向优先级</view>
-        <view class="hero-copy">先明确更看重的专业方向，再比较北京高校的专业实力与录取梯度。</view>
-      </view>
-    </view>
-
+    <view class="preference-cover"><view class="brand-lockup"><view class="brand-symbol"></view><view><view class="brand-name">京考择校指南</view><view class="brand-edition">ACADEMIC DIRECTION</view></view></view><view class="preference-step">02 / 03</view><view class="preference-cover-title">专业，是选择的起点</view><view class="hero-copy">先确定愿意投入的方向，再比较院校。<br/>每一次排序，都应该反映你的真实偏好。</view></view>
     <view class="context-strip">
       <view>
         <view class="context-label">当前位次区间</view>
@@ -68,7 +59,7 @@
     </view>
 
     <view class="evidence-band">
-      <view class="evidence-title">专业实力口径</view>
+      <view class="evidence-title">数据证据</view>
       <view class="evidence-copy">全国优势证据优先采用教育部第二轮“双一流”建设学科名单；招生专业与计划以北京教育考试院2026年官方目录为准。</view>
     </view>
 

@@ -18,7 +18,8 @@
       "root": "subpackages/volunteer",
       "pages": [
         "pages/major-preference/index",
-        "pages/volunteer-preview/index"
+        "pages/volunteer-preview/index",
+        "pages/my-list/index"
       ]
     }
   ]

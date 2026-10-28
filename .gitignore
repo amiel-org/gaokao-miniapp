@@ -54,3 +54,7 @@ tmp/
 # Local tools
 .tools/
 output/major-catalog-review/
+
+# Local visual QA screenshots and disposable HTML previews
+output/devtools-*.png
+output/decision-workspace-preview/

@@ -8,6 +8,7 @@ const {
   buildDirectionSummaries,
 } = require("../../utils/major-recommendation.js");
 const recommendationEngine = require("../../utils/volunteer-recommendation-engine.js");
+const volunteerListStore = require("../../utils/volunteer-list-store.js");
 const {
   isCurrentPositionPayload,
   removeStalePositionPayload,
@@ -104,6 +105,15 @@ Page({
     hasResult: false,
     payload: null,
     recommendations: [],
+    visibleRecommendations: [],
+    activeLevel: "冲",
+    levelTabs: [],
+    displayLimit: 8,
+    hasMore: false,
+    totalCandidateCount: 0,
+    savedCount: 0,
+    onlyMajorMatch: false,
+    decisionNote: "",
     preference: normalizePreference(null),
     preferenceModeLabel: "均衡推荐",
     preferenceDirectionText: "暂未确定专业方向",
@@ -138,7 +148,7 @@ Page({
     }
 
     const preference = normalizePreference(storedPreference);
-    const candidatePool = recommendationEngine.buildCandidatePool(payload, preference);
+    this.candidatePool = recommendationEngine.buildCandidatePool(payload, preference);
     this.setData({
       hasResult: true,
       payload,
@@ -148,7 +158,7 @@ Page({
         ? "暂未确定专业方向"
         : preference.selectedDirectionLabels.join(" → "),
       hasMajorPreference: !preference.undecided,
-      directionSummaries: buildDirectionSummaries(candidatePool, preference),
+      directionSummaries: buildDirectionSummaries(this.candidatePool, preference),
       subjectCombinationLabel: payload.input && payload.input.subjectCombination
         ? payload.input.subjectCombination.label
         : "未选择选科",
@@ -156,13 +166,56 @@ Page({
         ? ""
         : "未选择选科，当前为宽松初筛；补充选科后匹配会更准确。",
       restrictionWarningText: buildRestrictionWarning(payload),
-      recommendations: recommendationEngine.buildRecommendations(payload, preference, candidatePool),
+      decisionNote: payload.result.positionSource === "school_rank_prediction" || payload.result.positionSource === "mock_school_rank_prediction"
+        ? "当前为校排粗略预测，档位仅用于探索，不可作为正式保底依据。"
+        : "当前分档只参考 2025 一年投档位次，不代表 2026 录取概率或保底承诺。",
     });
+    this.refreshRecommendations();
   },
 
   onShow() {
     enableShareMenu();
+    if (this.data.hasResult) this.refreshRecommendations();
   },
+
+  refreshRecommendations() {
+    const all = recommendationEngine.buildRecommendations(this.data.payload, this.data.preference, this.candidatePool);
+    const savedItems = volunteerListStore.readList();
+    const filtered = all.map((section) => {
+      const items = this.data.onlyMajorMatch ? section.items.filter((item) => item.hasMajorMatch) : section.items;
+      return Object.assign({}, section, { items, totalCount: items.length });
+    });
+    const active = filtered.find((section) => section.level === this.data.activeLevel) || filtered[0];
+    const visibleItems = volunteerListStore.decorate(active.items.slice(0, this.data.displayLimit), savedItems);
+    this.setData({
+      recommendations: all,
+      totalCandidateCount: filtered.reduce((sum, section) => sum + section.totalCount, 0),
+      savedCount: savedItems.length,
+      levelTabs: filtered.map((section) => ({ level: section.level, title: section.title, count: section.totalCount, active: section.level === active.level })),
+      visibleRecommendations: [Object.assign({}, active, { items: visibleItems })],
+      hasMore: active.items.length > this.data.displayLimit,
+    });
+  },
+
+  handleLevelTap(event) { this.setData({ activeLevel: event.currentTarget.dataset.level, displayLimit: 8 }); this.refreshRecommendations(); },
+  handleLoadMore() { this.setData({ displayLimit: this.data.displayLimit + 10 }); this.refreshRecommendations(); },
+  handleMajorFilter() { this.setData({ onlyMajorMatch: !this.data.onlyMajorMatch, displayLimit: 8 }); this.refreshRecommendations(); },
+  handleToggleDetail(event) {
+    const id = event.currentTarget.dataset.id;
+    const sections = this.data.visibleRecommendations.map((section) => Object.assign({}, section, { items: section.items.map((item) => item.id === id ? Object.assign({}, item, { expanded: !item.expanded }) : item) }));
+    this.setData({ visibleRecommendations: sections });
+  },
+  handleToggleSaved(event) {
+    const id = event.currentTarget.dataset.id;
+    const rec = this.data.recommendations.reduce((found, section) => found || section.items.find((item) => item.id === id), null);
+    if (!rec) return;
+    try {
+      const result = volunteerListStore.toggleItem(rec);
+      wx.showToast({ title: result.saved ? "已加入志愿单" : "已移出志愿单", icon: "none" });
+      this.refreshRecommendations();
+    } catch (error) { wx.showToast({ title: "保存失败，请重试", icon: "none" }); }
+  },
+  handleOpenList() { wx.navigateTo({ url: "/subpackages/volunteer/pages/my-list/index" }); },
 
   onShareAppMessage() {
     return {

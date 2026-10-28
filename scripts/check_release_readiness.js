@@ -136,6 +136,7 @@ assert(
     && Array.isArray(pkg.pages)
     && pkg.pages.includes('pages/major-preference/index')
     && pkg.pages.includes('pages/volunteer-preview/index')
+    && pkg.pages.includes('pages/my-list/index')
   )),
   'app.json volunteer-preview subpackage missing',
 );
@@ -144,19 +145,23 @@ assert(appJson.window && appJson.window.navigationBarTitleText === '高考择校
 const expectedPageSpecs = {
   'pages/school-rank-entry/index': {
     navTitle: '高考择校定位',
-    phrases: ['鱼跃龙门', '高考择校定位', '北京市位次', '确认高中', '校排定位', '当前校排预测覆盖', '报考限制条件', '择校初筛', '生成择校定位', '为什么先做定位？'],
+    phrases: ['京考择校指南', '看见位置', '北京市位次', '确认高中', '校排', '当前校排预测覆盖', '报考限制条件', '生成我的择校坐标', '可信的数据'],
   },
   'pages/position-result/index': {
     navTitle: '位次参考',
-    phrases: ['步步登高', '北京市位次参考', '金榜有位，步步登高', '位次参考区间', '定位解读', '选择专业方向'],
+    phrases: ['{{resultSummary}}', '{{resultHeadline}}', '定位解读', '选择专业方向'],
   },
   'subpackages/volunteer/pages/major-preference/index': {
     navTitle: '专业方向优先级',
-    phrases: ['专业与院校匹配', '专业方向优先级', '决策侧重', '专业方向', '专业实力口径', '生成专业与院校方案'],
+    phrases: ['专业，是选择的起点', '专业方向优先级', '决策侧重', '专业方向', '数据证据', '生成专业与院校方案'],
+  },
+  'subpackages/volunteer/pages/my-list/index': {
+    navTitle: '我的志愿单',
+    phrases: ['我的志愿单', '专业与梯度', '方案结构检查', '仅意向专业', '接受组内专业', '复制清单与风险核对项', '继续挑选专业组'],
   },
   'subpackages/volunteer/pages/volunteer-preview/index': {
     navTitle: '专业与院校方案',
-    phrases: ['一举夺魁', '专业与院校方案', '专业优先级', '全国专业实力', '北京教育考试院', '为什么推荐', '建议重点核对的招生专业', '数据口径'],
+    phrases: ['COLLEGE SHORTLIST', '推荐学校池', '北京教育考试院', '为什么推荐', '我的志愿单', '加入志愿单', '数据边界', '不含京外院校及二本以下院校'],
   },
 };
 

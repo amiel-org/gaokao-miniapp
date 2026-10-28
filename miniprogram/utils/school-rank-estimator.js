@@ -112,13 +112,19 @@ function buildRankResult({
     confidence: confidenceLabel(confidenceScore),
     confidenceScore: Math.round(confidenceScore * 100),
     level: levelByRank(high),
-    bandText: bandText(high),
+    bandText: positionSource === "school_rank_prediction" || positionSource === "mock_school_rank_prediction"
+      ? "该区间由校排推演，适合提前建立多层次候选池；不要只按区间上限锁定少数院校，出分后再以官方位次收窄。"
+      : bandText(high),
     explanation,
     warnings: warnings || [],
     positionSource,
     positionSourceLabel,
     dataYear,
     parameterSnapshot: parameterSnapshot || {},
+    planningUseOnly: positionSource === "school_rank_prediction" || positionSource === "mock_school_rank_prediction",
+    modelStatus: positionSource === "school_rank_prediction" || positionSource === "mock_school_rank_prediction"
+      ? "uncalibrated_planning_estimate"
+      : "official_position_reference",
   };
 }
 
@@ -191,6 +197,8 @@ function estimateFromSchoolRank({ school, gradeRank, gradeTotal, rankingBasis, r
   }
 
   const percentile = rank / total;
+  // Grade size is a candidate's cohort, not a model sample. Small cohorts
+  // must not silently lower confidence without explaining the actual limitation.
   let confidenceScore = 0.5 + params.confidence_adjustment;
   const warnings = [];
   let explanation = "当前结果由校排和年级规模估算，不等同于北京市官方位次。";
@@ -215,14 +223,9 @@ function estimateFromSchoolRank({ school, gradeRank, gradeTotal, rankingBasis, r
     explanation += " 模考分数仅记录为预测背景。";
   }
 
-  if (total < (params.min_sample_size || 80)) {
-    confidenceScore -= 0.08;
-    warnings.push("年级规模偏小，定位区间可能波动。");
-    explanation += " 年级规模偏小，定位区间可能波动。";
-  }
-
-  warnings.push("当前学校参数尚缺真实届次回测样本，校排结果统一按低置信度宽区间使用。");
-  explanation += " 当前模型尚未完成真实样本回测。";
+  warnings.push("校排反映本校相对位置，不能直接代表北京市排名；本结果用于提前了解院校层次、专业要求和备选范围。");
+  warnings.push("当前学校参数尚缺真实届次回测样本，区间由校内百分位与学校参数推演，不是经过实测校准的录取预测。");
+  explanation += " 规划阶段请重点比较区间内的院校与专业，不把区间端点当成目标分数线；最终成绩公布后以官方位次重建方案。";
   confidenceScore = Math.max(0.2, Math.min(confidenceScore, 0.49));
 
   const rawMin = Math.max(1, Math.round(percentile * 10000 * params.range_factor_min));
@@ -245,6 +248,8 @@ function estimateFromSchoolRank({ school, gradeRank, gradeTotal, rankingBasis, r
       : (referenceScoreSource === "first_mock" ? "一模背景 + 校排粗略预测" : "仅校排粗略预测"),
     dataYear: 2025,
     school,
+    planningUseOnly: true,
+    modelStatus: "uncalibrated_planning_estimate",
     parameterSnapshot: {
       tierCode: params.tier_code,
       tierName: params.tier_name,

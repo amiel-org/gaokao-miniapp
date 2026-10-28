@@ -1,26 +1,15 @@
 <view class="page-shell">
-  <view class="hero themed-hero entry-hero">
-    <image class="hero-art" src="/assets/hero/hero-dragon-gate.jpg" mode="aspectFill"></image>
-    <view class="hero-content">
-      <view class="hero-kicker">鱼跃龙门</view>
-      <view class="hero-title">高考择校定位</view>
-      <view class="hero-lead">
-        先定位置，再定学校。重点支持已出分后的填报，也兼容未出分前的预测。
-      </view>
-      <view class="hero-flow">
-        <view class="flow-step">{{scoreMode === 'after_exam' ? '官方位次' : '确认高中'}}</view>
-        <view class="flow-line"></view>
-        <view class="flow-step">{{scoreMode === 'after_exam' ? '成绩定位' : '校排定位'}}</view>
-        <view class="flow-line"></view>
-        <view class="flow-step">择校初筛</view>
-      </view>
-    </view>
+  <view class="entry-cover">
+    <view class="cover-nav"><view class="brand-lockup"><view class="brand-symbol"></view><view><view class="brand-name">京考择校指南</view><view class="brand-edition">BEIJING ADMISSIONS · 2026</view></view></view><view class="cover-nav-mark">京</view></view>
+    <view class="cover-main"><view class="cover-eyebrow">让每一分，都有清晰的坐标</view><view class="cover-title"><text>看见位置</text><text>再选择未来</text></view><view class="cover-copy"><text>面向北京考生的院校专业组决策工具</text><text>用真实招生数据，建立你的择校坐标系</text></view></view>
+    <view class="coordinate-art"><view class="orbit orbit-one"></view><view class="orbit orbit-two"></view><view class="orbit orbit-three"></view><view class="axis axis-x"></view><view class="axis axis-y"></view><view class="coordinate-center"><text>位次</text><text>专业</text><text>志愿</text></view><view class="coordinate-dot dot-one"></view><view class="coordinate-dot dot-two"></view><view class="coordinate-dot dot-three"></view></view>
+    <view class="cover-foot"><view><text>2026</text><text>官方招生目录</text></view><view><text>46</text><text>北京目标院校</text></view><view><text>292</text><text>已核验专业组</text></view></view>
   </view>
-
-  <view class="form-block">
-    <view class="section-title">定位参数</view>
+  <view class="scope-line"><text>北京本科普通批</text><text>二本及以上院校</text><text>不出京</text></view>
+  <view class="entry-workspace"><view class="workspace-caption"><text>01</text><text>建立择校坐标</text></view>
+    <view class="section-title">{{scoreMode === 'after_exam' ? '成绩定位' : '提前规划'}}</view>
     <view class="section-subtitle">
-      只保留影响判断的关键参数；定位越清晰，后续学校梯度越可靠。
+      {{scoreMode === 'after_exam' ? '优先采用官方位次，让每次比较都有共同基准。' : '用校排建立选择范围，提前研究院校与专业。'}}
     </view>
 
     <view class="field-list">
@@ -30,10 +19,10 @@
         </view>
         <view class="segmented score-mode">
           <view class="segment {{scoreMode === 'after_exam' ? 'active' : ''}}" data-mode="after_exam" bindtap="handleScoreModeSelect">
-            已出分填报
+            出分定位
           </view>
           <view class="segment {{scoreMode === 'before_exam' ? 'active' : ''}}" data-mode="before_exam" bindtap="handleScoreModeSelect">
-            未出分预测
+            提前规划
           </view>
         </view>
         <view class="field-tip">已出分时优先填写考试院公布的北京市位次；未出分时再使用校排预测。</view>
@@ -153,7 +142,7 @@
           />
         </view>
       </view>
-      <view class="field-tip compact-tip">用于换算校内百分位，是定位精度的关键。</view>
+      <view class="field-tip compact-tip">年级规模指本届实际考生人数，须与校排属于同一排名范围；不是往届样本量。</view><view class="planning-note"><view class="planning-note-title">提前规划怎么用</view><view>校排用于推演一个选择区间，不追求伪精确排名。现阶段适合了解院校层次、筛掉不符合条件的专业、建立备选池；出分后再用官方位次重建冲稳保。</view></view>
 
       <view class="field">
         <view class="field-head">
@@ -269,19 +258,18 @@
             />
           </view>
         </view>
-        <view class="field-tip">仅记录为预测背景，不直接套用高考一分一段；当前校排模型尚待真实样本回测。</view>
+        <view class="field-tip">仅记录为预测背景，不直接套用高考一分一段；一模、二模只作背景，不提高校排推演精度；校排模型尚待真实届次结果回测。</view>
       </view>
     </view>
 
-    <view class="cta-area">
-      <button class="primary-button" bindtap="handleEstimate">生成择校定位</button>
     </view>
-  </view>
-
-  <view class="info-panel">
-    <view class="info-title">为什么先做定位？</view>
+    <view class="cta-area">
+      <button class="primary-button" bindtap="handleEstimate">生成我的择校坐标</button>
+    </view>
+  <view class="entry-method"><view class="method-index">METHODOLOGY</view>
+    <view class="info-title">一份可信的方案，从可信的数据开始</view>
     <view class="info-copy">
-      高考择校的第一步不是罗列学校，而是确认所处位置。已出分时直接使用北京市位次；未出分时才用校排生成预测区间，再结合选科、历史投档线和当年专业组形成冲稳保梯度。
+      已出分采用官方位次，未出分采用校排推演。2026 招生专业以北京教育考试院目录为准，2025 投档线只作历史参考；每一个推荐，都说清依据与边界。
     </view>
   </view>
 </view>

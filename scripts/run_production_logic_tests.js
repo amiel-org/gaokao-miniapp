@@ -61,6 +61,10 @@ function testRankSourceRouting() {
   });
   assert.strictEqual(mockTop.positionSource, 'mock_school_rank_prediction');
   assert.notStrictEqual(mockTop.rankRange, mockBottom.rankRange, 'mock route should continue to use school rank');
+  assert.strictEqual(mockTop.planningUseOnly, true, 'school-rank route must be planning-only');
+  assert.strictEqual(mockTop.modelStatus, 'uncalibrated_planning_estimate', 'unvalidated model status must be explicit');
+  assert.strictEqual(mockTop.confidence, '低', 'school-rank prediction must remain low confidence');
+  assert(mockTop.warnings.some((warning) => warning.includes('不能') || warning.includes('不是')), 'planning limitations must be visible');
 }
 
 function testCrossYearMappingExamples() {
@@ -208,6 +212,68 @@ function testRestrictionFilters() {
   assert.strictEqual(engine.assessRestrictions(cooperative, {
     studentProfile: { acceptCooperative: false },
   }).hardExcluded, true, 'rejected cooperative programs must be hard-filtered');
+
+  const restrictionFixture = { majors: [{ majorName: '测试专业', restrictionTags: ['只招男生'] }], groupRestrictionTags: [] };
+  assert.strictEqual(engine.assessRestrictions(restrictionFixture, {
+    studentProfile: { gender: 'female' },
+  }).hardExcluded, true, 'female student must be excluded from male-only majors');
+  assert.strictEqual(engine.assessRestrictions(restrictionFixture, {
+    studentProfile: { gender: 'male' },
+  }).hardExcluded, false, 'male student should remain eligible for male-only majors');
+  const colorFixture = { majors: [{ majorName: '测试专业', restrictionTags: ['不招色弱'] }], groupRestrictionTags: [] };
+  assert.strictEqual(engine.assessRestrictions(colorFixture, {
+    studentProfile: { colorVision: 'monochromacy' },
+  }).hardExcluded, true, 'monochromacy must not bypass a no-color-weak restriction');
+}
+
+
+function testCompletePoolAndVolunteerList() {
+  const payload = { input: { subjectCombination: { subjects: ['物理', '化学', '生物'] } }, result: { minRank: 7000, maxRank: 10000 } };
+  const preference = { mode: 'balanced', selectedDirectionIds: [], undecided: true };
+  const sections = engine.buildRecommendations(payload, preference);
+  const items = sections.flatMap((section) => section.items);
+  const collegeCounts = {};
+  items.forEach((item) => { collegeCounts[item.collegeName] = (collegeCounts[item.collegeName] || 0) + 1; });
+  assert(Object.values(collegeCounts).some((count) => count > 1), 'full pool must retain multiple groups from one college');
+  assert(items.every((item) => item.candidateId), 'every recommendation needs a stable candidateId');
+
+  const store = require('../miniprogram/subpackages/volunteer/utils/volunteer-list-store.js');
+  const previousWx = global.wx;
+  const storage = {};
+  global.wx = { getStorageSync: (key) => storage[key], setStorageSync: (key, value) => { storage[key] = value; } };
+  try {
+    let result = store.toggleItem(items[0]);
+    assert.strictEqual(result.saved, true);
+    store.toggleItem(items[1]);
+    store.moveItem(items[1].candidateId, -1);
+    assert.strictEqual(store.readList()[0].candidateId, items[1].candidateId, 'volunteer list reorder failed');
+    store.removeItem(items[1].candidateId);
+    result = store.toggleItem(items[0]);
+    assert.strictEqual(result.saved, false);
+    assert.strictEqual(store.readList().length, 0);
+  } finally { global.wx = previousWx; }
+}
+
+
+function testListDecisionAnalysis() {
+  const { analyzeList } = require('../miniprogram/subpackages/volunteer/utils/volunteer-list-analysis.js');
+  const items = [
+    { candidateId: 'a', level: '冲', referenceRankText: '5,000', majorAcceptance: 'selected' },
+    { candidateId: 'b', level: '冲', referenceRankText: '8,000', majorAcceptance: 'unknown' },
+    { candidateId: 'c', level: '冲', referenceRankText: '7,000', majorAcceptance: 'all' },
+  ];
+  const result = analyzeList(items, { positionSource: 'official_city_rank' });
+  assert(result.issues.some((issue) => issue.title.includes('尚未确认')), 'pending acceptance must be identified');
+  assert(result.issues.some((issue) => issue.title.includes('历史位次倒置')), 'rank inversion must be identified');
+  assert(result.issues.some((issue) => issue.title.includes('全部为冲刺')), 'all-reach list must not be called safe');
+  assert(result.issues.some((issue) => issue.title.includes('中间层次')), 'missing middle tier must be identified');
+  assert.strictEqual(result.items[0].majorRisk.includes('退档风险'), true, 'major-only acceptance must explain adjustment risk');
+  const balanced = analyzeList([
+    { level: '冲', referenceRankText: '5,000', majorAcceptance: 'all' },
+    { level: '稳', referenceRankText: '8,000', majorAcceptance: 'all' },
+    { level: '保', referenceRankText: '12,000', majorAcceptance: 'all' },
+  ], { positionSource: 'official_city_rank' });
+  assert.strictEqual(balanced.issues.length, 0, 'ordered complete example should not invent issues');
 }
 
 function main() {
@@ -215,6 +281,8 @@ function main() {
   testCrossYearMappingExamples();
   const mapping = testCrossYearMappingInvariant();
   const matrix = testRecommendationMatrix();
+  testCompletePoolAndVolunteerList();
+  testListDecisionAnalysis();
   testProfessionalFidelity();
   testRestrictionFilters();
   console.log(JSON.stringify({

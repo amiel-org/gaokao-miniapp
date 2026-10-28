@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "checkedAt": "2026-10-28T02:42:07.707Z",
+  "state": {
+    "path": "subpackages/volunteer/pages/volunteer-preview/index",
+    "hasResult": true,
+    "total": 105,
+    "tabs": [
+      {
+        "level": "冲",
+        "title": "冲刺层",
+        "count": 44,
+        "active": true
+      },
+      {
+        "level": "稳",
+        "title": "匹配参考层",
+        "count": 0,
+        "active": false
+      },
+      {
+        "level": "保",
+        "title": "低位次参考层",
+        "count": 61,
+        "active": false
+      }
+    ],
+    "visible": [
+      {
+        "level": "冲",
+        "count": 8,
+        "first": "北京外国语大学"
+      }
+    ]
+  },
+  "interactions": {
+    "saved": 1,
+    "rec": "北京外国语大学",
+    "expanded": 8
+  },
+  "decision": {
+    "acceptance": "仅接受意向专业",
+    "issues": [
+      "存在只接受意向专业的项目"
+    ]
+  },
+  "list": {
+    "path": "subpackages/volunteer/pages/my-list/index",
+    "count": 1,
+    "items": [
+      {
+        "name": "北京外国语大学",
+        "group": "03组"
+      }
+    ]
+  },
+  "resultPage": {
+    "path": "pages/position-result/index",
+    "range": "7,904",
+    "hasResult": true
+  },
+  "exceptions": []
+}

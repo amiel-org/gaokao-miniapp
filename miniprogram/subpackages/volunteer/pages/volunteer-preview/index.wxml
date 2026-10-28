@@ -6,148 +6,35 @@
   </view>
 
   <block wx:if="{{hasResult}}">
-    <view class="volunteer-hero themed-hero crown-hero">
-      <image class="hero-art" src="/assets/hero/hero-crown-laurel.jpg" mode="aspectFill"></image>
-      <view class="hero-content">
-        <text class="eyebrow">一举夺魁</text>
-        <view class="volunteer-title">专业与院校方案</view>
-        <view class="volunteer-copy">{{payload.result.positionSourceLabel}}｜先按专业方向匹配北京高校，再结合位次形成冲、稳、保三档方案。</view>
-      </view>
-    </view>
+    <view class="workspace-cover"><view class="cover-nav"><view class="brand-lockup"><view class="brand-symbol"></view><view><view class="brand-name">京考择校指南</view><view class="brand-edition">COLLEGE SHORTLIST</view></view></view><text>03 / 03</text></view><view class="workspace-title">推荐学校池</view><view class="workspace-copy">每一个候选，都有依据；每一个边界，都说清楚。</view><view class="position-band"><view><view class="position-label">{{payload.result.positionSourceLabel}}</view><view class="position-value">{{payload.result.rankRange}}</view></view><view class="position-context"><view>{{subjectCombinationLabel}}</view><view>置信度 {{payload.result.confidence}}</view></view></view></view>
+    <view class="decision-note">{{decisionNote}}</view><view wx:if="{{restrictionWarningText}}" class="decision-note">{{restrictionWarningText}}</view>
+    <view class="preference-line"><view><view class="line-label">当前决策偏好</view><view class="line-value">{{preferenceModeLabel}} · {{preferenceDirectionText}}</view></view><button class="text-button" bindtap="handleAdjustMajor">调整</button></view>
+    <view class="pool-heading"><view><view class="pool-title">推荐学校池</view><view class="pool-subtitle">{{totalCandidateCount}} 个可靠映射专业组 · 同校不同组可分别比较</view></view><button class="list-button" bindtap="handleOpenList">志愿单 {{savedCount}}</button></view>
+    <view class="filter-line"><view class="level-tabs"><view wx:for="{{levelTabs}}" wx:key="level" class="level-tab {{item.active ? 'active' : ''}}" data-level="{{item.level}}" bindtap="handleLevelTap">{{item.level}} <text>{{item.count}}</text></view></view><view wx:if="{{hasMajorPreference}}" class="match-filter {{onlyMajorMatch ? 'active' : ''}}" bindtap="handleMajorFilter">仅看专业命中</view></view>
 
-    <view class="base-panel">
-      <view class="base-label">定位区间</view>
-      <view class="base-range">{{payload.result.rankRange}}</view>
-      <view class="base-meta">{{payload.result.level}}｜置信度 {{payload.result.confidence}}</view>
-      <view class="base-subject">选科：{{subjectCombinationLabel}}</view>
-      <view wx:if="{{payload.input.studentProfileLabel}}" class="base-subject">限制条件：{{payload.input.studentProfileLabel}}</view>
-      <view wx:if="{{subjectWarningText}}" class="subject-notice">{{subjectWarningText}}</view>
-      <view wx:if="{{restrictionWarningText}}" class="subject-notice">{{restrictionWarningText}}</view>
-    </view>
-
-    <view class="preference-panel">
-      <view class="preference-head">
-        <view>
-          <view class="preference-label">当前决策侧重</view>
-          <view class="preference-mode">{{preferenceModeLabel}}</view>
-        </view>
-        <button class="adjust-button" bindtap="handleAdjustMajor">调整专业</button>
-      </view>
-      <view class="preference-directions">{{preferenceDirectionText}}</view>
-      <view class="preference-note">专业优先级用于同档排序，冲稳保仍由历史投档位次确定。</view>
-    </view>
-
-    <view wx:if="{{hasMajorPreference}}" class="major-priority-panel">
-      <view class="priority-panel-title">专业优先级</view>
-      <view wx:for="{{directionSummaries}}" wx:key="id" class="priority-row">
-        <view class="priority-number">{{item.priority}}</view>
-        <view class="priority-content">
-          <view class="priority-title">{{item.label}}</view>
-          <view class="priority-copy">{{item.description}}</view>
-          <view class="priority-metrics">当前选科覆盖 {{item.collegeCount}} 所北京高校｜国家级优势证据 {{item.evidenceCollegeCount}} 所</view>
-          <view class="priority-sample">专业示例：{{item.sampleMajorText}}</view>
-        </view>
-      </view>
-    </view>
-
-    <view class="official-plan-panel {{admissionPlanStatus.tone}}">
-      <view class="official-plan-top">
-        <view>
-          <view class="official-plan-label">北京教育考试院</view>
-          <view class="official-plan-title">{{admissionPlanStatus.title}}</view>
-        </view>
-        <view class="official-plan-tag">{{admissionPlanStatus.tag}}</view>
-      </view>
-      <view class="official-plan-copy">{{admissionPlanStatus.text}}</view>
-    </view>
-
-    <view class="recommendation-list">
-      <view wx:for="{{recommendations}}" wx:key="level" class="recommendation-section">
-        <view class="recommendation-head">
-          <view class="group-mark">{{item.level}}</view>
-          <view>
-            <view class="recommendation-title">{{item.title}}</view>
-            <view class="recommendation-summary">{{item.summary}}</view>
-          </view>
-        </view>
-
-        <view wx:if="{{item.items.length === 0}}" class="empty-recommendation">{{item.emptyText}}</view>
-
-        <view wx:for="{{item.items}}" wx:for-item="rec" wx:key="id" class="college-card">
-          <view class="college-card-top">
-            <view>
-              <view class="college-name">{{rec.collegeName}}</view>
-              <view class="college-group">2026 目标专业组：{{rec.targetGroupName}}｜{{rec.collegeLevel || '本科院校'}}｜选科要求：{{rec.subjectRequirement}}</view>
-            </view>
-            <view class="level-badge">{{rec.level}}</view>
-          </view>
-          <view class="college-rank">2025 录取参考：{{rec.referenceGroupText}}｜位次 {{rec.referenceRankText}}｜映射置信度 {{rec.referenceConfidence}}</view>
-
-          <view wx:if="{{rec.hasMajorMatch}}" class="major-match-strip">
-            <view class="major-match-label">优先专业命中</view>
-            <view class="major-match-value">{{rec.matchedMajorText}}</view>
-            <view class="major-match-meta">{{rec.majorCoverageText}}</view>
-            <view wx:if="{{rec.hasProfessionalFidelity}}" class="major-match-meta">专业保真度 {{rec.professionalFidelityBand}}｜目标专业计划占比 {{rec.professionalPlanShareText}}</view>
-            <view wx:if="{{rec.hasProfessionalFidelity}}" class="major-match-meta">{{rec.professionalFidelityText}}</view>
-          </view>
-
-          <view class="reason-block featured-reason">
-            <view class="reason-title">为什么推荐</view>
-            <view wx:for="{{rec.reasonLines}}" wx:key="*this" class="reason-line">
-              <text class="reason-dot"></text><text>{{item}}</text>
-            </view>
-          </view>
-
-          <view wx:if="{{rec.hasStrengthEvidence}}" class="strength-block">
-            <view class="strength-top">
-              <view class="strength-label">全国专业实力证据</view>
-              <view class="strength-band">{{rec.strengthLabel}}</view>
-            </view>
-            <view class="strength-detail">{{rec.strengthDetail}}</view>
-            <view class="strength-source">来源：{{rec.strengthSourceLabel}}</view>
-          </view>
-
-          <view wx:if="{{rec.hasRestrictionTags}}" class="restriction-strip">
-            <view class="restriction-title">报考限制</view>
-            <view class="restriction-tags">
-              <text wx:for="{{rec.restrictionTags}}" wx:key="*this" class="restriction-tag">{{item}}</text>
-            </view>
-          </view>
-
-          <view wx:if="{{rec.hasOfficial2026Plan || rec.hasVerified2026Catalog || rec.hasPlanHighlights}}" class="plan-block">
-            <view class="plan-title">{{rec.planBlockTitle}}</view>
-            <view wx:for="{{rec.planHighlights}}" wx:for-item="plan" wx:key="majorCode" class="plan-row">
-              <view class="plan-major">{{plan.majorCode}}｜{{plan.majorName}}</view>
-              <view class="plan-meta">计划 {{plan.planCountText}}｜学制 {{plan.durationYears}}｜学费 {{plan.tuition}}｜外语 {{plan.foreignLanguage}}</view>
-              <view class="plan-subject">选科：{{plan.subjectRequirement}}</view>
-              <view wx:if="{{plan.restrictionText}}" class="plan-subject">限制：{{plan.restrictionText}}</view>
-            </view>
-          </view>
-
-          <view class="major-block">
-            <view class="major-title">建议重点核对的招生专业</view>
-            <view class="major-tags">
-              <text wx:for="{{rec.recommendedMajors}}" wx:key="*this" class="major-tag">{{item}}</text>
-            </view>
-            <view class="major-source">{{rec.sourceLabel}}</view>
-          </view>
-
+    <view wx:for="{{visibleRecommendations}}" wx:key="level" class="recommendation-workspace">
+      <view class="section-explainer"><text>{{item.title}}</text><text>{{item.summary}}</text></view>
+      <view wx:if="{{item.items.length === 0}}" class="empty-recommendation">{{item.emptyText}}</view>
+      <view wx:for="{{item.items}}" wx:for-item="rec" wx:key="id" class="college-row">
+        <view class="college-topline"><view class="college-identity"><view class="college-index">{{rec.compactRank < 10 ? '0' + rec.compactRank : rec.compactRank}}</view><view class="college-name">{{rec.collegeName}}</view><view class="college-group">2026 {{rec.targetGroupName}} · {{rec.collegeLevel}}</view></view><view class="level-badge">{{rec.level}}</view></view>
+        <view class="rank-comparison"><view><text>2025 参考位次</text><text class="rank-number">{{rec.referenceRankText}}</text></view><view><text>选科要求</text><text>{{rec.subjectRequirement}}</text></view></view>
+        <view class="reason-block"><view class="reason-title">为什么推荐</view><view wx:for="{{rec.reasonLines}}" wx:key="*this" class="reason-line"><text class="reason-dot"></text><text>{{item}}</text></view></view>
+        <view wx:if="{{rec.hasMajorMatch}}" class="major-match-strip"><text>意向专业</text><view>{{rec.matchedMajorText}}</view><view wx:if="{{rec.hasProfessionalFidelity}}" class="major-match-meta">专业保真度 {{rec.professionalFidelityBand}} · 计划占比 {{rec.professionalPlanShareText}}</view></view>
+        <view wx:if="{{rec.hasRestrictionTags}}" class="restriction-strip">报考限制：{{rec.restrictionTags}}</view>
+        <view class="row-actions"><button class="save-button {{rec.saved ? 'saved' : ''}}" data-id="{{rec.id}}" bindtap="handleToggleSaved">{{rec.saved ? '✓ 已入志愿单' : '＋ 加入志愿单'}}</button><button class="detail-button" data-id="{{rec.id}}" bindtap="handleToggleDetail">{{rec.expanded ? '收起详情' : '专业与风险'}}</button></view>
+        <view wx:if="{{rec.expanded}}" class="expanded-detail">
+          <view class="detail-caption">2026 招生专业</view>
+          <view wx:for="{{rec.planHighlights}}" wx:for-item="plan" wx:key="majorCode" class="plan-row"><view class="plan-major">{{plan.majorCode}}｜{{plan.majorName}}</view><view class="plan-meta">计划 {{plan.planCountText}} · 学费 {{plan.tuition}} · 外语 {{plan.foreignLanguage}}</view></view>
+          <view wx:if="{{rec.hasStrengthEvidence}}" class="strength-detail">优势学科证据：{{rec.strengthDetail}}<view>来源：{{rec.strengthSourceLabel}}</view></view>
+          <view class="mapping-note">历史参考：{{rec.referenceGroupText}} · 映射置信度 {{rec.referenceConfidence}}</view>
           <view class="college-risk">{{rec.riskText}}</view>
         </view>
       </view>
+      <button wx:if="{{hasMore}}" class="more-button" bindtap="handleLoadMore">继续查看本档专业组</button>
     </view>
 
-    <view class="notice-panel">
-      <view class="notice-title">数据口径</view>
-      <view class="notice-copy">
-        当前方案只覆盖北京地区二本及以上目标院校，二本以下不收录。2025 投档线仅作为同校同选科历史录取参考，2026 官方目录用于目标专业组、招生专业和计划数；两年组号不直接拼接。{{majorStrengthScopeText}}{{coverageText}}{{admissionPlanStatusText}}{{majorCatalogStatusText}}
-      </view>
-    </view>
-
-    <view class="result-actions">
-      <button class="secondary-button" bindtap="handleAdjustMajor">调整专业</button>
-      <button class="primary-button compact" bindtap="handleBackResult">返回位次</button>
-    </view>
+    <view class="data-scope"><view class="data-title">数据边界</view><view>北京教育考试院 2026 招生目录用于目标专业组，2025 投档线仅作历史参考。当前仅覆盖北京地区二本及以上目标院校，不含京外院校及二本以下院校。历史可比性不足的专业组不进入冲稳保。</view><view class="data-source">{{admissionPlanStatusText}}</view></view>
+    <view class="result-actions"><button class="secondary-button" bindtap="handleBackResult">返回位次</button><button class="primary-button compact" bindtap="handleOpenList">整理我的志愿单</button></view>
   </block>
 </view>
 

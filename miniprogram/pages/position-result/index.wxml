@@ -6,22 +6,13 @@
   </view>
 
   <block wx:if="{{hasResult}}">
-    <view class="result-hero gold-result-hero">
-      <image class="hero-art" src="/assets/hero/hero-gold-result.jpg" mode="aspectFill"></image>
-      <view class="hero-content">
-        <view class="gold-result-label">定位结果</view>
-        <view class="result-school">{{positionHeadline}}</view>
-        <view class="result-summary">北京市位次参考已生成，金榜有位，步步登高</view>
-        <view class="result-disclaimer">先看清位置，再确定专业方向与院校梯度。</view>
-      </view>
+    <view class="report-cover">
+      <view class="report-nav"><view class="brand-lockup"><view class="brand-symbol"></view><view><view class="brand-name">京考择校指南</view><view class="brand-edition">PERSONAL POSITION REPORT</view></view></view><text>01 / 03</text></view>
+      <view class="report-kicker">个人择校坐标</view><view class="result-school">{{positionHeadline}}</view><view class="result-summary">{{resultSummary}}</view>
+      <view class="report-rank"><view class="report-rank-label">{{resultHeadline}}</view><view class="rank-range">{{rangeDisplay}}</view><view class="report-rank-rule"><view></view><view></view><view></view></view><view class="plate-meta">{{basisMeta}}</view></view>
+      <view class="report-disclaimer">{{isPlanning ? '用于提前研究院校与专业，出分后须重建方案' : '官方位次为比较基准，专业组为选择单位'}}</view>
     </view>
-
-    <view class="rank-plate">
-      <view class="plate-label">位次参考区间</view>
-      <view class="rank-range">{{rangeDisplay}}</view>
-      <view class="plate-meta">{{basisMeta}}</view>
-    </view>
-
+    <view class="report-progress"><text class="active">01 定位</text><text>02 专业</text><text>03 志愿单</text></view>
     <view class="insight-section">
       <view class="insight-title">定位解读</view>
       <view class="insight-copy">{{payload.result.bandText}}</view>
@@ -32,7 +23,7 @@
         </view>
         <view class="metric-item">
           <text class="metric-label">置信度</text>
-          <text class="metric-value confidence {{confidenceTone}}">{{payload.result.confidence}}</text>
+          <text class="metric-value confidence {{confidenceTone}}">{{isPlanning ? "低 · 未回测" : payload.result.confidence}}</text>
         </view>
         <view wx:if="{{payload.result.parameterSnapshot.tierName}}" class="metric-item">
           <text class="metric-label">参数梯队</text>
